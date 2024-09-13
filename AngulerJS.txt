@@ -3,130 +3,845 @@ Certainly! Here is a comprehensive list of 100 AngularJS interview questions, ra
 ### Basics
 
 1. What is AngularJS, and what are its main features?
+AngularJS is a JavaScript framework used for building single-page applications. Its main features include two-way data binding, dependency injection, and a powerful templating engine. It also provides a robust set of tools for building complex web applications, including services, directives, and filters.
+
 2. What is the difference between AngularJS and Angular (2+ versions)?
+AngularJS is the original version of the framework, while Angular (2+ versions) is a complete rewrite of the framework. The main differences between the two are the syntax, architecture, and features. Angular (2+ versions) is more modular, efficient, and scalable than AngularJS.
+
 3. Explain the concept of two-way data binding in AngularJS.
+Two-way data binding is a feature in AngularJS that allows for automatic synchronization of data between the model and the view. When the model changes, the view is updated automatically, and when the view changes, the model is updated automatically.
+
 4. How does AngularJS handle dependency injection?
+AngularJS uses a dependency injection system to manage dependencies between components. This system allows components to declare their dependencies, and the framework will provide them with the required dependencies.
+
 5. What are directives in AngularJS, and how are they used?
+Directives are a way to extend the HTML syntax in AngularJS. They are used to create custom HTML elements, attributes, and classes that can be used to manipulate the DOM and bind events.
+
 6. What is the purpose of the `$scope` object in AngularJS?
+The `$scope` object is used to bind data between the view and the controller. It is the glue that holds the application together, allowing data to be shared between components.
+
 7. How do you create and use a service in AngularJS?
+A service is a singleton object that can be used to share data and functionality between components. To create a service, you define a function that returns an object with the desired properties and methods.
+
 8. What is the role of the `$rootScope` in AngularJS?
+The `$rootScope` is the topmost scope in the application, and it is shared by all components. It is used to share data and events between components.
+
 9. What are AngularJS filters, and how are they used?
+Filters are used to format data in the view. They can be used to convert data from one format to another, or to filter out unwanted data.
+
 10. How do you implement routing in AngularJS?
+Routing is implemented using the `$routeProvider`. You define routes and their corresponding templates and controllers, and the framework will handle the navigation between routes.
+
+
 
 ### Directives
 
 11. What is a custom directive, and how do you create one?
+A custom directive is a reusable piece of code that can be used to extend the functionality of an HTML element. To create a custom directive, you define a function that returns an object with the desired properties and methods. The function is then registered with the AngularJS compiler using the `directive` method.
+
 12. What are the different types of directives in AngularJS?
+There are four types of directives in AngularJS: element directives, attribute directives, class directives, and comment directives. Element directives are used to create custom HTML elements, attribute directives are used to add custom attributes to existing HTML elements, class directives are used to add custom classes to existing HTML elements, and comment directives are used to add custom comments to existing HTML elements.
+
 13. How do you use `ng-repeat` to iterate over a collection?
+`ng-repeat` is used to iterate over a collection of items and render a template for each item. The syntax for `ng-repeat` is `ng-repeat="item in collection"`, where `item` is the variable that represents the current item in the collection, and `collection` is the collection of items to iterate over.
+
 14. What is the difference between `ng-if` and `ng-show/ng-hide`?
+`ng-if` is used to conditionally include or exclude a section of HTML based on a boolean expression. `ng-show` and `ng-hide` are used to conditionally show or hide a section of HTML based on a boolean expression. The main difference between the two is that `ng-if` removes the element from the DOM, while `ng-show` and `ng-hide` simply toggle the visibility of the element.
+
 15. How do you use `ng-class` to conditionally apply CSS classes?
+`ng-class` is used to conditionally apply CSS classes to an element based on a boolean expression. The syntax for `ng-class` is `ng-class="{'class-name': boolean-expression}"`, where `class-name` is the name of the CSS class to apply, and `boolean-expression` is the boolean expression that determines whether the class should be applied.
+
 16. What is the purpose of `ng-model` in AngularJS?
+`ng-model` is used to bind a form control to a property on the scope. This allows the form control to update the property on the scope when the user interacts with it, and also allows the property on the scope to update the form control.
+
 17. How do you create a reusable component with a directive?
+To create a reusable component with a directive, you define a function that returns an object with the desired properties and methods. The function is then registered with the AngularJS compiler using the `directive` method. The directive can then be used in your HTML templates to render the component.
+
 18. What are attribute directives, and how are they different from element directives?
+Attribute directives are used to add custom attributes to existing HTML elements. They are different from element directives in that they do not create a new HTML element, but rather add functionality to an existing element.
+
 19. How do you use the `link` function in a directive?
+The `link` function is used to manipulate the DOM and bind events in a directive. It is called after the template has been compiled and the scope has been created.
+
 20. What is the `compile` function in a directive?
+The `compile` function is used to compile the template for a directive. It is called before the `link` function and is used to manipulate the template before it is rendered.
+
+
 
 ### Controllers and Scope
-
 21. What is the role of controllers in AngularJS?
+Controllers in AngularJS are responsible for managing the data and behavior of a specific part of the application. They are typically used to handle user input, update the model, and interact with services. Controllers are instantiated by the AngularJS framework and are responsible for setting up the initial state of the scope.
+
 22. How do you define a controller in AngularJS?
+A controller in AngularJS is defined using the `controller` method of the module. The method takes two arguments: the name of the controller and the constructor function that defines the controller.
+
 23. What is the difference between `$scope` and `$rootScope`?
+`$scope` is the scope of the current controller, while `$rootScope` is the root scope of the application. The `$rootScope` is the parent of all scopes in the application and is used to share data between controllers.
+
 24. How do you use `$scope` to bind data between the view and the controller?
+`$scope` is used to bind data between the view and the controller by attaching properties and methods to it. The view can then access these properties and methods using the `{{ }}` syntax.
+
 25. What is the purpose of `$watch` and `$digest` in AngularJS?
+`$watch` is used to watch for changes to a specific property on the scope, while `$digest` is used to trigger a digest cycle, which updates the view with the latest data.
+
 26. How do you manage scope hierarchy in AngularJS?
+Scope hierarchy in AngularJS is managed by creating child scopes using the `scope` method of the controller. Child scopes inherit properties and methods from their parent scopes.
+
 27. What are `$emit` and `$broadcast`, and how are they used?
+`$emit` is used to emit an event up the scope hierarchy, while `$broadcast` is used to broadcast an event down the scope hierarchy. Both methods are used to communicate between controllers.
+
 28. How do you handle form validation in AngularJS?
+Form validation in AngularJS is handled using the `ng-model` directive, which binds the form control to a property on the scope. The `ng-required` and `ng-pattern` directives can be used to specify validation rules.
+
 29. What is the purpose of `$timeout` in AngularJS?
+`$timeout` is used to execute a function after a specified delay. It is often used to delay the execution of a function until the next digest cycle.
+
 30. How do you use `$http` to make AJAX requests?
+`$http` is used to make AJAX requests by calling the `get`, `post`, `put`, or `delete` methods. The methods return a promise that resolves with the response data.
+
+
 
 ### Services and Dependency Injection
 
 31. What are services in AngularJS, and how do they differ from factories?
+Services in AngularJS are singletons that provide a way to organize and share code throughout an application. They are typically used to encapsulate business logic, interact with servers, or provide utility functions. Services differ from factories in that they are instantiated only once, and the same instance is shared throughout the application. Factories, on the other hand, are functions that return a new object or value each time they are called.
+
 32. How do you create a singleton service in AngularJS?
+To create a singleton service in AngularJS, you can define a service using the `service` method of the module. The service is instantiated only once, and the same instance is shared throughout the application.
+
+```javascript
+angular.module('myApp').service('MyService', function() {
+  // service code here
+});
+```
+
 33. What is dependency injection, and how is it implemented in AngularJS?
+Dependency injection is a design pattern that allows components to be loosely coupled, making it easier to test, maintain, and extend the application. In AngularJS, dependency injection is implemented using the `$injector` service, which provides a way to inject dependencies into components, such as controllers, services, and directives.
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', 'MyService', function($scope, MyService) {
+  // controller code here
+}]);
+```
+
 34. How do you use `$http` service to perform HTTP operations?
+The `$http` service in AngularJS provides a way to perform HTTP operations, such as GET, POST, PUT, and DELETE requests. You can use the `$http` service to interact with servers, retrieve data, or send data to the server.
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', '$http', function($scope, $http) {
+  $http.get('/api/data').then(function(response) {
+    $scope.data = response.data;
+  });
+}]);
+```
+
 35. What is `$q`, and how does it work with promises?
+The `$q` service in AngularJS provides a way to work with promises, which are used to handle asynchronous operations. Promises provide a way to handle the result of an operation, such as a server request, when it is completed.
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', '$q', function($scope, $q) {
+  var deferred = $q.defer();
+  deferred.resolve('Hello World!');
+  deferred.promise.then(function(data) {
+    $scope.data = data;
+  });
+}]);
+```
+
 36. How do you configure and use interceptors in AngularJS?
+Interceptors in AngularJS are used to intercept HTTP requests and responses, allowing you to modify or cancel them. You can configure interceptors using the `$httpProvider` service.
+
+```javascript
+angular.module('myApp').config(['$httpProvider', function($httpProvider) {
+  $httpProvider.interceptors.push('MyInterceptor');
+}]);
+
+angular.module('myApp').factory('MyInterceptor', ['$q', function($q) {
+  return {
+    request: function(config) {
+      // modify request here
+      return config;
+    },
+    response: function(response) {
+      // modify response here
+      return response;
+    }
+  };
+}]);
+```
+
 37. What are `$resource` and how does it differ from `$http`?
+The `$resource` service in AngularJS provides a way to interact with RESTful servers, providing a higher-level abstraction than the `$http` service. `$resource` provides a way to define resources, which are used to interact with the server.
+
+```javascript
+angular.module('myApp').factory('MyResource', ['$resource', function($resource) {
+  return $resource('/api/data/:id', { id: '@id' }, {
+    update: {
+      method: 'PUT'
+    }
+  });
+}]);
+```
+
 38. How do you create and use a factory in AngularJS?
+Factories in AngularJS are functions that return a new object or value each time they are called. You can create a factory using the `factory` method of the module.
+
+```javascript
+angular.module('myApp').factory('MyFactory', function() {
+  return {
+    // factory code here
+  };
+});
+```
+
 39. What is the purpose of `$injector` in AngularJS?
+The `$injector` service in AngularJS provides a way to inject dependencies into components, such as controllers, services, and directives.
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', '$injector', function($scope, $injector) {
+  var MyService = $injector.get('MyService');
+  // controller code here
+}]);
+```
+
 40. How do you use AngularJS services for state management?
+Services in AngularJS can be used for state management by providing a way to share data between components. You can define a service that provides a way to get and set data, and then inject that service into your components.
+
+```javascript
+angular.module('myApp').service('MyService', function() {
+  var data = '';
+  this.getData = function() {
+    return data;
+  };
+  this.setData = function(value) {
+    data = value;
+  };
+});
+
+angular.module('myApp').controller('MyController', ['$scope', 'MyService', function($scope, MyService) {
+  $scope.data = MyService.getData();
+  // controller code here
+}]);
+
+```d 
+
 
 ### Routing and Navigation
 
 41. How do you configure routes in AngularJS?
+
+To configure routes in AngularJS, you define routes using the `$routeProvider` service. You specify the URL pattern, the corresponding template, and the controller for each route. You can also define route parameters and use them in your controller.
+
+```javascript
+angular.module('myApp').config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl: 'home.html',
+      controller: 'HomeController'
+    })
+    .when('/users/:id', {
+      templateUrl: 'user.html',
+      controller: 'UserController'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
+}]);
+```
+
 42. What is the role of `$routeProvider` in AngularJS routing?
+
+`$routeProvider` is a service that allows you to define routes for your AngularJS application. You use it to specify the URL patterns, corresponding templates, and controllers for each route.
+
 43. How do you handle route parameters in AngularJS?
+
+To handle route parameters in AngularJS, you use the `$routeParams` service. You inject `$routeParams` into your controller and access the route parameters using the `$routeParams` object.
+
+```javascript
+angular.module('myApp').controller('UserController', ['$scope', '$routeParams', function($scope, $routeParams) {
+  $scope.userId = $routeParams.id;
+}]);
+```
+
 44. What is the purpose of `ng-view` in routing?
+
+`ng-view` is a directive that is used to render the template for the current route. You use it in your main HTML file to specify the location where the route template should be rendered.
+
+```html
+<div ng-view></div>
+```
+
 45. How do you implement nested routes in AngularJS?
+
+To implement nested routes in AngularJS, you use the `$routeProvider` service to define the nested routes. You specify the parent route and the child route, and use the `ng-view` directive to render the child route template.
+
+```javascript
+angular.module('myApp').config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+    .when('/users', {
+      templateUrl: 'users.html',
+      controller: 'UsersController'
+    })
+    .when('/users/:id', {
+      templateUrl: 'user.html',
+      controller: 'UserController'
+    });
+}]);
+```
+
 46. How do you use `$location` for URL manipulation?
+
+To use `$location` for URL manipulation, you inject `$location` into your controller and use its methods to manipulate the URL.
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', '$location', function($scope, $location) {
+  $location.path('/users');
+}]);
+```
+
 47. What are route guards, and how do you implement them?
+
+Route guards are functions that are executed before the route is rendered. To implement route guards, you use the `resolve` property of the route definition.
+
+```javascript
+angular.module('myApp').config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+    .when('/users', {
+      templateUrl: 'users.html',
+      controller: 'UsersController',
+      resolve: {
+        auth: ['AuthService', function(AuthService) {
+          return AuthService.isAuthenticated();
+        }]
+      }
+    });
+}]);
+```
+
 48. How do you manage navigation and redirection in AngularJS?
+
+To manage navigation and redirection in AngularJS, you use the `$location` service and the `$routeProvider` service. You can use the `$location` service to redirect to a different route, and use the `$routeProvider` service to define the routes.
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', '$location', function($scope, $location) {
+  $location.path('/users');
+}]);
+```
+
 49. What is `$routeParams`, and how is it used?
+
+`$routeParams` is a service that provides access to the route parameters. You inject `$routeParams` into your controller and access the route parameters using the `$routeParams` object.
+
+```javascript
+angular.module('myApp').controller('UserController', ['$scope', '$routeParams', function($scope, $routeParams) {
+  $scope.userId = $routeParams.id;
+}]);
+```
+
 50. How do you handle 404 pages in AngularJS routing?
+
+To handle 404 pages in AngularJS routing, you use the `otherwise` method of the `$routeProvider` service. You specify the template and controller for the 404 page.
+
+```javascript
+angular.module('myApp').config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+    .otherwise({
+      templateUrl: '404.html',
+      controller: 'ErrorController'
+    });
+}]);
+```
+
+
 
 ### Forms and Validation
 
 51. How do you create and handle forms in AngularJS?
+
+In AngularJS, you can create and handle forms using the `ng-form` directive. This directive allows you to create a form and bind it to a scope object, which can then be used to validate and submit the form. To handle forms, you can use the `$valid`, `$invalid`, `$dirty`, and `$pristine` properties to check the state of the form.
+
+```
+<form name="myForm" ng-submit="submitForm()">
+  <input type="text" ng-model="username" required />
+  <input type="password" ng-model="password" required />
+  <button type="submit" ng-disabled="myForm.$invalid">Submit</button>
+</form>
+```
+
 52. What is the difference between template-driven forms and reactive forms in AngularJS?
+
+Template-driven forms and reactive forms are two different approaches to handling forms in AngularJS. Template-driven forms use the `ng-form` directive to create a form and bind it to a scope object, while reactive forms use a more programmatic approach to create and manage forms.
+
+```
+// Template-driven form
+<form name="myForm" ng-submit="submitForm()">
+  <input type="text" ng-model="username" required />
+  <input type="password" ng-model="password" required />
+</form>
+
+// Reactive form
+import { FormGroup, FormControl } from '@angular/forms';
+
+@Component({
+  selector: 'app-my-component',
+  template: `
+    <form [formGroup]="myForm">
+      <input type="text" formControlName="username" required />
+      <input type="password" formControlName="password" required />
+    </form>
+  `
+})
+export class MyComponent {
+  myForm = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl('')
+  });
+}
+```
+
 53. How do you perform custom form validation in AngularJS?
+
+You can perform custom form validation in AngularJS by creating a custom validator function and adding it to the form control. This function will be called whenever the form control changes and will return an error object if the validation fails.
+
+```
+// Custom validator function
+function validateUsername(control: FormControl) {
+  if (control.value.length < 5) {
+    return { invalidUsername: true };
+  }
+  return null;
+}
+
+// Add custom validator to form control
+myForm.controls['username'].setValidators([validateUsername]);
+```
+
 54. What are built-in form validators in AngularJS?
+
+AngularJS provides several built-in form validators, including `required`, `minlength`, `maxlength`, `pattern`, and `email`.
+
+```
+// Using built-in validators
+<form name="myForm">
+  <input type="text" ng-model="username" required minlength="5" />
+  <input type="email" ng-model="email" email />
+</form>
+```
+
 55. How do you handle form submission and resetting in AngularJS?
+
+You can handle form submission and resetting in AngularJS by using the `ng-submit` and `ng-click` directives.
+
+```
+// Handling form submission
+<form name="myForm" ng-submit="submitForm()">
+  <input type="text" ng-model="username" required />
+  <input type="password" ng-model="password" required />
+  <button type="submit">Submit</button>
+</form>
+
+// Handling form resetting
+<button ng-click="resetForm()">Reset</button>
+```
+
 56. What is the role of `$valid`, `$invalid`, `$dirty`, and `$pristine` in form validation?
+
+The `$valid`, `$invalid`, `$dirty`, and `$pristine` properties are used to check the state of a form control or form.
+
+*   `$valid`: Returns `true` if the form control or form is valid.
+*   `$invalid`: Returns `true` if the form control or form is invalid.
+*   `$dirty`: Returns `true` if the form control or form has been modified.
+*   `$pristine`: Returns `true` if the form control or form has not been modified.
+
 57. How do you create and use custom validators?
+
+You can create a custom validator by creating a function that returns an error object if the validation fails.
+
+```
+// Custom validator function
+function validateUsername(control: FormControl) {
+  if (control.value.length < 5) {
+    return { invalidUsername: true };
+  }
+  return null;
+}
+
+// Add custom validator to form control
+myForm.controls['username'].setValidators([validateUsername]);
+```
+
 58. What is the purpose of `ng-submit` in AngularJS forms?
+
+The `ng-submit` directive is used to handle form submission in AngularJS.
+
+```
+<form name="myForm" ng-submit="submitForm()">
+  <input type="text" ng-model="username" required />
+  <input type="password" ng-model="password" required />
+  <button type="submit">Submit</button>
+</form>
+```
+
 59. How do you use `ng-model` with forms for two-way data binding?
+
+The `ng-model` directive is used to bind a form control to a scope object, allowing for two-way data binding.
+
+```
+<form name="myForm">
+  <input type="text" ng-model="username" required />
+  <input type="password" ng-model="password" required />
+</form>
+```
+
 60. How do you handle form errors and display them in AngularJS?
+
+You can handle form errors and display them in AngularJS by using the `$error` object and the `ng-show` or `ng-hide` directives.
+
+```
+<form name="myForm">
+  <input type="text" ng-model="username" required />
+  <div ng-show="myForm.username.$error.required">Username is required</div>
+  <input type="password" ng-model="password" required />
+  <div ng-show="myForm.password.$error.required">Password is required</div>
+</form>
+```
+
+
 
 ### Dependency Injection and Services
 
 61. What is the difference between services and factories in AngularJS?
+
+In AngularJS, services and factories are both used to create reusable objects that can be injected into controllers and other components. However, they differ in how they are instantiated and how they are used.
+
+A service is a singleton object that is instantiated only once, and the same instance is shared throughout the application. Services are typically used to provide a way to share data and functionality between components.
+
+A factory, on the other hand, is a function that returns a new object or value each time it is called. Factories are typically used to create multiple instances of an object, or to create objects that have different configurations.
+
+Here is an example of a service:
+
+```javascript
+angular.module('myApp').service('MyService', function() {
+  // service code here
+});
+```
+
+And here is an example of a factory:
+
+```javascript
+angular.module('myApp').factory('MyFactory', function() {
+  return {
+    // factory code here
+  };
+});
+```
+
 62. How do you use `$provide` to create custom services?
+
+The `$provide` service is used to register custom services, factories, and providers with the AngularJS injector. To create a custom service using `$provide`, you can use the `service` method and pass in the name of the service and the constructor function.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').config(['$provide', function($provide) {
+  $provide.service('MyService', function() {
+    // service code here
+  });
+}]);
+```
+
 63. What are AngularJS modules, and how do they work?
+
+AngularJS modules are a way to organize and structure an application. A module is a container for a set of related components, such as controllers, services, and directives. Modules can be used to create reusable components that can be easily shared between applications.
+
+To create a module, you can use the `angular.module` function and pass in the name of the module. You can then use the `controller`, `service`, `factory`, and `directive` methods to register components with the module.
+
+Here is an example:
+
+```javascript
+angular.module('myApp', [])
+  .controller('MyController', ['$scope', function($scope) {
+    // controller code here
+  }])
+  .service('MyService', function() {
+    // service code here
+  });
+```
+
 64. How do you configure dependency injection in AngularJS?
+
+Dependency injection is a design pattern that allows components to be loosely coupled, making it easier to test, maintain, and extend the application. In AngularJS, dependency injection is implemented using the `$injector` service.
+
+To configure dependency injection, you can use the `$injector` service to register dependencies with the injector. You can then use the `inject` method to inject dependencies into components.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', 'MyService', function($scope, MyService) {
+  // controller code here
+}]);
+```
+
 65. What is `$injector` and how does it work?
+
+The `$injector` service is used to manage dependencies between components. It is responsible for instantiating components and injecting dependencies into them.
+
+The `$injector` service uses a dependency injection pattern to manage dependencies. It maintains a registry of dependencies and their instances, and uses this registry to resolve dependencies when a component is instantiated.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').controller('MyController', ['$scope', 'MyService', function($scope, MyService) {
+  // controller code here
+}]);
+```
+
 66. How do you use `ngResource` for data access in AngularJS?
+
+`ngResource` is a module that provides a way to interact with RESTful servers. It provides a set of services and directives that can be used to create, read, update, and delete data.
+
+To use `ngResource`, you can include the `ngResource` module in your application and then use the `$resource` service to create a resource object.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').factory('MyResource', ['$resource', function($resource) {
+  return $resource('/api/data/:id', { id: '@id' }, {
+    update: {
+      method: 'PUT'
+    }
+  });
+}]);
+```
+
 67. How do you handle asynchronous operations in services?
+
+In AngularJS, services can be used to handle asynchronous operations, such as making HTTP requests to a server. To handle asynchronous operations, you can use the `$q` service to create a promise that is resolved when the operation is complete.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').service('MyService', ['$q', function($q) {
+  var deferred = $q.defer();
+  // make HTTP request here
+  deferred.resolve(response);
+  return deferred.promise;
+}]);
+```
+
 68. What are AngularJS providers, and how do they differ from services?
+
+AngularJS providers are a way to create configurable services. They are similar to services, but they can be configured before they are instantiated.
+
+To create a provider, you can use the `provider` method and pass in the name of the provider and the constructor function.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').provider('MyProvider', function() {
+  // provider code here
+});
+```
+
 69. How do you use `$q` for handling asynchronous operations?
+
+The `$q` service is used to create promises that can be used to handle asynchronous operations. To use `$q`, you can create a deferred object using the `defer` method and then resolve the promise using the `resolve` method.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').service('MyService', ['$q', function($q) {
+  var deferred = $q.defer();
+  // make HTTP request here
+  deferred.resolve(response);
+  return deferred.promise;
+}]);
+```
+
 70. How do you create and use decorators in AngularJS?
+
+Decorators are a way to modify or extend the behavior of a service or factory. To create a decorator, you can use the `decorator` method and pass in the name of the service or factory and the decorator function.
+
+Here is an example:
+
+```javascript
+angular.module('myApp').config(['$provide', function($provide) {
+  $provide.decorator('MyService', ['$delegate', function($delegate) {
+    // decorator code here
+    return $delegate;
+  }]);
+}]);
+```n
+
 
 ### Performance Optimization
 
 71. How do you optimize AngularJS performance?
+To optimize AngularJS performance, you should focus on reducing the number of digests, using one-time binding, and minimizing the use of watchers. You can also use tools like Batarang to identify performance bottlenecks.
+
 72. What are some common performance pitfalls in AngularJS applications?
+Common performance pitfalls in AngularJS applications include overusing watchers, using ng-repeat without track by, and not using bindonce. You should also avoid using too many nested scopes and not using services to share data between controllers.
+
 73. How do you use `$watch` efficiently to minimize performance issues?
+To use `$watch` efficiently, you should only watch the variables that need to be watched and use the third argument of the `$watch` function to specify the type of watch.
+
 74. What are some strategies for reducing the number of digest cycles?
+To reduce the number of digest cycles, you can use one-time binding, minimize the use of watchers, and use services to share data between controllers.
+
 75. How do you use `track by` in `ng-repeat` for performance optimization?
+To use `track by` in `ng-repeat` for performance optimization, you should specify a unique identifier for each item in the collection.
+
 76. What is the purpose of `ng-if` vs `ng-show/ng-hide` for performance?
+`ng-if` is used to conditionally include or exclude a section of HTML based on a boolean expression. `ng-show` and `ng-hide` are used to conditionally show or hide a section of HTML based on a boolean expression. `ng-if` is more efficient than `ng-show` and `ng-hide` because it removes the element from the DOM.
+
 77. How do you optimize the use of filters in AngularJS?
+To optimize the use of filters in AngularJS, you should only use filters when necessary and use the `ng-bind` directive to bind the filtered value to the view.
+
 78. How do you handle large data sets efficiently in AngularJS?
+To handle large data sets efficiently in AngularJS, you should use pagination, limit the number of items displayed, and use services to share data between controllers.
+
 79. What is the role of `ngAnimate` in AngularJS?
+`ngAnimate` is a module that provides a way to animate the transition between views. It can be used to improve the user experience by providing a smooth transition between views.
+
 80. How do you use one-time binding for performance improvements?
+To use one-time binding for performance improvements, you should use the `::` operator to bind a value to the view. This will prevent the value from being watched and will improve performance.
+
+
 
 ### Testing
 
 81. How do you test AngularJS controllers?
+
+Testing AngularJS controllers is crucial to ensure the application's functionality. To test a controller, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the controller's behavior. You can use a testing framework like Jasmine or Mocha to write and run the tests.
+
 82. What are some common testing frameworks used with AngularJS?
+
+Some common testing frameworks used with AngularJS include Jasmine, Mocha, and Karma. Jasmine is a popular choice for unit testing, while Mocha is often used for integration testing. Karma is a test runner that allows you to run your tests in multiple browsers.
+
 83. How do you use Jasmine for testing AngularJS applications?
+
+To use Jasmine for testing AngularJS applications, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the application's behavior. You can use the `beforeEach` function to set up the testing environment, the `afterEach` function to clean up after each test, and the `it` function to define each test.
+
 84. What is the role of `$httpBackend` in testing AngularJS services?
+
+`$httpBackend` is a service that allows you to mock HTTP requests in your tests. You can use it to verify that your services are making the correct requests and to test their behavior in different scenarios.
+
 85. How do you test AngularJS directives?
+
+To test an AngularJS directive, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the directive's behavior. You can use the `compile` function to compile the directive and the `digest` function to trigger a digest cycle.
+
 86. What are some best practices for writing unit tests in AngularJS?
+
+Some best practices for writing unit tests in AngularJS include keeping your tests simple and focused on a specific piece of functionality, using a consistent naming convention, and testing both the happy path and error scenarios.
+
 87. How do you use Karma for running tests in AngularJS?
+
+Karma is a test runner that allows you to run your tests in multiple browsers. To use Karma, you should install it using npm or yarn, configure it to run your tests, and write your tests using a testing framework like Jasmine or Mocha.
+
 88. How do you mock dependencies in AngularJS tests?
+
+To mock dependencies in AngularJS tests, you can use a mocking library like angular-mocks or sinon. These libraries provide functions that allow you to create mock objects that can be used in place of the real dependencies.
+
 89. What is end-to-end testing, and how do you perform it in AngularJS?
+
+End-to-end testing involves testing the entire application from the user's perspective. To perform end-to-end testing in AngularJS, you can use a testing framework like Protractor or Cypress. These frameworks provide functions that allow you to interact with the application and verify its behavior.
+
 90. How do you test AngularJS routing?
+
+To test AngularJS routing, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the routing behavior. You can use the `$location` service to navigate to different routes and the `$route` service to verify the current route.
+
+
 
 ### Best Practices
 
 91. What are some best practices for organizing AngularJS code?
+
+Organizing AngularJS code effectively is crucial for maintaining a scalable and maintainable application. Here are some best practices to follow:
+
+*   Modularize your code: Break down your application into smaller, independent modules that can be easily managed and maintained.
+*   Use a consistent naming convention: Use a consistent naming convention throughout your application to make it easier to understand and navigate.
+*   Keep your controllers thin: Keep your controllers as thin as possible by moving business logic to services and factories.
+*   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
+*   Use directives for DOM manipulation: Use directives to manipulate the DOM and keep your controllers and services focused on business logic.
+
 92. How do you handle application state in AngularJS?
+
+Handling application state in AngularJS can be challenging, but there are several strategies you can use to manage it effectively. Here are some best practices:
+
+*   Use a state management library: Consider using a state management library like ngStorage or angular-ui-router to manage application state.
+*   Use services and factories: Use services and factories to encapsulate business logic and manage application state.
+*   Use the $rootScope: Use the $rootScope to share data between controllers and services.
+*   Use events: Use events to communicate between controllers and services and manage application state.
+
 93. How do you use dependency injection effectively in AngularJS?
+
+Dependency injection is a powerful feature in AngularJS that allows you to decouple your code and make it more modular and maintainable. Here are some best practices for using dependency injection effectively:
+
+*   Use the $injector: Use the $injector to inject dependencies into your controllers and services.
+*   Use the @ngInject annotation: Use the @ngInject annotation to specify dependencies for your controllers and services.
+*   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
+*   Avoid using the $rootScope: Avoid using the $rootScope to share data between controllers and services, instead use services and factories.
+
 94. What are some common anti-patterns to avoid in AngularJS development?
+
+There are several common anti-patterns to avoid when developing AngularJS applications. Here are some of the most common ones:
+
+*   Overusing the $rootScope: Avoid using the $rootScope to share data between controllers and services, instead use services and factories.
+*   Not using dependency injection: Failing to use dependency injection can make your code tightly coupled and difficult to maintain.
+*   Not using services and factories: Failing to use services and factories can make your code tightly coupled and difficult to maintain.
+*   Not using directives: Failing to use directives can make your code tightly coupled and difficult to maintain.
+
 95. How do you manage large AngularJS applications?
+
+Managing large AngularJS applications can be challenging, but there are several strategies you can use to make it more manageable. Here are some best practices:
+
+*   Modularize your code: Break down your application into smaller, independent modules that can be easily managed and maintained.
+*   Use a consistent naming convention: Use a consistent naming convention throughout your application to make it easier to understand and navigate.
+*   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
+*   Use directives: Use directives to manipulate the DOM and keep your controllers and services focused on business logic.
+
 96. How do you ensure maintainability and scalability in AngularJS projects?
+
+Ensuring maintainability and scalability in AngularJS projects requires careful planning and design. Here are some best practices:
+
+*   Modularize your code: Break down your application into smaller, independent modules that can be easily managed and maintained.
+*   Use a consistent naming convention: Use a consistent naming convention throughout your application to make it easier to understand and navigate.
+*   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
+*   Use directives: Use directives to manipulate the DOM and keep your controllers and services focused on business logic.
+
 97. What are some strategies for debugging AngularJS applications?
+
+Debugging AngularJS applications can be challenging, but there are several strategies you can use to make it easier. Here are some best practices:
+
+*   Use the AngularJS debugger: The AngularJS debugger is a powerful tool that allows you to step through your code and inspect variables.
+*   Use console.log: Use console.log to log messages and inspect variables.
+*   Use the Chrome DevTools: The Chrome DevTools are a powerful set of tools that allow you to inspect and debug your application.
+*   Use a debugging library: Consider using a debugging library like angular-debug to make debugging easier.
+
 98. How do you use AngularJS directives for modularity?
+
+AngularJS directives are a powerful feature that allows you to extend the HTML syntax and create reusable components. Here are some best practices for using directives for modularity:
+
+*   Use the `restrict` property: Use the `restrict` property to specify how the directive should be used.
+*   Use the `template` property: Use the `template` property to specify the HTML template for the directive.
+*   Use the `link` function: Use the `link` function to manipulate the DOM and bind events.
+*   Use the `controller` property: Use the `controller` property to specify a controller for the directive.
+
 99. How do you handle cross-browser compatibility issues in AngularJS?
+
+Handling cross-browser compatibility issues in AngularJS can be challenging, but there are several strategies you can use to make it easier. Here are some best practices:
+
+*   Use a feature detection library: Consider using a feature detection library like Modernizr to detect browser features.
+*   Use a polyfill library: Consider using a polyfill library like es5-shim to add support for older browsers.
+*   Use the `ng-class` directive: Use the `ng-class` directive to conditionally apply CSS classes based on browser features.
+*   Use the `ng-style` directive: Use the `ng-style` directive to conditionally apply CSS styles based on browser features.
+
 100. How do you keep AngularJS applications up-to-date with the latest best practices?
+
+Keeping AngularJS applications up-to-date with the latest best practices requires ongoing effort and dedication. Here are some best practices:
+
+*   Follow the AngularJS blog: Follow the AngularJS blog to stay up-to-date with the latest news and best practices.
+*   Attend conferences and meetups: Attend conferences and meetups to learn from other developers and stay up-to-date with the latest best practices.
+*   Read books and tutorials: Read books and tutorials to learn new skills and stay up-to-date with the latest best practices.
+*   Participate in online communities: Participate in online communities like the AngularJS subreddit and Stack Overflow to learn from other developers and stay up-to-date with the latest best practices.
 
