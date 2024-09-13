@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 Node.js interview questions, ranging from basics to advanced topics:
+
+### Basics
+
+1. What is Node.js, and what are its main uses?
+2. Explain the event-driven architecture in Node.js.
+3. What is the role of the `package.json` file in a Node.js project?
+4. How do you install packages using npm?
+5. What is the difference between `npm` and `yarn`?
+6. How do you create a basic HTTP server in Node.js?
+7. What is a callback function in Node.js?
+8. How does Node.js handle asynchronous operations?
+9. Explain the concept of the event loop in Node.js.
+10. What are streams in Node.js, and how are they used?
+
+### Modules and Packages
+
+11. What is the CommonJS module system?
+12. How do you export and import modules in Node.js?
+13. What is the purpose of the `require` function?
+14. How do you create a custom module in Node.js?
+15. What are the differences between `require()` and `import` statements?
+16. How do you use the `exports` and `module.exports` objects?
+17. What is `node_modules`, and how does it work?
+18. How do you manage package dependencies in Node.js?
+19. What is a package lock file, and why is it important?
+20. How do you create and use a `.env` file for environment variables?
+
+### Core Modules
+
+21. What is the `fs` module, and how do you use it for file operations?
+22. How do you handle file streams with the `fs` module?
+23. What is the `path` module used for?
+24. How do you create and use HTTP servers with the `http` module?
+25. What is the purpose of the `url` module in Node.js?
+26. How do you handle URL routing with the `url` module?
+27. What is the `os` module, and what information does it provide?
+28. How do you work with processes and child processes in Node.js?
+29. What is the `crypto` module used for?
+30. How do you handle events using the `events` module?
+
+### Asynchronous Programming
+
+31. What are Promises, and how are they used in Node.js?
+32. How do you handle errors in Promises?
+33. What is `async/await`, and how does it work in Node.js?
+34. How do you convert callback-based functions to use Promises?
+35. What is the purpose of `Promise.all()`?
+36. How do you handle multiple asynchronous operations in Node.js?
+37. What is the `async` module, and how does it help with asynchronous programming?
+38. How do you use `setTimeout` and `setInterval` functions?
+39. What is the `process.nextTick()` method, and when should it be used?
+40. How do you manage asynchronous operations with streams?
+
+### Express.js
+
+41. What is Express.js, and why is it used with Node.js?
+42. How do you set up a basic Express.js application?
+43. What are middleware functions in Express.js?
+44. How do you handle routing in Express.js?
+45. What are the different types of HTTP methods, and how are they used in Express.js?
+46. How do you handle errors in Express.js?
+47. What is `body-parser`, and why is it used in Express.js?
+48. How do you serve static files with Express.js?
+49. How do you use template engines with Express.js?
+50. What is the purpose of the `express.Router` class?
+
+### Databases
+
+51. How do you connect to a MongoDB database using Mongoose?
+52. What is Mongoose, and what are its key features?
+53. How do you perform CRUD operations with Mongoose?
+54. What is SQL and how does it differ from NoSQL databases?
+55. How do you connect to a MySQL database using Node.js?
+56. What is an ORM, and how does it help with database operations?
+57. How do you handle database migrations in Node.js?
+58. How do you use `sequelize` for database management?
+59. What are some common database queries in MongoDB?
+60. How do you handle database transactions in Node.js?
+
+### Security
+
+61. How do you secure a Node.js application?
+62. What are some common security vulnerabilities in Node.js applications?
+63. How do you handle authentication in a Node.js application?
+64. What is the purpose of HTTPS, and how do you implement it in Node.js?
+65. How do you manage secrets and sensitive information in Node.js?
+66. What are some best practices for protecting against Cross-Site Scripting (XSS) attacks?
+67. How do you prevent Cross-Site Request Forgery (CSRF) attacks in Node.js?
+68. What is rate limiting, and how can you implement it?
+69. How do you handle user authorization in Node.js applications?
+70. What are some common Node.js security best practices?
+
+### Performance and Scalability
+
+71. How do you monitor the performance of a Node.js application?
+72. What is clustering, and how does it improve performance in Node.js?
+73. How do you handle memory leaks in Node.js?
+74. What are some strategies for scaling a Node.js application?
+75. How do you use profiling tools to analyze performance?
+76. What is the role of caching in Node.js applications?
+77. How do you use Redis for caching in Node.js?
+78. What is the purpose of load balancing in Node.js?
+79. How do you handle large amounts of data efficiently in Node.js?
+80. What are some common performance bottlenecks in Node.js?
+
+### Testing
+
+81. How do you test Node.js applications?
+82. What is the purpose of unit testing, and how do you write unit tests for Node.js?
+83. How do you use Mocha for testing Node.js applications?
+84. What is Chai, and how does it work with Mocha?
+85. How do you handle asynchronous code in tests?
+86. What is Sinon, and how is it used for mocking and stubbing?
+87. How do you write integration tests for Node.js applications?
+88. What are some best practices for testing Node.js applications?
+89. How do you use Supertest for testing HTTP endpoints?
+90. How do you test error handling in Node.js?
+
+### Best Practices
+
+91. What are some best practices for writing maintainable Node.js code?
+92. How do you manage environment variables in Node.js?
+93. What is the importance of logging, and how do you implement logging in Node.js?
+94. How do you handle asynchronous error handling in Node.js?
+95. What are some strategies for managing dependencies in Node.js?
+96. How do you structure a Node.js application for scalability?
+97. What are some common anti-patterns in Node.js development?
+98. How do you ensure code quality in Node.js projects?
+99. What is the role of code reviews in Node.js development?
+100. How do you keep up with the latest Node.js features and best practices?

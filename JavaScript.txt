@@ -1,0 +1,142 @@
+Certainly! Here's a comprehensive list of 100 JavaScript interview questions that cover a range of topics from basic to advanced:
+
+### Basics
+
+1. What is JavaScript, and what are its main uses?
+2. Explain the difference between `var`, `let`, and `const`.
+3. What is a closure in JavaScript?
+4. How does JavaScript handle asynchronous operations?
+5. What are JavaScript data types? Give examples.
+6. Explain the concept of hoisting.
+7. What is the difference between `==` and `===` in JavaScript?
+8. How do you create an object in JavaScript?
+9. What is the purpose of the `this` keyword in JavaScript?
+10. What is event delegation?
+
+### Functions
+
+11. What is a callback function?
+12. How do arrow functions differ from regular functions?
+13. Explain the concept of function currying.
+14. What is a higher-order function?
+15. How can you create a private method in JavaScript?
+16. What is the `bind()` method and how does it work?
+17. How do you handle errors in JavaScript?
+18. What are IIFE (Immediately Invoked Function Expressions)?
+19. Explain the concept of the `arguments` object in functions.
+20. What are generator functions and how do they work?
+
+### Objects and Arrays
+
+21. How do you clone an object in JavaScript?
+22. What is the difference between `Object.assign()` and spread operator for object copying?
+23. Explain the concept of prototype inheritance.
+24. How do you check if an object has a property?
+25. What are some common array methods in JavaScript?
+26. How do you iterate over an array?
+27. What is the purpose of `Array.prototype.reduce()`?
+28. How do you remove duplicates from an array?
+29. What is the difference between `map()` and `forEach()`?
+30. How can you sort an array of objects by a specific property?
+
+### ES6 and Beyond
+
+31. What are template literals and how are they used?
+32. What is destructuring assignment and how does it work?
+33. How do default parameters work in functions?
+34. Explain the concept of modules in JavaScript.
+35. What is the `spread` operator and how is it used?
+36. What is the difference between `class` and `function` constructors?
+37. How do you handle asynchronous operations using `async/await`?
+38. What is the purpose of `Promise.all()`?
+39. What are `WeakMap` and `WeakSet`?
+40. What is a `Symbol` and how is it used?
+
+### DOM Manipulation
+
+41. How do you select an element in the DOM?
+42. What are the differences between `getElementById()` and `querySelector()`?
+43. How do you add or remove a class from an element?
+44. What is event bubbling and how does it work?
+45. How can you create and append new elements to the DOM?
+46. What is the `event.target` property?
+47. How do you prevent the default action of an event?
+48. What is event delegation, and why is it useful?
+49. How can you manipulate the attributes of an HTML element?
+50. What is the difference between `innerHTML` and `textContent`?
+
+### Browser and Performance
+
+51. What is the role of the JavaScript engine in the browser?
+52. How do you measure the performance of JavaScript code?
+53. What are some techniques for optimizing JavaScript performance?
+54. Explain the concept of the Event Loop.
+55. What is the difference between synchronous and asynchronous code?
+56. How can you avoid memory leaks in JavaScript?
+57. What is debouncing and throttling?
+58. How does JavaScript handle garbage collection?
+59. What are Web Workers and how do they work?
+60. What is the purpose of the `requestAnimationFrame()` method?
+
+### Advanced Topics
+
+61. What is the purpose of `Object.create()`?
+62. How do you implement inheritance in JavaScript?
+63. What is a Proxy in JavaScript and how can it be used?
+64. How do `Reflect` and `Proxy` work together?
+65. Explain the concept of event loop and call stack.
+66. What is the difference between `setTimeout()` and `setInterval()`?
+67. How can you create a custom iterator in JavaScript?
+68. What are `async iterators` and `for-await-of` loops?
+69. How does the JavaScript engine handle the `this` keyword in different contexts?
+70. What are `WeakRef` and `FinalizationRegistry`?
+
+### Security
+
+71. What is Cross-Site Scripting (XSS) and how can you prevent it?
+72. Explain Cross-Origin Resource Sharing (CORS).
+73. What is Content Security Policy (CSP) and how does it work?
+74. How can you handle sensitive data in JavaScript securely?
+75. What is the Same-Origin Policy and why is it important?
+
+### Testing and Debugging
+
+76. How do you debug JavaScript code in the browser?
+77. What are some common debugging tools or techniques?
+78. How do you write unit tests for JavaScript code?
+79. What is the role of `console.log()` in debugging?
+80. How do you use browser developer tools to analyze performance?
+
+### Frameworks and Libraries
+
+81. What is the Virtual DOM, and how does it work in React?
+82. How does Angular handle two-way data binding?
+83. What is the purpose of Vue.js directives?
+84. Explain the concept of state management in Redux.
+85. How do you handle side effects in React with `useEffect`?
+
+### Best Practices
+
+86. What are some common JavaScript design patterns?
+87. How do you ensure your code is maintainable and scalable?
+88. What are some best practices for writing secure JavaScript code?
+89. How do you handle version control and dependency management in JavaScript projects?
+90. What is the importance of code documentation?
+
+### Miscellaneous
+
+91. What are some common pitfalls or mistakes in JavaScript programming?
+92. How do you handle cross-browser compatibility issues?
+93. What are some strategies for handling large-scale JavaScript applications?
+94. How do you manage asynchronous code in a JavaScript application?
+95. What is the role of TypeScript in the JavaScript ecosystem?
+
+### Recent Developments
+
+96. What new features were introduced in the latest ECMAScript specification?
+97. How does JavaScript support new programming paradigms like functional programming?
+98. What is the impact of recent updates to JavaScript libraries and frameworks?
+99. How do JavaScript updates impact browser support and compatibility?
+100. What are some emerging trends in JavaScript development?
+
+Feel free to adjust the list according to the specific needs of your interview or focus areas.

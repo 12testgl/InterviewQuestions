@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 interview questions on design patterns, covering various aspects from basic to advanced:
+
+### Basics
+
+1. What is a design pattern, and why are they useful?
+2. What are the main types of design patterns?
+3. What is the Singleton pattern, and when would you use it?
+4. Explain the Factory Method pattern with an example.
+5. What is the difference between the Factory Method and Abstract Factory patterns?
+6. What is the Observer pattern, and how is it implemented?
+7. What is the Decorator pattern, and what are its benefits?
+8. Explain the Adapter pattern and provide a real-world example.
+9. What is the Strategy pattern, and how does it differ from the State pattern?
+10. What is the Template Method pattern, and when should it be used?
+
+### Creational Patterns
+
+11. What are creational design patterns?
+12. What is the difference between the Singleton and Prototype patterns?
+13. Explain the Builder pattern and provide an example use case.
+14. How does the Abstract Factory pattern differ from the Factory Method pattern?
+15. What is the purpose of the Factory Method pattern, and how does it work?
+16. What are some common use cases for the Prototype pattern?
+17. How do you implement lazy initialization using the Singleton pattern?
+18. What are the pros and cons of using the Builder pattern?
+19. How can you ensure thread safety in a Singleton implementation?
+20. What are the typical pitfalls of using the Singleton pattern?
+
+### Structural Patterns
+
+21. What are structural design patterns?
+22. Explain the Bridge pattern and provide an example.
+23. How does the Composite pattern work, and what are its benefits?
+24. What is the Proxy pattern, and when would you use it?
+25. Describe the Flyweight pattern and its use cases.
+26. How does the Decorator pattern differ from the Proxy pattern?
+27. What is the purpose of the Adapter pattern, and how does it work?
+28. How can you use the Facade pattern to simplify a complex subsystem?
+29. What is the difference between the Decorator pattern and the Chain of Responsibility pattern?
+30. What are the advantages of using the Bridge pattern over a direct inheritance approach?
+
+### Behavioral Patterns
+
+31. What are behavioral design patterns?
+32. Explain the Chain of Responsibility pattern with an example.
+33. How does the Command pattern work, and what are its applications?
+34. What is the purpose of the Memento pattern, and how is it implemented?
+35. Describe the Interpreter pattern and its use cases.
+36. How does the State pattern differ from the Strategy pattern?
+37. What is the Visitor pattern, and how does it simplify operations on complex objects?
+38. Explain the Template Method pattern and its advantages.
+39. What is the Observer pattern, and how does it handle state changes?
+40. How can the Iterator pattern be used to traverse collections?
+
+### Advanced Topics
+
+41. How do design patterns support software maintainability and scalability?
+42. What is the role of design patterns in microservices architecture?
+43. How do you choose the appropriate design pattern for a given problem?
+44. What are some common anti-patterns related to design patterns?
+45. How can design patterns be combined to solve complex problems?
+46. What is the role of design patterns in object-oriented design principles?
+47. How do design patterns influence software architecture?
+48. What is the role of refactoring in the context of design patterns?
+49. How do design patterns apply to functional programming paradigms?
+50. What are some design patterns specifically used in distributed systems?
+
+### Practical Implementation
+
+51. How do you apply the Singleton pattern in a multi-threaded environment?
+52. How can you use the Factory Method pattern to create complex objects?
+53. What are some real-world examples of the Observer pattern?
+54. How do you implement the Decorator pattern to add functionality to objects dynamically?
+55. How can the Strategy pattern be used to implement different algorithms?
+56. What are some common use cases for the Command pattern in GUI applications?
+57. How does the Proxy pattern help with access control and lazy initialization?
+58. What is an example of using the Composite pattern to represent part-whole hierarchies?
+59. How can the Flyweight pattern improve memory usage in applications?
+60. What are some effective ways to apply the Template Method pattern in code?
+
+### Testing and Maintenance
+
+61. How do you test applications using the Singleton pattern?
+62. What strategies can be used to test the Factory Method pattern?
+63. How can you ensure the Decorator pattern does not lead to excessive complexity?
+64. What are the challenges of testing the Observer pattern, and how can they be addressed?
+65. How do you test the Command pattern and its invocations?
+66. What are the best practices for maintaining code that uses design patterns?
+67. How can design patterns be refactored to improve testability?
+68. What tools and techniques are available for testing patterns like the Strategy or State patterns?
+69. How do you handle changes in requirements that affect design patterns in use?
+70. What are some common pitfalls when implementing and testing design patterns?
+
+### Best Practices
+
+71. What are the best practices for applying the Singleton pattern?
+72. How do you ensure proper use of the Factory Method pattern in code?
+73. What are the best practices for implementing the Observer pattern?
+74. How can you effectively use the Decorator pattern without introducing unnecessary complexity?
+75. What are the best practices for using the Adapter pattern in a legacy codebase?
+76. How do you apply the Composite pattern to maintainable and scalable design?
+77. What are some best practices for using the Strategy pattern effectively?
+78. How can you leverage the Template Method pattern for reusable code?
+79. What are the best practices for combining multiple design patterns in a project?
+80. How do you maintain simplicity while using complex design patterns?
+
+### Real-World Applications
+
+81. Can you provide an example of the Singleton pattern in a real-world application?
+82. How is the Factory Method pattern used in modern frameworks and libraries?
+83. What are some practical examples of the Observer pattern in web development?
+84. How is the Decorator pattern used in GUI toolkits and frameworks?
+85. What are real-world scenarios where the Adapter pattern is commonly used?
+86. How does the Composite pattern apply to user interface design?
+87. What are some practical implementations of the Command pattern in software engineering?
+88. How is the Flyweight pattern used in gaming and graphics applications?
+89. What are real-world uses of the State pattern in applications?
+90. How is the Strategy pattern applied in e-commerce and payment processing systems?
+
+### Emerging Trends
+
+91. How are design patterns evolving with the rise of microservices architecture?
+92. What impact do design patterns have on cloud-native applications?
+93. How do design patterns apply to serverless architecture?
+94. What are the implications of design patterns in event-driven architectures?
+95. How are design patterns being adapted for containerized applications?
+96. What role do design patterns play in DevOps and CI/CD pipelines?
+97. How are design patterns used in AI and machine learning applications?
+98. What are the challenges of applying traditional design patterns in modern software development?
+99. How are design patterns integrated into Agile and Scrum methodologies?
+100. What are the future directions for design patterns in software engineering?

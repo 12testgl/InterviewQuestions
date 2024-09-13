@@ -1,0 +1,131 @@
+Certainly! Here's a comprehensive list of 100 ReactJS interview questions that cover a range of topics from basics to advanced concepts:
+
+### Basics
+
+1. What is React, and why is it used?
+2. Explain the concept of components in React.
+3. What are props in React? How do they work?
+4. What is state in React? How is it different from props?
+5. How do you create a functional component in React?
+6. What is JSX, and why is it used in React?
+7. What is the purpose of the `render()` method in class components?
+8. How do you handle events in React?
+9. What are the lifecycle methods in React?
+10. Explain the concept of "lifting state up" in React.
+
+### Components and Props
+
+11. What is the difference between stateful and stateless components?
+12. How can you pass data from a parent component to a child component?
+13. How do you use default props in React?
+14. What is the purpose of `PropTypes` in React?
+15. How do you conditionally render components in React?
+16. What are controlled components in React?
+17. What are uncontrolled components in React?
+18. How do you handle forms in React?
+19. What are the benefits of using functional components over class components?
+20. How do you create reusable components in React?
+
+### State Management
+
+21. What is the `useState` hook, and how does it work?
+22. How do you manage state in a React application?
+23. What is the `useReducer` hook, and when would you use it?
+24. How does the Context API help with state management?
+25. What is the purpose of `useContext` in React?
+26. How do you implement a global state management solution in React?
+27. What are the differences between `useState` and `useReducer`?
+28. How can you handle state updates based on previous state?
+29. What are the performance considerations when managing state?
+30. How do you optimize state management in large applications?
+
+### Lifecycle Methods
+
+31. What are the different lifecycle methods in class components?
+32. How do you use the `componentDidMount` lifecycle method?
+33. What is the purpose of the `componentDidUpdate` lifecycle method?
+34. How do you implement cleanup in `componentWillUnmount`?
+35. How does the `shouldComponentUpdate` method help with performance?
+36. What is `getDerivedStateFromProps`, and when should it be used?
+37. How does `getSnapshotBeforeUpdate` work?
+38. What are the lifecycle hooks available in functional components?
+39. How do you use `useEffect` for side effects in functional components?
+40. How can you handle asynchronous operations within `useEffect`?
+
+### React Router
+
+41. What is React Router, and why is it used?
+42. How do you set up routing in a React application?
+43. What are `Route`, `Switch`, and `Link` components in React Router?
+44. How do you handle dynamic routing in React Router?
+45. What is the purpose of the `useParams` hook?
+46. How do you implement nested routes using React Router?
+47. What are `history`, `location`, and `match` objects in React Router?
+48. How do you perform programmatic navigation in React Router?
+49. What are the differences between `BrowserRouter` and `HashRouter`?
+50. How can you handle authentication and authorization with React Router?
+
+### Hooks
+
+51. What are hooks in React, and why were they introduced?
+52. How does the `useEffect` hook work?
+53. What is the `useMemo` hook, and when should you use it?
+54. How does the `useCallback` hook help with performance?
+55. What is the `useRef` hook, and how is it used?
+56. How can you create custom hooks in React?
+57. What is the purpose of `useLayoutEffect`?
+58. How do you use `useImperativeHandle` with `forwardRef`?
+59. What is the difference between `useEffect` and `useLayoutEffect`?
+60. How do hooks work with class components?
+
+### Performance Optimization
+
+61. How do you optimize performance in a React application?
+62. What is memoization, and how does it apply to React?
+63. How does `React.memo` help with performance?
+64. What is the purpose of `React.lazy` and `Suspense`?
+65. How can you avoid unnecessary re-renders in React?
+66. What are some strategies for code splitting in React?
+67. How do you use the `Profiler` API in React?
+68. What is server-side rendering (SSR), and how can it be implemented with React?
+69. How do you handle large lists efficiently in React?
+70. What are some common performance pitfalls in React applications?
+
+### Advanced Topics
+
+71. What is React Fiber, and how does it improve rendering performance?
+72. How do you implement a higher-order component (HOC) in React?
+73. What is the concept of render props in React?
+74. How does React handle reconciliation?
+75. What are portals in React, and how are they used?
+76. What is the purpose of the `context` API, and how does it work?
+77. How do you handle error boundaries in React?
+78. What are the best practices for testing React components?
+79. How do you implement lazy loading for components in React?
+80. What are the differences between React and other front-end frameworks like Angular or Vue?
+
+### Testing
+
+81. How do you test React components with Jest?
+82. What is Enzyme, and how is it used for testing React components?
+83. How do you write snapshot tests for React components?
+84. What is the purpose of the `act` utility in testing?
+85. How do you test asynchronous code in React components?
+86. What is React Testing Library, and how does it differ from Enzyme?
+87. How do you mock API calls in unit tests for React components?
+88. What are some best practices for writing testable React components?
+89. How do you simulate user interactions in tests?
+90. How do you test components that use React Router?
+
+### Best Practices
+
+91. What are some common React best practices for code organization?
+92. How do you manage CSS in a React application?
+93. What are the benefits of using TypeScript with React?
+94. How do you handle responsive design in React?
+95. What are some strategies for maintaining component reusability?
+96. How do you manage application state in large React applications?
+97. What is the role of context in managing global state?
+98. How do you structure your React application for scalability?
+99. What are some common anti-patterns to avoid in React development?
+100. How do you handle accessibility (a11y) in React applications?

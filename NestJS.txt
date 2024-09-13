@@ -1,0 +1,131 @@
+Certainly! Here is a comprehensive list of 100 NestJS interview questions, covering a range of topics from basic to advanced:
+
+### Basics
+
+1. What is NestJS, and what are its main features?
+2. How does NestJS differ from Express.js?
+3. What is the role of decorators in NestJS?
+4. How do you create a new NestJS project?
+5. What is the purpose of the `@Module` decorator in NestJS?
+6. Explain the concept of dependency injection in NestJS.
+7. What are providers in NestJS, and how are they used?
+8. How do you handle environment variables in a NestJS application?
+9. What is the `main.ts` file used for in a NestJS project?
+10. How do you define and use routes in NestJS?
+
+### Modules and Components
+
+11. What is a module in NestJS, and how is it used?
+12. How do you import and export modules in NestJS?
+13. What is the purpose of the `@Injectable` decorator?
+14. How do you use the `@Controller` decorator in NestJS?
+15. What are the different types of providers in NestJS?
+16. How do you create and use custom modules in NestJS?
+17. What is the role of the `@Global` decorator in NestJS modules?
+18. How do you configure and use dynamic modules?
+19. What is the purpose of the `@Inject` decorator in NestJS?
+20. How do you use middleware in NestJS?
+
+### Routing and Controllers
+
+21. How do you define routes in a NestJS controller?
+22. What is the purpose of route decorators like `@Get()`, `@Post()`, `@Put()`, and `@Delete()`?
+23. How do you handle route parameters and query parameters in NestJS?
+24. What is the role of the `@Body()` decorator in NestJS?
+25. How do you validate request data in a NestJS controller?
+26. How do you handle exceptions in NestJS controllers?
+27. What is the purpose of the `@Param()` decorator in NestJS?
+28. How do you use guards to protect routes in NestJS?
+29. What is the difference between `@UseGuards()` and `@Roles()` decorators?
+30. How do you implement custom route handlers in NestJS?
+
+### Dependency Injection
+
+31. How does dependency injection work in NestJS?
+32. What are the benefits of using dependency injection?
+33. How do you provide and inject services in NestJS?
+34. What is the difference between a singleton provider and a transient provider?
+35. How do you use the `@Injectable()` decorator to define a service?
+36. How do you resolve dependencies dynamically in NestJS?
+37. What is the role of the `@Optional()` decorator?
+38. How do you create and use custom providers?
+39. What is the purpose of `useClass`, `useValue`, `useFactory`, and `useExisting` in NestJS?
+40. How do you handle circular dependencies in NestJS?
+
+### Database Integration
+
+41. How do you integrate a database with a NestJS application?
+42. What is TypeORM, and how do you use it with NestJS?
+43. How do you define and use entities in NestJS with TypeORM?
+44. What is the role of the `@Entity()` decorator in TypeORM?
+45. How do you perform CRUD operations using TypeORM in NestJS?
+46. What are repositories in TypeORM, and how do you use them?
+47. How do you configure a database connection in NestJS?
+48. What is the purpose of migrations in TypeORM?
+49. How do you use the `@Transaction()` decorator in NestJS?
+50. How do you handle database transactions in NestJS?
+
+### Asynchronous Operations
+
+51. How do you handle asynchronous operations in NestJS?
+52. What is the `@Injectable()` decorator used for in asynchronous services?
+53. How do you use async/await in NestJS services and controllers?
+54. What are the benefits of using Promises and Observables in NestJS?
+55. How do you handle exceptions and errors in asynchronous operations?
+56. How do you use the `@Transaction()` decorator for transactional operations?
+57. What is the role of the `rxjs` library in NestJS?
+58. How do you create and manage Observables in NestJS?
+59. How do you use the `async` and `await` keywords effectively in NestJS?
+60. How do you handle concurrency and parallelism in NestJS?
+
+### Validation and Serialization
+
+61. How do you validate incoming request data in NestJS?
+62. What is the role of the `class-validator` package in NestJS?
+63. How do you use the `@IsString()`, `@IsInt()`, and other validation decorators?
+64. How do you handle validation errors and display custom error messages?
+65. What is the `class-transformer` package, and how is it used in NestJS?
+66. How do you serialize and deserialize data using `class-transformer`?
+67. What are validation pipes, and how do you use them in NestJS?
+68. How do you create custom validation pipes in NestJS?
+69. What is the purpose of the `ValidationPipe` in NestJS?
+70. How do you handle complex data validation scenarios?
+
+### Authentication and Authorization
+
+71. How do you implement authentication in a NestJS application?
+72. What is the role of JWT (JSON Web Tokens) in authentication?
+73. How do you create and use JWT strategies in NestJS?
+74. What is Passport.js, and how does it integrate with NestJS?
+75. How do you implement role-based access control (RBAC) in NestJS?
+76. How do you use guards for authentication and authorization?
+77. What are the different types of guards in NestJS?
+78. How do you create custom guards in NestJS?
+79. What is the purpose of the `@Roles()` decorator?
+80. How do you handle user sessions and cookies in NestJS?
+
+### Testing
+
+81. How do you write unit tests for NestJS services?
+82. What is the role of the `TestingModule` in NestJS testing?
+83. How do you use Jest for testing NestJS applications?
+84. How do you mock dependencies in NestJS tests?
+85. How do you test controllers and route handlers in NestJS?
+86. What is the purpose of the `@nestjs/testing` module?
+87. How do you perform integration testing in a NestJS application?
+88. How do you use `supertest` for HTTP endpoint testing in NestJS?
+89. What are some best practices for testing NestJS applications?
+90. How do you handle asynchronous tests in NestJS?
+
+### Advanced Topics
+
+91. How does NestJS handle microservices architecture?
+92. What is the purpose of the `@Microservice()` decorator?
+93. How do you implement message-based communication with microservices?
+94. How do you use WebSockets in a NestJS application?
+95. What are interceptors in NestJS, and how are they used?
+96. How do you create and use custom interceptors?
+97. What is the purpose of custom exception filters in NestJS?
+98. How do you use the `@Catch()` decorator to handle exceptions?
+99. How do you implement rate limiting in a NestJS application?
+100. What are some performance optimization techniques for NestJS applications?

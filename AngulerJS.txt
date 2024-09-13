@@ -1,0 +1,132 @@
+Certainly! Here is a comprehensive list of 100 AngularJS interview questions, ranging from basic to advanced topics:
+
+### Basics
+
+1. What is AngularJS, and what are its main features?
+2. What is the difference between AngularJS and Angular (2+ versions)?
+3. Explain the concept of two-way data binding in AngularJS.
+4. How does AngularJS handle dependency injection?
+5. What are directives in AngularJS, and how are they used?
+6. What is the purpose of the `$scope` object in AngularJS?
+7. How do you create and use a service in AngularJS?
+8. What is the role of the `$rootScope` in AngularJS?
+9. What are AngularJS filters, and how are they used?
+10. How do you implement routing in AngularJS?
+
+### Directives
+
+11. What is a custom directive, and how do you create one?
+12. What are the different types of directives in AngularJS?
+13. How do you use `ng-repeat` to iterate over a collection?
+14. What is the difference between `ng-if` and `ng-show/ng-hide`?
+15. How do you use `ng-class` to conditionally apply CSS classes?
+16. What is the purpose of `ng-model` in AngularJS?
+17. How do you create a reusable component with a directive?
+18. What are attribute directives, and how are they different from element directives?
+19. How do you use the `link` function in a directive?
+20. What is the `compile` function in a directive?
+
+### Controllers and Scope
+
+21. What is the role of controllers in AngularJS?
+22. How do you define a controller in AngularJS?
+23. What is the difference between `$scope` and `$rootScope`?
+24. How do you use `$scope` to bind data between the view and the controller?
+25. What is the purpose of `$watch` and `$digest` in AngularJS?
+26. How do you manage scope hierarchy in AngularJS?
+27. What are `$emit` and `$broadcast`, and how are they used?
+28. How do you handle form validation in AngularJS?
+29. What is the purpose of `$timeout` in AngularJS?
+30. How do you use `$http` to make AJAX requests?
+
+### Services and Dependency Injection
+
+31. What are services in AngularJS, and how do they differ from factories?
+32. How do you create a singleton service in AngularJS?
+33. What is dependency injection, and how is it implemented in AngularJS?
+34. How do you use `$http` service to perform HTTP operations?
+35. What is `$q`, and how does it work with promises?
+36. How do you configure and use interceptors in AngularJS?
+37. What are `$resource` and how does it differ from `$http`?
+38. How do you create and use a factory in AngularJS?
+39. What is the purpose of `$injector` in AngularJS?
+40. How do you use AngularJS services for state management?
+
+### Routing and Navigation
+
+41. How do you configure routes in AngularJS?
+42. What is the role of `$routeProvider` in AngularJS routing?
+43. How do you handle route parameters in AngularJS?
+44. What is the purpose of `ng-view` in routing?
+45. How do you implement nested routes in AngularJS?
+46. How do you use `$location` for URL manipulation?
+47. What are route guards, and how do you implement them?
+48. How do you manage navigation and redirection in AngularJS?
+49. What is `$routeParams`, and how is it used?
+50. How do you handle 404 pages in AngularJS routing?
+
+### Forms and Validation
+
+51. How do you create and handle forms in AngularJS?
+52. What is the difference between template-driven forms and reactive forms in AngularJS?
+53. How do you perform custom form validation in AngularJS?
+54. What are built-in form validators in AngularJS?
+55. How do you handle form submission and resetting in AngularJS?
+56. What is the role of `$valid`, `$invalid`, `$dirty`, and `$pristine` in form validation?
+57. How do you create and use custom validators?
+58. What is the purpose of `ng-submit` in AngularJS forms?
+59. How do you use `ng-model` with forms for two-way data binding?
+60. How do you handle form errors and display them in AngularJS?
+
+### Dependency Injection and Services
+
+61. What is the difference between services and factories in AngularJS?
+62. How do you use `$provide` to create custom services?
+63. What are AngularJS modules, and how do they work?
+64. How do you configure dependency injection in AngularJS?
+65. What is `$injector` and how does it work?
+66. How do you use `ngResource` for data access in AngularJS?
+67. How do you handle asynchronous operations in services?
+68. What are AngularJS providers, and how do they differ from services?
+69. How do you use `$q` for handling asynchronous operations?
+70. How do you create and use decorators in AngularJS?
+
+### Performance Optimization
+
+71. How do you optimize AngularJS performance?
+72. What are some common performance pitfalls in AngularJS applications?
+73. How do you use `$watch` efficiently to minimize performance issues?
+74. What are some strategies for reducing the number of digest cycles?
+75. How do you use `track by` in `ng-repeat` for performance optimization?
+76. What is the purpose of `ng-if` vs `ng-show/ng-hide` for performance?
+77. How do you optimize the use of filters in AngularJS?
+78. How do you handle large data sets efficiently in AngularJS?
+79. What is the role of `ngAnimate` in AngularJS?
+80. How do you use one-time binding for performance improvements?
+
+### Testing
+
+81. How do you test AngularJS controllers?
+82. What are some common testing frameworks used with AngularJS?
+83. How do you use Jasmine for testing AngularJS applications?
+84. What is the role of `$httpBackend` in testing AngularJS services?
+85. How do you test AngularJS directives?
+86. What are some best practices for writing unit tests in AngularJS?
+87. How do you use Karma for running tests in AngularJS?
+88. How do you mock dependencies in AngularJS tests?
+89. What is end-to-end testing, and how do you perform it in AngularJS?
+90. How do you test AngularJS routing?
+
+### Best Practices
+
+91. What are some best practices for organizing AngularJS code?
+92. How do you handle application state in AngularJS?
+93. How do you use dependency injection effectively in AngularJS?
+94. What are some common anti-patterns to avoid in AngularJS development?
+95. How do you manage large AngularJS applications?
+96. How do you ensure maintainability and scalability in AngularJS projects?
+97. What are some strategies for debugging AngularJS applications?
+98. How do you use AngularJS directives for modularity?
+99. How do you handle cross-browser compatibility issues in AngularJS?
+100. How do you keep AngularJS applications up-to-date with the latest best practices?
+

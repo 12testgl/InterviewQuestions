@@ -1,0 +1,134 @@
+Here are 100 interview questions covering various sorting algorithms, divided into categories like theory, coding, complexity, and applications:
+
+### General Questions on Sorting Algorithms
+
+1. What is a sorting algorithm?
+2. Why is sorting important in computer science?
+3. What are the types of sorting algorithms?
+4. How do you decide which sorting algorithm to use in a given scenario?
+5. What is the difference between comparison-based and non-comparison-based sorting?
+6. Name five sorting algorithms.
+7. What are stable sorting algorithms?
+8. Can you give examples of stable sorting algorithms?
+9. What are in-place sorting algorithms?
+10. Can you name sorting algorithms that are not in-place?
+11. What does it mean for a sorting algorithm to be adaptive?
+12. How do external sorting algorithms differ from internal ones?
+13. Explain the difference between ascending and descending order.
+14. What is meant by "sorted in lexicographical order"?
+15. What are the advantages of using a recursive sorting algorithm?
+
+### Selection Sort
+16. What is the basic principle of selection sort?
+17. What is the time complexity of selection sort?
+18. Is selection sort stable? Why or why not?
+19. How can you optimize selection sort for specific use cases?
+20. Explain how selection sort works step by step.
+
+### Bubble Sort
+21. What is the core idea behind bubble sort?
+22. What is the time complexity of bubble sort in the best, worst, and average cases?
+23. Can bubble sort be optimized? How?
+24. Why is bubble sort considered inefficient for large datasets?
+25. How does the swapping mechanism work in bubble sort?
+
+### Insertion Sort
+26. How does insertion sort work?
+27. What is the time complexity of insertion sort?
+28. Why is insertion sort more efficient for small datasets?
+29. Is insertion sort stable?
+30. Can insertion sort be used in real-time applications?
+
+### Merge Sort
+31. What is the basic concept of merge sort?
+32. How does merge sort achieve its time complexity of O(n log n)?
+33. What is the space complexity of merge sort?
+34. Why is merge sort a good option for sorting linked lists?
+35. Can merge sort be performed in-place? Why or why not?
+
+### Quick Sort
+36. What is the pivot element in quick sort?
+37. What is the average time complexity of quick sort?
+38. Explain the worst-case scenario for quick sort.
+39. How can the worst-case performance of quick sort be avoided?
+40. What is the difference between Lomuto and Hoare partition schemes?
+41. Why is quick sort generally faster than other O(n log n) algorithms?
+
+### Heap Sort
+42. How does heap sort use a heap data structure for sorting?
+43. What is the time complexity of heap sort?
+44. Is heap sort a stable sorting algorithm?
+45. How do you build a heap for heap sort?
+46. What are the advantages of heap sort over quick sort?
+
+### Radix Sort
+47. What is the principle behind radix sort?
+48. Is radix sort a comparison-based algorithm?
+49. What is the time complexity of radix sort?
+50. How does radix sort handle different digit sizes (e.g., binary vs. decimal)?
+51. Why is radix sort more efficient than quick sort in certain cases?
+
+### Counting Sort
+52. How does counting sort work?
+53. What is the time complexity of counting sort?
+54. Why is counting sort not a comparison-based algorithm?
+55. Can counting sort handle negative numbers?
+56. What are the space requirements for counting sort?
+
+### Bucket Sort
+57. What is the basic principle of bucket sort?
+58. When is bucket sort more efficient than quick sort?
+59. How do you choose the bucket size for bucket sort?
+60. What is the average-case time complexity of bucket sort?
+61. Can bucket sort be used for strings or other data types?
+
+### Tim Sort
+62. What is Tim sort, and why is it used in real-world applications?
+63. How does Tim sort combine merge sort and insertion sort?
+64. What is the time complexity of Tim sort?
+65. Why is Tim sort considered stable?
+66. Can Tim sort handle nearly sorted data efficiently?
+
+### Shell Sort
+67. How does shell sort differ from insertion sort?
+68. What is the time complexity of shell sort?
+69. How do you choose the gap sequence in shell sort?
+70. Is shell sort stable?
+71. Can shell sort be used for large datasets?
+
+### Complexity and Performance
+72. Explain the time complexity of various sorting algorithms (selection, bubble, merge, quick, heap, etc.).
+73. Why is quick sort often faster in practice than other O(n log n) algorithms?
+74. What is the space complexity of in-place sorting algorithms?
+75. Why is merge sort not suitable for large arrays with memory constraints?
+76. Explain the difference between the best, worst, and average-case time complexities of sorting algorithms.
+77. How do sorting algorithms perform when dealing with already sorted or nearly sorted data?
+78. What is the relationship between sorting algorithms and cache efficiency?
+79. How do sorting algorithms perform in multi-threaded environments?
+80. Why is O(n log n) considered the optimal time complexity for comparison-based sorting algorithms?
+
+### Real-World Applications
+81. How are sorting algorithms used in database indexing?
+82. Why is quick sort used in the C standard library (qsort)?
+83. What are the advantages of using merge sort in external sorting, such as sorting large files on disk?
+84. How does Tim sort optimize real-world sorting in languages like Python and Java?
+85. How are sorting algorithms applied in searching algorithms like binary search?
+86. How is sorting used in ranking systems (e.g., search engines, recommendation systems)?
+87. What are the trade-offs between time complexity and space complexity when choosing a sorting algorithm for real-world applications?
+88. How do sorting algorithms affect the performance of data structures like binary trees and hash tables?
+
+### Coding Challenges
+89. Write a function to implement selection sort.
+90. Implement bubble sort and optimize it to terminate early if the list is already sorted.
+91. Write a function to perform insertion sort.
+92. Implement merge sort recursively and iteratively.
+93. Write quick sort with both Lomuto and Hoare partitioning schemes.
+94. Implement heap sort and explain each step in your code.
+95. Write a function to perform counting sort on an array of integers.
+96. Implement radix sort for sorting large integers.
+97. Write bucket sort for sorting floating-point numbers between 0 and 1.
+98. Implement Tim sort, explaining the insertion sort and merge sort hybrid mechanism.
+99. Write shell sort using the Hibbard or Knuth gap sequence.
+100. Compare the performance of different sorting algorithms by implementing them and analyzing their execution times on large datasets.
+
+These questions cover theoretical aspects, practical coding challenges, and real-world applications of sorting algorithms, giving a well-rounded preparation for interviews.

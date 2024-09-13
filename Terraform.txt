@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 interview questions about Terraform, covering various topics from basics to advanced:
+
+### Basics
+
+1. What is Terraform, and what is it used for?
+2. What are the main components of Terraform?
+3. How does Terraform differ from configuration management tools like Ansible or Chef?
+4. What is infrastructure as code (IaC)?
+5. How do you define infrastructure using Terraform?
+6. What are Terraform providers?
+7. What is a Terraform module?
+8. How do you manage state in Terraform?
+9. What is the purpose of the `terraform init` command?
+10. What does the `terraform apply` command do?
+
+### Configuration Language
+
+11. What is HashiCorp Configuration Language (HCL)?
+12. How do you define variables in Terraform?
+13. What is the purpose of the `terraform.tfvars` file?
+14. How do you use output variables in Terraform?
+15. What are data sources in Terraform, and how are they used?
+16. How do you create and use modules in Terraform?
+17. What is a resource block in Terraform?
+18. How do you handle multiple environments in Terraform?
+19. What is the purpose of the `terraform plan` command?
+20. How do you use conditional expressions in Terraform configurations?
+
+### State Management
+
+21. What is the Terraform state file, and why is it important?
+22. How do you manage remote state in Terraform?
+23. What are the benefits of using remote state storage?
+24. How do you handle state file locking?
+25. What is state file drift, and how can you detect it?
+26. How do you perform a state file migration?
+27. What is `terraform taint`, and when would you use it?
+28. How do you use `terraform state` commands?
+29. What is the purpose of the `terraform refresh` command?
+30. How do you address state file corruption or loss?
+
+### Modules and Best Practices
+
+31. How do you create reusable Terraform modules?
+32. What are some best practices for organizing Terraform configurations?
+33. How do you use Terraform module versions?
+34. What is a Terraform workspace, and how is it used?
+35. How do you handle secrets and sensitive data in Terraform?
+36. What are the benefits of using community modules?
+37. How do you test Terraform configurations?
+38. What is the role of the `.terraform` directory?
+39. How do you handle version control for Terraform configurations?
+40. What is a Terraform provider version constraint, and how is it specified?
+
+### Providers and Resources
+
+41. What is a Terraform provider, and how does it work?
+42. How do you configure a provider in Terraform?
+43. What are some common Terraform providers?
+44. How do you use provider aliases?
+45. What is the purpose of the `provider` block?
+46. How do you manage provider credentials securely?
+47. What is the `resource` block, and how do you define resources?
+48. How do you use resource dependencies in Terraform?
+49. What are data sources, and how do they interact with resources?
+50. How do you handle resource changes and updates?
+
+### Advanced Topics
+
+51. What is a Terraform backend, and what types are there?
+52. How do you configure Terraform to use a specific backend?
+53. What are Terraform workspaces, and how do they differ from environments?
+54. How do you use Terraform with multiple cloud providers?
+55. What is the purpose of the `terraform import` command?
+56. How do you perform a Terraform plan with a specific target?
+57. What is a `terraform destroy` command, and when should it be used?
+58. How do you use Terraform to manage dependencies between resources?
+59. What is the purpose of `terraform validate`?
+60. How do you handle resource dependencies and ordering?
+
+### Security and Compliance
+
+61. How do you secure Terraform configurations?
+62. What are some best practices for managing Terraform secrets?
+63. How do you ensure compliance with security policies using Terraform?
+64. What is `terraform plan` security context, and how does it help in compliance?
+65. How do you use Terraform to enforce infrastructure policies?
+66. What are some common security pitfalls in Terraform configurations?
+67. How do you audit Terraform configurations for compliance?
+68. What is the role of Terraform in a security automation strategy?
+69. How do you manage access control in Terraform?
+70. What are some best practices for securing the Terraform state file?
+
+### Integration and Automation
+
+71. How do you integrate Terraform with CI/CD pipelines?
+72. What are some tools and services commonly used with Terraform?
+73. How do you use Terraform with version control systems like Git?
+74. What is the role of Terraform in infrastructure automation?
+75. How do you handle rollbacks and recoveries with Terraform?
+76. How do you use Terraform in a multi-environment setup?
+77. What is the Terraform CLI, and what are some key commands?
+78. How do you use Terraform with cloud-native services like AWS Lambda or Google Cloud Functions?
+79. What is the Terraform Registry, and how do you use it?
+80. How do you manage Terraform configurations across teams?
+
+### Troubleshooting and Debugging
+
+81. What are some common Terraform errors, and how do you troubleshoot them?
+82. How do you debug Terraform configurations?
+83. What is the role of `terraform console` in troubleshooting?
+84. How do you use Terraform logs for debugging?
+85. What are some techniques for resolving Terraform plan conflicts?
+86. How do you identify and resolve issues with resource provisioning?
+87. What is the Terraform troubleshooting process?
+88. How do you handle Terraform provider issues or limitations?
+89. What are some common mistakes to avoid with Terraform?
+90. How do you handle performance issues in large-scale Terraform configurations?
+
+### Best Practices and Optimization
+
+91. What are some best practices for writing efficient Terraform code?
+92. How do you optimize Terraform configurations for performance?
+93. What are some strategies for managing large Terraform projects?
+94. How do you use Terraform in a team environment?
+95. What are the benefits of using Terraform modules and how do they help in code reuse?
+96. How do you maintain Terraform configurations over time?
+97. What are some strategies for reducing Terraform state file size?
+98. How do you handle Terraform state file versioning?
+99. What are some best practices for managing Terraform configurations in production?
+100. How do you ensure Terraform configurations are maintainable and scalable?

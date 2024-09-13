@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 SQL database interview questions, covering a range of topics from basics to advanced:
+
+### Basics
+
+1. What is SQL, and what does it stand for?
+2. What are the main types of SQL statements?
+3. What is a database, and how is it different from a table?
+4. What are the basic data types available in SQL?
+5. What is the purpose of the `SELECT` statement?
+6. How do you filter records in a SQL query?
+7. What are `JOIN` operations, and what types are there?
+8. What is the difference between `INNER JOIN` and `LEFT JOIN`?
+9. What is a primary key, and why is it important?
+10. What is a foreign key, and how is it used?
+
+### Data Manipulation
+
+11. How do you insert data into a table?
+12. What is the syntax for updating records in a table?
+13. How do you delete records from a table?
+14. What is the `WHERE` clause, and how is it used in SQL queries?
+15. How do you use the `ORDER BY` clause in SQL?
+16. What is the purpose of the `GROUP BY` clause?
+17. How do you use aggregate functions like `COUNT`, `SUM`, `AVG`, `MIN`, and `MAX`?
+18. What is the `HAVING` clause, and how does it differ from `WHERE`?
+19. How do you use subqueries in SQL?
+20. What is a common table expression (CTE), and how is it used?
+
+### Joins and Relationships
+
+21. What is the difference between `INNER JOIN` and `OUTER JOIN`?
+22. How does a `RIGHT JOIN` work?
+23. What is a `FULL OUTER JOIN`, and when would you use it?
+24. How do you perform a self-join?
+25. What are the advantages of using joins over subqueries?
+26. How do you handle many-to-many relationships in SQL?
+27. What is a `CROSS JOIN`, and how does it work?
+28. How do you retrieve data from multiple tables using joins?
+29. What is the purpose of the `UNION` and `UNION ALL` operators?
+30. How do you use the `EXISTS` operator in SQL?
+
+### Indexing and Optimization
+
+31. What is an index, and why is it used?
+32. How do indexes improve query performance?
+33. What are the different types of indexes available in SQL?
+34. What is the difference between clustered and non-clustered indexes?
+35. How do you create and drop indexes in SQL?
+36. What is a composite index, and when should you use it?
+37. How do you analyze and optimize query performance?
+38. What is query execution plan, and how do you use it?
+39. How do you use the `EXPLAIN` statement to analyze queries?
+40. What is database normalization, and why is it important?
+
+### Transactions and Concurrency
+
+41. What is a database transaction, and why is it important?
+42. What are the ACID properties of transactions?
+43. How do you use the `BEGIN`, `COMMIT`, and `ROLLBACK` statements?
+44. What is the purpose of transaction isolation levels?
+45. What are the different transaction isolation levels, and how do they affect concurrency?
+46. How do you handle deadlocks in SQL databases?
+47. What is a savepoint, and how is it used?
+48. What is the difference between `REPEATABLE READ` and `SERIALIZABLE` isolation levels?
+49. How do you use locking mechanisms in SQL?
+50. What are implicit and explicit transactions?
+
+### Database Design
+
+51. What is normalization, and what are its different forms (1NF, 2NF, 3NF, BCNF)?
+52. What is denormalization, and when might it be used?
+53. How do you design a schema for a relational database?
+54. What is the purpose of ER diagrams in database design?
+55. How do you identify and define primary keys for tables?
+56. What are foreign key constraints, and how do they maintain data integrity?
+57. How do you implement cascading updates and deletes?
+58. What are domain constraints, and how are they used?
+59. What are default constraints, and how do they work?
+60. How do you handle many-to-many relationships in database design?
+
+### Stored Procedures and Functions
+
+61. What are stored procedures, and how are they created and used?
+62. What is a stored function, and how does it differ from a procedure?
+63. How do you pass parameters to stored procedures?
+64. How do you handle exceptions in stored procedures?
+65. What is a trigger, and how is it used in SQL databases?
+66. How do you create and manage triggers in SQL?
+67. What are the different types of triggers (e.g., BEFORE, AFTER, INSTEAD OF)?
+68. How do you use cursors in stored procedures?
+69. What are some best practices for writing efficient stored procedures?
+70. How do you optimize stored procedures for performance?
+
+### Security and Permissions
+
+71. What is user management in SQL databases, and how is it done?
+72. How do you grant and revoke permissions to users?
+73. What are roles, and how are they used in SQL databases?
+74. How do you use views for security and data abstraction?
+75. What is the purpose of data encryption in SQL databases?
+76. How do you manage database backups and restore operations?
+77. What are some best practices for securing SQL databases?
+78. How do you audit database activities?
+79. What is SQL injection, and how can you prevent it?
+80. How do you handle user authentication and authorization in SQL databases?
+
+### Advanced Topics
+
+81. What is database sharding, and how is it implemented?
+82. How do you use partitioning to manage large tables?
+83. What is database replication, and what are its types?
+84. How do you configure and manage database replication?
+85. What is database clustering, and how does it work?
+86. How do you perform database migration and versioning?
+87. What are materialized views, and how are they used?
+88. What is data warehousing, and how is it different from OLTP databases?
+89. What is a data lake, and how does it differ from a data warehouse?
+90. How do you handle schema changes in a production database?
+
+### Performance Tuning and Best Practices
+
+91. What are some common performance bottlenecks in SQL databases?
+92. How do you use caching to improve database performance?
+93. What are some best practices for writing efficient SQL queries?
+94. How do you manage and optimize database indexes?
+95. What is the role of database statistics, and how are they used?
+96. How do you monitor database performance and resource usage?
+97. What are some strategies for handling large-scale databases?
+98. How do you handle data archiving and purging?
+99. What are some best practices for database maintenance?
+100. How do you ensure high availability and disaster recovery for SQL databases?

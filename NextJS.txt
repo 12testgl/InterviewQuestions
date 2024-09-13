@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 Next.js interview questions, covering a range of topics from basic to advanced:
+
+### Basics
+
+1. **What is Next.js and what are its main features?**
+2. **How does Next.js differ from Create React App?**
+3. **What is server-side rendering (SSR) in Next.js?**
+4. **What is static site generation (SSG) in Next.js?**
+5. **Explain the concept of incremental static regeneration (ISR) in Next.js.**
+6. **How do you set up a new Next.js project?**
+7. **What is the purpose of the `pages` directory in a Next.js project?**
+8. **How does Next.js handle routing?**
+9. **What are API routes in Next.js and how do you use them?**
+10. **How do you configure custom headers and redirects in Next.js?**
+
+### Pages and Routing
+
+11. **How do you create dynamic routes in Next.js?**
+12. **What is the difference between `getStaticProps` and `getServerSideProps`?**
+13. **How do you fetch data at build time with `getStaticProps`?**
+14. **How do you fetch data on each request with `getServerSideProps`?**
+15. **What is `getStaticPaths` and how is it used?**
+16. **How do you handle 404 pages in Next.js?**
+17. **What is `next/link` and how do you use it for navigation?**
+18. **How do you create a catch-all route in Next.js?**
+19. **What is the purpose of the `_app.js` file?**
+20. **How do you use the `_document.js` file to customize the HTML document?**
+
+### Static and Dynamic Rendering
+
+21. **How do you enable incremental static regeneration (ISR) in Next.js?**
+22. **What are the benefits of using static site generation (SSG) over server-side rendering (SSR)?**
+23. **How do you handle revalidation with ISR?**
+24. **How do you configure caching for static assets in Next.js?**
+25. **What is the difference between `getStaticProps` and client-side data fetching?**
+26. **How do you use environment variables in a Next.js application?**
+27. **How do you handle dynamic imports in Next.js?**
+28. **What is the `next/image` component and how does it improve image performance?**
+29. **How do you optimize performance with static and dynamic rendering?**
+30. **How do you prefetch pages in Next.js?**
+
+### Styling and CSS
+
+31. **How do you add global CSS to a Next.js project?**
+32. **What is CSS-in-JS and how is it used in Next.js?**
+33. **How do you use styled-components or Emotion with Next.js?**
+34. **What is the `next/font` module and how does it help with font optimization?**
+35. **How do you implement CSS modules in Next.js?**
+36. **What are the advantages of using Tailwind CSS with Next.js?**
+37. **How do you add and use Sass or LESS in a Next.js application?**
+38. **How do you apply responsive design in Next.js applications?**
+39. **What are the best practices for optimizing CSS in a Next.js project?**
+40. **How do you handle global styles and component-level styles in Next.js?**
+
+### Data Fetching and API Routes
+
+41. **How do you handle API requests in Next.js using `fetch` or Axios?**
+42. **What is the role of API routes in Next.js?**
+43. **How do you use serverless functions with Next.js?**
+44. **How do you handle authentication in API routes?**
+45. **How do you set up a custom API endpoint in Next.js?**
+46. **How do you handle API route errors and exceptions?**
+47. **What is the `API` directory and how is it structured?**
+48. **How do you handle form submissions in API routes?**
+49. **How do you test API routes in a Next.js application?**
+50. **What are some common security practices for API routes in Next.js?**
+
+### Performance Optimization
+
+51. **How do you measure and improve performance in a Next.js application?**
+52. **What is the role of `next/script` and how does it help with performance?**
+53. **How do you optimize images with the `next/image` component?**
+54. **What are some techniques for optimizing bundle size in Next.js?**
+55. **How do you handle lazy loading in Next.js?**
+56. **How do you analyze and improve the initial load time of a Next.js app?**
+57. **How do you leverage code splitting in Next.js?**
+58. **What is pre-rendering and how is it used in Next.js?**
+59. **How do you use the `next/optimise` module for performance enhancements?**
+60. **What are some best practices for optimizing a Next.js application for SEO?**
+
+### Deployment and Hosting
+
+61. **How do you deploy a Next.js application to Vercel?**
+62. **What are some alternative hosting options for Next.js applications?**
+63. **How do you configure custom domains for a Next.js application?**
+64. **How do you set up continuous integration and deployment (CI/CD) for Next.js?**
+65. **What are some best practices for deploying a Next.js application to AWS?**
+66. **How do you handle environment-specific configurations in Next.js?**
+67. **What is the `next.config.js` file and how is it used for configuration?**
+68. **How do you handle serverless deployment for Next.js?**
+69. **How do you monitor and log Next.js applications in production?**
+70. **What are some strategies for scaling Next.js applications?**
+
+### Testing
+
+71. **How do you write unit tests for Next.js components?**
+72. **What is the role of Jest in testing Next.js applications?**
+73. **How do you test API routes in a Next.js application?**
+74. **What are some common testing libraries used with Next.js?**
+75. **How do you perform integration testing with Next.js?**
+76. **How do you test server-side rendering (SSR) in Next.js?**
+77. **What is the role of React Testing Library in Next.js testing?**
+78. **How do you mock API requests in Next.js tests?**
+79. **How do you test static and dynamic routes in Next.js?**
+80. **What are some best practices for testing Next.js applications?**
+
+### Advanced Topics
+
+81. **How do you implement custom server logic in Next.js?**
+82. **What is Next.js middleware and how is it used?**
+83. **How do you integrate Next.js with a headless CMS?**
+84. **How do you handle internationalization (i18n) in Next.js?**
+85. **How do you use Next.js with TypeScript?**
+86. **How do you implement Progressive Web App (PWA) features in Next.js?**
+87. **How do you use serverless functions with Next.js?**
+88. **How do you manage state in a Next.js application?**
+89. **How do you integrate third-party services or APIs with Next.js?**
+90. **What are some common patterns for organizing large Next.js applications?**
+
+### Best Practices
+
+91. **What are some best practices for structuring a Next.js project?**
+92. **How do you handle error boundaries and fallback pages in Next.js?**
+93. **What are some security considerations when building a Next.js application?**
+94. **How do you ensure SEO optimization in a Next.js application?**
+95. **How do you manage and update dependencies in a Next.js project?**
+96. **What are some strategies for maintaining code quality in Next.js projects?**
+97. **How do you handle authentication and authorization in a Next.js application?**
+98. **What are the best practices for managing static and dynamic content?**
+99. **How do you handle user-generated content in Next.js applications?**
+100. **How do you keep up with the latest Next.js features and best practices?**

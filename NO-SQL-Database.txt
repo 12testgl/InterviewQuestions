@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 interview questions on NoSQL databases, covering a range of topics from basics to advanced:
+
+### Basics
+
+1. What is a NoSQL database, and how does it differ from a relational database?
+2. What are the main types of NoSQL databases?
+3. What is schema-less design, and why is it important in NoSQL databases?
+4. What are the advantages of using NoSQL databases?
+5. What are some common use cases for NoSQL databases?
+6. How do NoSQL databases handle scalability compared to relational databases?
+7. What are CAP Theorem and its implications for NoSQL databases?
+8. What is eventual consistency, and how does it differ from strong consistency?
+9. What are some limitations of NoSQL databases?
+10. What is data denormalization, and how is it used in NoSQL databases?
+
+### Types of NoSQL Databases
+
+11. What is a key-value store, and what are some examples?
+12. What is a document store, and how does it work?
+13. What is a column-family store, and how does it differ from other NoSQL databases?
+14. What is a graph database, and what are its primary use cases?
+15. How does Redis function as a key-value store, and what are its primary features?
+16. What is MongoDB, and how does it work as a document store?
+17. What is Cassandra, and how does it function as a column-family store?
+18. What is Neo4j, and how is it used as a graph database?
+19. How does Amazon DynamoDB work, and what are its main features?
+20. What is Couchbase, and how does it integrate key-value and document store capabilities?
+
+### Data Modeling
+
+21. What is data modeling in the context of NoSQL databases?
+22. How does data modeling differ between relational and NoSQL databases?
+23. What are some best practices for data modeling in MongoDB?
+24. How do you design a schema for a key-value store like Redis?
+25. What is a wide-column store, and how do you model data in Cassandra?
+26. What are some common patterns for modeling data in graph databases?
+27. How do you handle relationships in a document store?
+28. What is denormalization, and how does it affect data modeling in NoSQL databases?
+29. How do you ensure data consistency in a NoSQL database?
+30. What are some strategies for handling large-scale data in NoSQL databases?
+
+### Query Languages
+
+31. What is MongoDB Query Language (MQL), and how is it used for querying data?
+32. How does Cassandra Query Language (CQL) differ from SQL?
+33. What is Redis Query Language, and how does it support querying in Redis?
+34. What are Cypher queries, and how are they used in Neo4j?
+35. How do you perform complex queries in a document store like Couchbase?
+36. What are some common query patterns for graph databases?
+37. How do you perform aggregation operations in MongoDB?
+38. What are secondary indexes in NoSQL databases, and how are they used?
+39. What is MapReduce, and how is it used for querying in NoSQL databases?
+40. How do you optimize query performance in NoSQL databases?
+
+### Performance and Scalability
+
+41. How do NoSQL databases achieve horizontal scalability?
+42. What is sharding, and how does it work in NoSQL databases?
+43. How does replication contribute to performance and availability in NoSQL databases?
+44. What are the differences between synchronous and asynchronous replication?
+45. How do you handle read and write performance in a NoSQL database?
+46. What are some techniques for load balancing in NoSQL databases?
+47. How do you manage large volumes of data in a NoSQL database?
+48. What are some common performance bottlenecks in NoSQL databases?
+49. How do you use caching to improve performance in NoSQL databases?
+50. What are some strategies for scaling out a NoSQL database cluster?
+
+### Data Consistency and Integrity
+
+51. How do NoSQL databases ensure data consistency?
+52. What is eventual consistency, and how does it work in NoSQL databases?
+53. What are the trade-offs between consistency and availability in NoSQL databases?
+54. How do you handle data integrity in a NoSQL database?
+55. What are some techniques for maintaining consistency in distributed NoSQL systems?
+56. How do you perform data validation in NoSQL databases?
+57. What are conflict resolution strategies in NoSQL databases?
+58. How do you ensure transactional consistency in NoSQL databases?
+59. What is the role of quorum in data consistency for NoSQL databases?
+60. How do you handle data replication conflicts?
+
+### Security
+
+61. What are some common security features in NoSQL databases?
+62. How do you manage user access and authentication in NoSQL databases?
+63. What are the best practices for securing data in NoSQL databases?
+64. How do you handle encryption in NoSQL databases?
+65. What is role-based access control (RBAC), and how is it implemented in NoSQL databases?
+66. How do you audit and monitor security in NoSQL databases?
+67. What are some strategies for protecting data from unauthorized access?
+68. How do you manage security vulnerabilities in NoSQL databases?
+69. What are some common security risks associated with NoSQL databases?
+70. How do you implement data masking and anonymization in NoSQL databases?
+
+### Backup and Recovery
+
+71. What are the best practices for backing up NoSQL databases?
+72. How do you perform point-in-time recovery in NoSQL databases?
+73. What are snapshot backups, and how are they used in NoSQL databases?
+74. How do you ensure data durability in NoSQL databases?
+75. What are the strategies for disaster recovery in NoSQL databases?
+76. How do you handle incremental backups in NoSQL databases?
+77. What are the challenges of backup and recovery in distributed NoSQL systems?
+78. How do you test backup and recovery procedures for NoSQL databases?
+79. What are the differences between online and offline backups?
+80. How do you manage backup retention and archival in NoSQL databases?
+
+### Tools and Ecosystem
+
+81. What are some popular NoSQL databases and their primary use cases?
+82. How does Apache Cassandra support distributed data management?
+83. What is the role of MongoDB Atlas in managing MongoDB deployments?
+84. How do you use Redis for caching and real-time data processing?
+85. What are some tools for monitoring and managing NoSQL databases?
+86. How do you integrate NoSQL databases with other data processing frameworks?
+87. What is the role of ETL (Extract, Transform, Load) tools in working with NoSQL databases?
+88. How do you use data visualization tools with NoSQL databases?
+89. What are some best practices for maintaining NoSQL databases in a cloud environment?
+90. How do you use data migration tools for moving data between NoSQL databases?
+
+### Real-World Applications
+
+91. How are NoSQL databases used in social media platforms?
+92. What is the role of NoSQL databases in real-time analytics?
+93. How are NoSQL databases used in e-commerce applications?
+94. What are some examples of NoSQL databases used in IoT (Internet of Things) applications?
+95. How do NoSQL databases support content management systems (CMS)?
+96. What is the role of NoSQL databases in gaming applications?
+97. How are NoSQL databases used in recommendation systems?
+98. What are some use cases for NoSQL databases in financial services?
+99. How do NoSQL databases support big data applications?
+100. What are the future trends in NoSQL databases, and how are they evolving?

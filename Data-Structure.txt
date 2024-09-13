@@ -1,0 +1,126 @@
+Sure, I can provide a comprehensive list of interview questions related to data structures. Here’s a mix of basic, intermediate, and advanced questions:
+
+### Basic Questions
+
+1. What is a data structure?
+2. Explain the difference between an array and a linked list.
+3. What is a stack? How does it work?
+4. What is a queue? How does it work?
+5. What are the differences between a stack and a queue?
+6. Explain the concept of a singly linked list.
+7. What is a doubly linked list? How does it differ from a singly linked list?
+8. What is a circular linked list?
+9. Describe how a hash table works.
+10. What is a hash function?
+11. What are the common types of collision resolution techniques in hash tables?
+12. Explain the concept of a binary tree.
+13. What is a binary search tree (BST)?
+14. What is a heap?
+15. Describe the differences between a max-heap and a min-heap.
+
+### Intermediate Questions
+
+16. How do you traverse a binary tree?
+17. What is in-order, pre-order, and post-order traversal?
+18. Explain the concept of a balanced binary tree.
+19. What is an AVL tree?
+20. What is a Red-Black Tree?
+21. Describe the concept of a trie.
+22. What is a graph? How can it be represented in memory?
+23. What are the different types of graphs?
+24. How do you perform a depth-first search (DFS) on a graph?
+25. How do you perform a breadth-first search (BFS) on a graph?
+26. What is Dijkstra's algorithm used for?
+27. Explain the concept of dynamic programming with an example.
+28. What is a priority queue?
+29. How does a bloom filter work?
+30. What is a disjoint-set (union-find) data structure?
+
+### Advanced Questions
+
+31. How do you implement a LRU (Least Recently Used) cache?
+32. What is a segment tree?
+33. Describe the concept of a Fenwick Tree (Binary Indexed Tree).
+34. What are B-trees and where are they used?
+35. How do you implement a graph using an adjacency list?
+36. How do you implement a graph using an adjacency matrix?
+37. Explain the concept of topological sorting.
+38. What is a suffix tree? How is it used in string processing?
+39. Describe the concept of a K-d tree.
+40. What are the advantages and disadvantages of using a hash table?
+41. How do you find the shortest path in a weighted graph using Bellman-Ford algorithm?
+42. What is the concept of amortized analysis?
+43. How do you handle collisions in a hash table?
+44. Describe the concept of a Splay Tree.
+45. What is a skip list and how does it work?
+46. How do you implement a persistent data structure?
+47. Explain the concept of data structure locality of reference.
+48. How do you perform a union operation in a union-find data structure?
+49. What is a self-balancing binary search tree?
+50. Describe the differences between a Trie and a Hash Map.
+
+### Problem-Solving Questions
+
+51. How would you implement a stack using two queues?
+52. How would you implement a queue using two stacks?
+53. Given a sorted array, how would you find the median in O(log n) time?
+54. How do you reverse a linked list?
+55. How do you detect a cycle in a linked list?
+56. How would you merge two sorted linked lists?
+57. How do you find the intersection point of two linked lists?
+58. How would you implement an algorithm to check for balanced parentheses using a stack?
+59. Given a binary tree, how would you find its maximum depth?
+60. How would you find the lowest common ancestor of two nodes in a binary search tree?
+
+### Practical Design Questions
+
+61. Design a data structure that supports insert, delete, get_random_element operations all in O(1) time.
+62. How would you design a text editor with undo and redo functionality?
+63. Design a system to manage a set of time-based events.
+64. How would you implement an auto-complete feature using a data structure?
+65. Design a recommendation system using data structures.
+66. How would you implement a scheduling algorithm using data structures?
+67. Design a data structure for a large-scale key-value store.
+68. How would you design a system for real-time analytics?
+69. Implement a data structure that allows you to find the k-th smallest element in a stream of integers.
+70. Design a data structure to track the frequency of words in a large text corpus.
+
+### Algorithmic Questions
+
+71. Implement an algorithm to sort an array using merge sort.
+72. Write an algorithm to perform quicksort.
+73. How would you find the longest common prefix of an array of strings?
+74. Implement a depth-first traversal of a graph.
+75. Write an algorithm to find all pairs in an array that sum up to a specific target value.
+76. How would you find the shortest path between two nodes in an unweighted graph?
+77. Implement a function to find the maximum subarray sum (Kadane’s Algorithm).
+78. Write an algorithm to check if a string is a palindrome.
+79. How would you perform a binary search on a rotated sorted array?
+80. Implement a function to generate all possible subsets of a set.
+
+### Complexity Analysis
+
+81. Explain Big O notation and give examples of different time complexities.
+82. How do you analyze the space complexity of an algorithm?
+83. What is the time complexity of various sorting algorithms (e.g., quicksort, mergesort, bubblesort)?
+84. How would you analyze the time complexity of a recursive algorithm?
+85. What is amortized time complexity? Give examples.
+86. Explain the concept of NP-completeness.
+87. How do you optimize algorithms for large data sets?
+88. What is the difference between worst-case, average-case, and best-case complexity?
+89. How do you handle data structure resizing and its impact on complexity?
+90. Explain the trade-offs between time and space complexity.
+
+### Theoretical Concepts
+
+91. What are the key properties of a good hash function?
+92. Explain the principle of divide and conquer in algorithm design.
+93. What is the master theorem for divide-and-conquer recurrences?
+94. Discuss the role of greedy algorithms in solving optimization problems.
+95. What is a probabilistic data structure? Give examples.
+96. Explain the concept of an online algorithm.
+97. What are approximation algorithms and when are they used?
+98. How does the concept of a "pigeonhole principle" apply in data structures?
+99. Discuss the role of data structures in system design and performance optimization.
+100. What is the role of randomness in algorithm design?
+

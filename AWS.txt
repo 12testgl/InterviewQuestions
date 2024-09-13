@@ -1,0 +1,131 @@
+Certainly! Here is a comprehensive list of 100 AWS interview questions, covering a wide range of topics from basic to advanced:
+
+### Basics
+
+1. What is Amazon Web Services (AWS), and what are its main components?
+2. What are the benefits of using AWS?
+3. Explain the concept of cloud computing and its service models (IaaS, PaaS, SaaS).
+4. What is the AWS Free Tier, and what services does it include?
+5. What is the AWS Management Console, and how is it used?
+6. What is Amazon EC2, and how does it work?
+7. What is Amazon S3, and what are its primary use cases?
+8. Explain the concept of regions and availability zones in AWS.
+9. What is AWS IAM, and how does it manage access control?
+10. What are AWS security groups, and how are they used?
+
+### Compute Services
+
+11. What are the different types of EC2 instances, and how do you choose the right one?
+12. How do you launch an EC2 instance and connect to it?
+13. What is Auto Scaling in AWS, and how does it work?
+14. Explain the concept of Elastic Load Balancing (ELB).
+15. What is AWS Lambda, and how does it support serverless architecture?
+16. How does AWS Fargate differ from EC2 and ECS?
+17. What is AWS Elastic Beanstalk, and how does it simplify application deployment?
+18. What is the purpose of AWS Batch, and how is it used for batch processing?
+19. What is the difference between Spot Instances and On-Demand Instances in EC2?
+20. How do you monitor and manage EC2 instances using CloudWatch?
+
+### Storage Services
+
+21. What is Amazon EBS, and how does it differ from Amazon S3?
+22. What is Amazon Glacier, and what are its use cases?
+23. How do you configure lifecycle policies for Amazon S3?
+24. What is AWS Storage Gateway, and how does it integrate on-premises environments with AWS?
+25. What is Amazon FSx, and what file systems does it support?
+26. How do you use S3 versioning, and what are its benefits?
+27. What are the different storage classes available in Amazon S3?
+28. How do you set up and use Amazon RDS for relational database management?
+29. What is the difference between Amazon S3 and Amazon EFS?
+30. How do you secure data at rest and in transit in AWS?
+
+### Networking
+
+31. What is Amazon VPC, and how do you configure a VPC?
+32. How do you create and manage subnets in Amazon VPC?
+33. What is an AWS Route 53, and how does it handle DNS management?
+34. How do you set up a Virtual Private Network (VPN) in AWS?
+35. What is AWS Direct Connect, and when would you use it?
+36. How do you implement security groups and network ACLs in AWS?
+37. What are AWS Transit Gateways, and how do they simplify VPC connectivity?
+38. What is the purpose of AWS PrivateLink?
+39. How do you configure an Internet Gateway and a NAT Gateway in AWS?
+40. What is AWS Global Accelerator, and how does it improve application performance?
+
+### Databases
+
+41. What are the different database services offered by AWS?
+42. How does Amazon RDS handle backups and snapshots?
+43. What is Amazon DynamoDB, and what are its key features?
+44. How do you set up read replicas and multi-AZ deployments in Amazon RDS?
+45. What is Amazon Aurora, and how does it improve database performance?
+46. How do you use Amazon Redshift for data warehousing?
+47. What is Amazon Neptune, and what use cases does it support?
+48. How does Amazon DocumentDB differ from DynamoDB?
+49. What is Amazon Keyspaces (for Apache Cassandra), and what are its benefits?
+50. How do you manage and optimize database performance in AWS?
+
+### Security and Compliance
+
+51. What is AWS IAM, and how do you manage user permissions and roles?
+52. How does AWS KMS (Key Management Service) work for encryption?
+53. What are AWS Security Hub and AWS GuardDuty, and how do they enhance security?
+54. How do you implement Multi-Factor Authentication (MFA) in AWS?
+55. What is AWS Shield, and how does it protect against DDoS attacks?
+56. How does AWS Config help with compliance and auditing?
+57. What is the AWS Well-Architected Framework, and what are its pillars?
+58. How do you use AWS CloudTrail for monitoring and logging API calls?
+59. What is AWS Secrets Manager, and how does it help with managing secrets?
+60. How do you implement network security using AWS WAF and AWS Shield?
+
+### Monitoring and Management
+
+61. What is Amazon CloudWatch, and how do you use it for monitoring resources?
+62. How do you set up CloudWatch alarms and dashboards?
+63. What is AWS CloudFormation, and how does it facilitate infrastructure as code?
+64. How do you use AWS Config to monitor configuration changes?
+65. What is AWS Systems Manager, and how does it simplify instance management?
+66. How do you use AWS Trusted Advisor to optimize your AWS environment?
+67. What is AWS CloudTrail, and how does it help with auditing?
+68. How do you use AWS X-Ray for debugging and tracing applications?
+69. What is AWS Control Tower, and how does it help with governance and management?
+70. How do you manage cost and billing using AWS Cost Explorer and Budgets?
+
+### Deployment and Automation
+
+71. What is AWS CodePipeline, and how does it support CI/CD?
+72. How do you use AWS CodeBuild for building and testing code?
+73. What is AWS CodeDeploy, and how does it handle application deployment?
+74. How do you set up a serverless application using AWS SAM or the Serverless Framework?
+75. What is AWS CloudFormation, and how does it enable infrastructure as code?
+76. How do you use AWS Elastic Beanstalk for application deployment?
+77. What is AWS OpsWorks, and how does it manage configurations?
+78. How do you automate infrastructure provisioning using Terraform with AWS?
+79. What is AWS Lambda Layers, and how does it help with code reuse?
+80. How do you manage containerized applications using AWS ECS or EKS?
+
+### Advanced Topics
+
+81. What is AWS Fargate, and how does it simplify container management?
+82. How does AWS Outposts extend AWS infrastructure to on-premises environments?
+83. What is AWS Snowball, and how is it used for data migration?
+84. How do you implement machine learning solutions using AWS SageMaker?
+85. What is Amazon QuickSight, and how does it help with data visualization?
+86. How do you use AWS AppSync for building GraphQL APIs?
+87. What is AWS Ground Station, and how does it support satellite data processing?
+88. How do you use AWS CloudFront for content delivery and caching?
+89. What is AWS IoT Core, and how does it support IoT device management?
+90. How do you implement high availability and disaster recovery in AWS?
+
+### Best Practices
+
+91. What are some best practices for securing AWS resources?
+92. How do you ensure cost optimization in AWS?
+93. What are some best practices for managing AWS IAM roles and policies?
+94. How do you handle scalability and elasticity in AWS applications?
+95. What are some strategies for data backup and recovery in AWS?
+96. How do you manage and monitor AWS costs effectively?
+97. What are the best practices for designing fault-tolerant systems in AWS?
+98. How do you implement effective logging and monitoring in AWS?
+99. What are some best practices for deploying and managing serverless applications?
+100. How do you stay updated with new AWS features and best practices?

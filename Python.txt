@@ -1,0 +1,131 @@
+Certainly! Here’s a comprehensive list of 100 Python interview questions, covering a wide range of topics from basics to advanced:
+
+### Basics
+
+1. What is Python, and what are its key features?
+2. What is the difference between Python 2 and Python 3?
+3. How do you declare a variable in Python?
+4. What are Python’s built-in data types?
+5. How do you perform type casting in Python?
+6. What are lists and tuples, and how do they differ?
+7. How do you handle exceptions in Python?
+8. What are Python’s built-in functions, and how are they used?
+9. How do you create and use functions in Python?
+10. What is the difference between `==` and `is` in Python?
+
+### Data Structures
+
+11. How do you create and manipulate lists in Python?
+12. What are dictionaries, and how do you use them?
+13. How do you work with sets in Python?
+14. What are the differences between sets and lists?
+15. How do you implement a stack and a queue in Python?
+16. How do you use Python’s `collections` module?
+17. What are the key characteristics of Python’s `deque`?
+18. How do you sort and filter data structures in Python?
+19. What are list comprehensions, and how are they used?
+20. How do you merge and split lists in Python?
+
+### Object-Oriented Programming
+
+21. What is object-oriented programming (OOP), and how is it implemented in Python?
+22. How do you define a class in Python?
+23. What are instance variables and class variables?
+24. What is inheritance, and how do you implement it in Python?
+25. What are polymorphism and encapsulation in Python?
+26. How do you use the `super()` function in Python?
+27. What are magic methods or dunder methods?
+28. How do you implement method overriding in Python?
+29. What is the difference between `__str__` and `__repr__` methods?
+30. What are class methods and static methods?
+
+### Functional Programming
+
+31. What is functional programming, and how is it supported in Python?
+32. How do you use lambda functions in Python?
+33. What are higher-order functions, and how are they used?
+34. What is the `map()` function, and how does it work?
+35. How do you use the `filter()` function in Python?
+36. What is the `reduce()` function, and how is it used?
+37. What are generator expressions and how do they differ from list comprehensions?
+38. What is the purpose of the `itertools` module?
+39. How do you create and use iterators in Python?
+40. What are coroutines and how are they used in Python?
+
+### Modules and Packages
+
+41. What are Python modules, and how do you create them?
+42. How do you import a module in Python?
+43. What are Python packages, and how are they structured?
+44. How do you use the `__init__.py` file in a package?
+45. What is the purpose of `sys.path` in Python?
+46. How do you manage dependencies and packages in Python?
+47. What is `pip`, and how is it used to manage packages?
+48. What are some popular third-party libraries for Python?
+49. How do you use virtual environments in Python?
+50. What is the role of the `import` statement in Python?
+
+### File Handling
+
+51. How do you read from and write to files in Python?
+52. What is the purpose of the `with` statement when handling files?
+53. How do you handle different file types (e.g., text, binary) in Python?
+54. How do you work with CSV files in Python?
+55. What is the `os` module, and how is it used for file operations?
+56. How do you use the `shutil` module for file operations?
+57. What are context managers, and how are they used in file handling?
+58. How do you handle file exceptions and errors in Python?
+59. What is the difference between `read()` and `readlines()` methods?
+60. How do you handle file paths and directories in Python?
+
+### Data Processing and Analysis
+
+61. How do you use the `pandas` library for data analysis?
+62. What are DataFrames, and how are they used in `pandas`?
+63. How do you handle missing data in `pandas`?
+64. What are some common data manipulation operations in `pandas`?
+65. How do you use the `numpy` library for numerical computations?
+66. What are arrays in `numpy`, and how are they different from lists?
+67. How do you perform data aggregation in `pandas`?
+68. What is data visualization, and how do you use libraries like `matplotlib` or `seaborn`?
+69. How do you handle large datasets efficiently in Python?
+70. What are some common data cleaning techniques in Python?
+
+### Web Development
+
+71. What is Flask, and how is it used for web development?
+72. How do you create a basic web application using Flask?
+73. What is Django, and how does it differ from Flask?
+74. How do you set up a Django project and app?
+75. What are Django models, and how do you define them?
+76. How do you handle forms and user input in Flask and Django?
+77. What are REST APIs, and how do you build them in Python?
+78. How do you use `requests` library for making HTTP requests?
+79. What is ORM, and how is it used in Django?
+80. How do you deploy a Python web application to a cloud service?
+
+### Testing and Debugging
+
+81. How do you write unit tests in Python using `unittest`?
+82. What is the purpose of the `pytest` framework?
+83. How do you use `mock` for testing in Python?
+84. What is test coverage, and how do you measure it?
+85. How do you handle exceptions and errors during debugging?
+86. What are Python’s debugging tools, such as `pdb`?
+87. How do you perform integration testing in Python?
+88. What are some best practices for writing tests in Python?
+89. How do you use assertions in Python testing?
+90. What is Continuous Integration (CI), and how is it used with Python projects?
+
+### Advanced Topics
+
+91. What is concurrency, and how is it handled in Python?
+92. How do you use threads and multiprocessing in Python?
+93. What is the Global Interpreter Lock (GIL), and how does it affect concurrency?
+94. How do you use asynchronous programming in Python?
+95. What are `async` and `await`, and how are they used?
+96. How do you manage memory and performance in Python applications?
+97. What are metaclasses, and how do you use them in Python?
+98. How do you implement design patterns in Python?
+99. What is the Python memory manager, and how does it work?
+100. What are some best practices for writing efficient and maintainable Python code?

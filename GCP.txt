@@ -1,0 +1,132 @@
+Certainly! Here is a comprehensive list of 100 Google Cloud Platform (GCP) interview questions, covering a wide range of topics from basic to advanced:
+
+### Basics
+
+1. What is Google Cloud Platform (GCP), and what are its primary services?
+2. What are the benefits of using GCP?
+3. Explain the concept of cloud computing and its service models (IaaS, PaaS, SaaS).
+4. What is the GCP Free Tier, and what services does it include?
+5. What is the Google Cloud Console, and how is it used?
+6. What is Google Compute Engine, and how does it work?
+7. What is Google Cloud Storage, and what are its primary use cases?
+8. Explain the concept of regions and zones in GCP.
+9. What is Google Cloud IAM, and how does it manage access control?
+10. What are Google Cloud security groups, and how are they used?
+
+### Compute Services
+
+11. What are the different types of virtual machine instances available in Google Compute Engine?
+12. How do you launch a virtual machine instance in Google Compute Engine?
+13. What is Google Kubernetes Engine (GKE), and how does it support container orchestration?
+14. What is Google App Engine, and how does it simplify application deployment?
+15. How does Google Cloud Functions support serverless architecture?
+16. What is Google Cloud Run, and how does it differ from GKE and Cloud Functions?
+17. What is the purpose of Google Cloud Batch, and how is it used for batch processing?
+18. What is Google Cloud Run for Anthos, and how does it extend Cloud Run to GKE?
+19. What are Preemptible VMs in Google Compute Engine, and when would you use them?
+20. How do you monitor and manage VM instances using Google Cloud Monitoring?
+
+### Storage Services
+
+21. What is Google Cloud Storage, and how does it differ from Google Cloud Filestore?
+22. How do you configure lifecycle management policies in Google Cloud Storage?
+23. What is Google Cloud Persistent Disk, and how does it integrate with Compute Engine?
+24. What is Google Cloud SQL, and how does it manage relational databases?
+25. How do you set up backups and replicas in Google Cloud SQL?
+26. What is Google Cloud Bigtable, and what use cases does it support?
+27. How does Google Cloud Spanner provide global-scale transactional consistency?
+28. What are the different storage classes available in Google Cloud Storage?
+29. How do you use Google Cloud Storage for data archiving and long-term storage?
+30. What are the best practices for securing data at rest and in transit in GCP?
+
+### Networking
+
+31. What is Google Virtual Private Cloud (VPC), and how do you configure it?
+32. How do you set up and manage subnets in Google VPC?
+33. What is Google Cloud Load Balancing, and how does it handle traffic distribution?
+34. How do you use Google Cloud DNS for domain name resolution?
+35. What is Google Cloud Interconnect, and how does it enhance connectivity?
+36. How do you set up a VPN connection in GCP?
+37. What are Google Cloud Firewalls, and how do you configure them?
+38. What is Google Cloud Peering, and how does it facilitate network connectivity?
+39. What is the role of Google Cloud CDN in content delivery?
+40. How do you use Google Cloud Network Service Tiers for optimizing network performance?
+
+### Databases
+
+41. What are the different database services offered by GCP?
+42. How does Google Cloud BigQuery support data warehousing and analytics?
+43. What is Google Cloud Datastore, and what use cases does it address?
+44. How do you set up replication and high availability in Google Cloud Spanner?
+45. What is the difference between Google Cloud SQL and Google Cloud Spanner?
+46. How do you perform backups and disaster recovery in Google Cloud SQL?
+47. What is Google Cloud Memorystore, and how does it support in-memory caching?
+48. How do you use Google Cloud Bigtable for large-scale data storage?
+49. What are the benefits of using Google Cloud Firestore for NoSQL database needs?
+50. How do you monitor and optimize database performance in GCP?
+
+### Security and Compliance
+
+51. What is Google Cloud IAM, and how do you manage user permissions and roles?
+52. How does Google Cloud KMS (Key Management Service) work for encryption?
+53. What are Google Cloud Security Command Center and its key features?
+54. How do you implement Multi-Factor Authentication (MFA) in GCP?
+55. What is Google Cloud Identity-Aware Proxy (IAP), and how does it enhance security?
+56. How does Google Cloud Security Scanner help with vulnerability assessment?
+57. What are the best practices for securing Google Cloud resources?
+58. How do you use Google Cloud Audit Logs for monitoring and compliance?
+59. What is Google Cloud Data Loss Prevention (DLP), and how does it help protect sensitive data?
+60. How do you handle compliance requirements and data residency in GCP?
+
+### Monitoring and Management
+
+61. What is Google Cloud Monitoring, and how do you use it for monitoring resources?
+62. How do you set up Google Cloud Logging and create custom logs?
+63. What is Google Cloud Trace, and how does it help with application performance monitoring?
+64. How do you use Google Cloud Profiler for performance optimization?
+65. What is Google Cloud Operations Suite (formerly Stackdriver), and what are its components?
+66. How do you set up alerts and notifications in Google Cloud Monitoring?
+67. What is Google Cloud Deployment Manager, and how does it support infrastructure as code?
+68. How do you use Google Cloud Config for configuration management?
+69. What is the role of Google Cloud Console's cost management tools?
+70. How do you use Google Cloud Resource Manager for managing projects and resources?
+
+### Deployment and Automation
+
+71. What is Google Cloud Build, and how does it support continuous integration and delivery?
+72. How do you use Google Cloud Source Repositories for version control?
+73. What is Google Cloud Deployment Manager, and how does it enable infrastructure as code?
+74. How do you use Google Cloud Functions to automate workflows?
+75. What is the role of Google Cloud Run in deploying containerized applications?
+76. How do you implement blue-green deployments using Google Kubernetes Engine?
+77. What is Google Cloud Scheduler, and how does it help with job scheduling?
+78. How do you use Google Cloud Pub/Sub for event-driven architecture?
+79. What is the role of Google Cloud Tasks in managing asynchronous workloads?
+80. How do you handle rolling updates and rollbacks in GKE?
+
+### Advanced Topics
+
+81. What is Google Anthos, and how does it support hybrid and multi-cloud environments?
+82. How does Google Cloud AI Platform support machine learning and AI development?
+83. What is Google Cloud Dataflow, and how does it enable stream and batch data processing?
+84. How does Google Cloud Vertex AI improve machine learning workflows?
+85. What are the benefits of using Google Cloud BigQuery ML for machine learning?
+86. How do you use Google Cloud Composer for workflow orchestration?
+87. What is the role of Google Cloud Pub/Sub in building real-time analytics pipelines?
+88. How do you use Google Cloud Spanner for globally distributed databases?
+89. What is Google Cloud IoT Core, and how does it support IoT solutions?
+90. How do you leverage Google Cloud’s serverless offerings to reduce infrastructure management?
+
+### Best Practices
+
+91. What are some best practices for securing GCP resources and data?
+92. How do you optimize cost management in Google Cloud?
+93. What are best practices for designing scalable architectures in GCP?
+94. How do you ensure high availability and disaster recovery in GCP?
+95. What are the best practices for managing and monitoring GCP resources?
+96. How do you handle performance tuning and optimization in GCP services?
+97. What are the best practices for implementing CI/CD pipelines using GCP tools?
+98. How do you ensure compliance and governance in Google Cloud environments?
+99. What are some strategies for managing multi-cloud and hybrid cloud environments?
+100. How do you stay updated with the latest GCP features and best practices?
+
