@@ -3,124 +3,800 @@ Sure, I can provide a comprehensive list of interview questions related to data 
 ### Basic Questions
 
 1. What is a data structure?
+A data structure is a way to organize and store data in a computer so that it can be efficiently accessed, modified, and manipulated. It is a fundamental concept in computer science and is used to implement various algorithms and data processing techniques.
+
 2. Explain the difference between an array and a linked list.
+An array is a collection of elements of the same data type stored in contiguous memory locations, whereas a linked list is a dynamic collection of elements, where each element points to the next element.
+
 3. What is a stack? How does it work?
+A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle, where the last element added to the stack is the first one to be removed.
+
 4. What is a queue? How does it work?
+A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle, where the first element added to the queue is the first one to be removed.
+
 5. What are the differences between a stack and a queue?
+The main difference between a stack and a queue is the order in which elements are added and removed. A stack follows the LIFO principle, while a queue follows the FIFO principle.
+
 6. Explain the concept of a singly linked list.
+A singly linked list is a linear data structure where each element points to the next element in the list.
+
 7. What is a doubly linked list? How does it differ from a singly linked list?
+A doubly linked list is a linear data structure where each element points to both the next and previous elements in the list.
+
 8. What is a circular linked list?
+A circular linked list is a linear data structure where the last element points back to the first element, forming a circle.
+
 9. Describe how a hash table works.
+A hash table is a data structure that stores key-value pairs in an array using a hash function to map keys to indices.
+
 10. What is a hash function?
+A hash function is a function that takes a key as input and generates a hash value that corresponds to an index in an array.
+
 11. What are the common types of collision resolution techniques in hash tables?
+Common collision resolution techniques include chaining, open addressing, and linear probing.
+
 12. Explain the concept of a binary tree.
+A binary tree is a data structure where each node has at most two children, referred to as the left child and the right child.
+
 13. What is a binary search tree (BST)?
+A binary search tree is a binary tree where each node represents a key, and the left child of a node has a key less than its parent node, while the right child has a key greater than its parent node.
+
 14. What is a heap?
+A heap is a specialized tree-based data structure that satisfies the heap property: the parent node is either greater than (or less than) its child nodes.
+
 15. Describe the differences between a max-heap and a min-heap.
+In a max-heap, the parent node is greater than its child nodes, while in a min-heap, the parent node is less than its child nodes.
+
+
 
 ### Intermediate Questions
 
 16. How do you traverse a binary tree?
+Tree traversal is the process of visiting each node in a tree data structure. There are three main types of tree traversal: inorder, preorder, and postorder. Inorder traversal visits the left subtree, then the current node, then the right subtree. Preorder traversal visits the current node, then the left subtree, then the right subtree. Postorder traversal visits the left subtree, then the right subtree, then the current node.
+
 17. What is in-order, pre-order, and post-order traversal?
+In-order traversal visits the left subtree, then the current node, then the right subtree. Pre-order traversal visits the current node, then the left subtree, then the right subtree. Post-order traversal visits the left subtree, then the right subtree, then the current node.
+
 18. Explain the concept of a balanced binary tree.
+A balanced binary tree is a binary tree in which the height of the two subtrees of every node differs by at most one. This means that the tree remains roughly balanced, with no subtree being much taller than the others.
+
 19. What is an AVL tree?
+An AVL tree is a self-balancing binary search tree in which the height of the two subtrees of every node differs by at most one. AVL trees are used to maintain a balance between the height of the tree and the time it takes to perform search, insert, and delete operations.
+
 20. What is a Red-Black Tree?
+A Red-Black Tree is a self-balancing binary search tree in which each node is either red or black. The root node is black, and all leaf nodes are black. Each red node must have two black child nodes. The tree is self-balancing, meaning that the height of the tree remains relatively small by rotating nodes when the balance factor becomes too large.
+
 21. Describe the concept of a trie.
+A trie, also known as a prefix tree, is a data structure used to store a dynamic set or associative array where the keys are usually strings. It is often used to store a dictionary of words, with each word being a node in the trie.
+
 22. What is a graph? How can it be represented in memory?
+A graph is a non-linear data structure consisting of nodes or vertices connected by edges. It can be represented in memory using an adjacency matrix or an adjacency list.
+
 23. What are the different types of graphs?
+There are several types of graphs, including:
+* Undirected graph: A graph in which edges do not have direction.
+* Directed graph: A graph in which edges have direction.
+* Weighted graph: A graph in which edges have weights or labels.
+* Unweighted graph: A graph in which edges do not have weights or labels.
+* Cyclic graph: A graph that contains at least one cycle.
+* Acyclic graph: A graph that does not contain any cycles.
+
 24. How do you perform a depth-first search (DFS) on a graph?
+A depth-first search is a traversal approach in which the leftmost branch is explored as far as possible before moving to the right.
+
 25. How do you perform a breadth-first search (BFS) on a graph?
+A breadth-first search is a traversal approach in which all the nodes at a given level are visited before moving to the next level.
+
 26. What is Dijkstra's algorithm used for?
+Dijkstra's algorithm is used to find the shortest path between two nodes in a weighted graph.
+
 27. Explain the concept of dynamic programming with an example.
+Dynamic programming is an algorithmic technique used to solve complex problems by breaking them down into simpler subproblems. It is often used to solve optimization problems.
+
 28. What is a priority queue?
+A priority queue is a data structure that allows elements to be inserted and removed based on their priority.
+
 29. How does a bloom filter work?
+A bloom filter is a space-efficient data structure used to test whether an element is a member of a set.
+
 30. What is a disjoint-set (union-find) data structure?
+A disjoint-set data structure is a data structure used to keep track of a set of elements partitioned into a number of non-overlapping (or disjoint) subsets.
+
+
 
 ### Advanced Questions
 
 31. How do you implement a LRU (Least Recently Used) cache?
+To implement an LRU cache, you can use a combination of a doubly linked list and a hash map. The linked list is used to keep track of the order of the elements, with the most recently used element at the front and the least recently used element at the back. The hash map is used to store the elements and their corresponding nodes in the linked list. When an element is accessed, it is moved to the front of the linked list. When the cache is full and a new element needs to be added, the least recently used element is removed from the cache.
+Here is some sample Python code to implement an LRU cache:
+
+```python
+from collections import OrderedDict
+
+class LRUCache:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.cache = OrderedDict()
+
+    def get(self, key):
+        if key not in self.cache:
+            return -1
+        else:
+            self.cache.move_to_end(key)
+            return self.cache[key]
+
+    def put(self, key, value):
+        self.cache[key] = value
+        self.cache.move_to_end(key)
+        if len(self.cache) > self.capacity:
+            self.cache.popitem(last=False)
+
 32. What is a segment tree?
+A segment tree is a data structure that is used to store information about segments or intervals. It is a binary tree where each node represents a segment, and the children of a node represent the segments that are contained within the segment of the parent node. Segment trees are useful for solving problems that involve querying or updating segments, such as finding the sum of a segment or updating the values of a segment.
+Here is some sample Python code to implement a segment tree:
+
+```python
+class SegmentTree:
+    def __init__(self, nums):
+        self.n = len(nums)
+        self.tree = [0] * (4 * self.n)
+        self.build_tree(nums, 0, 0, self.n - 1)
+
+    def build_tree(self, nums, node, start, end):
+        if start == end:
+            self.tree[node] = nums[start]
+        else:
+            mid = (start + end) // 2
+            self.build_tree(nums, 2 * node + 1, start, mid)
+            self.build_tree(nums, 2 * node + 2, mid + 1, end)
+            self.tree[node] = self.tree[2 * node + 1] + self.tree[2 * node + 2]
+
+    def query(self, node, start, end, left, right):
+        if right < start or end < left:
+            return 0
+        if left <= start and end <= right:
+            return self.tree[node]
+        mid = (start + end) // 2
+        return self.query(2 * node + 1, start, mid, left, right) + self.query(2 * node + 2, mid + 1, end, left, right)
+
+    def update(self, node, start, end, idx, val):
+        if start == end:
+            self.tree[node] += val
+        else:
+            mid = (start + end) // 2
+            if start <= idx and idx <= mid:
+                self.update(2 * node + 1, start, mid, idx, val)
+            else:
+                self.update(2 * node + 2, mid + 1, end, idx, val)
+            self.tree[node] = self.tree[2 * node + 1] + self.tree[2 * node + 2]
+
 33. Describe the concept of a Fenwick Tree (Binary Indexed Tree).
+A Fenwick tree is a data structure that is used to store the prefix sums of an array. It is a binary tree where each node represents a prefix sum, and the children of a node represent the prefix sums that are contained within the prefix sum of the parent node. Fenwick trees are useful for solving problems that involve querying or updating prefix sums, such as finding the sum of a prefix or updating the values of a prefix.
+Here is some sample Python code to implement a Fenwick tree:
+
+```python
+class FenwickTree:
+    def __init__(self, nums):
+        self.n = len(nums)
+        self.tree = [0] * (self.n + 1)
+        for i in range(self.n):
+            self.update(i, nums[i])
+
+    def update(self, i, val):
+        i += 1
+        while i <= self.n:
+            self.tree[i] += val
+            i += i & -i
+
+    def query(self, i):
+        i += 1
+        sum = 0
+        while i > 0:
+            sum += self.tree[i]
+            i -= i & -i
+        return sum
+
 34. What are B-trees and where are they used?
+B-trees are a type of self-balancing search tree that is used to store large amounts of data. They are commonly used in databases and file systems to store and retrieve data efficiently. B-trees are useful for solving problems that involve searching, inserting, or deleting data in a large dataset.
+Here is some sample Python code to implement a B-tree:
+
+```python
+class BTreeNode:
+    def __init__(self, leaf=False):
+        self.leaf = leaf
+        self.keys = []
+        self.child = []
+
+class BTree:
+    def __init__(self, t):
+        self.root = BTreeNode(True)
+        self.t = t
+
+    def insert(self, k):
+        root = self.root
+        if len(root.keys) == (2 * self.t) - 1:
+            temp = BTreeNode()
+            self.root = temp
+            temp.child.insert(0, root)
+            self.split_child(temp, 0)
+            self.insert_non_full(temp, k)
+        else:
+            self.insert_non_full(root, k)
+
+    def insert_non_full(self, x, k):
+        i = len(x.keys) - 1
+        if x.leaf:
+            x.keys.append((None, None))
+            while i >= 0 and k < x.keys[i]:
+                x.keys[i + 1] = x.keys[i]
+                i -= 1
+            x.keys[i + 1] = k
+        else:
+            while i >= 0 and k < x.keys[i]:
+                i -= 1
+            i += 1
+            if len(x.child[i].keys) == (2 * self.t) - 1:
+                self.split_child(x, i)
+                if k > x.keys[i]:
+                    i += 1
+            self.insert_non_full(x.child[i], k)
+
+    def split_child(self, x, i):
+        t = self.t
+        y = x.child[i]
+        z = BTreeNode(y.leaf)
+        x.child.insert(i + 1, z)
+        x.keys.insert(i, y.keys[t - 1])
+        z.keys = y.keys[t: (2 * t) - 1]
+        y.keys = y.keys[0: t - 1]
+        if not y.leaf:
+            z.child = y.child[t: 2 * t]
+            y.child = y.child[0: t]
+
 35. How do you implement a graph using an adjacency list?
+To implement a graph using an adjacency list, you can use a dictionary where the keys are the nodes of the graph and the values are lists of the nodes that are adjacent to the key node.
+Here is some sample Python code to implement a graph using an adjacency list:
+
+```python
+class Graph:
+    def __init__(self):
+        self.adjacency_list = {}
+
+    def add_node(self, node):
+        if node not in self.adjacency_list:
+            self.adjacency_list[node] = []
+
+    def add_edge(self, node1, node2):
+        if node1 in self.adjacency_list and node2 in self.adjacency_list:
+            self.adjacency_list[node1].append(node2)
+            self.adjacency_list[node2].append(node1)
+
+    def display_graph(self):
+        for node in self.adjacency_list:
+            print(node, "->", self.adjacency_list[node])
+
 36. How do you implement a graph using an adjacency matrix?
+To implement a graph using an adjacency matrix, you can use a 2D array where the entry at row i and column j represents the weight of the edge between node i and node j.
+Here is some sample Python code to implement a graph using an adjacency matrix:
+
+```python
+class Graph:
+    def __init__(self, num_nodes):
+        self.num_nodes = num_nodes
+        self.adjacency_matrix = [[0 for _ in range(num_nodes)] for _ in range(num_nodes)]
+
+    def add_edge(self, node1, node2, weight):
+        if node1 < self.num_nodes and node2 < self.num_nodes:
+            self.adjacency_matrix[node1][node2] = weight
+            self.adjacency_matrix[node2][node1] = weight
+
+    def display_graph(self):
+        for row in self.adjacency_matrix:
+            print(row)
+
 37. Explain the concept of topological sorting.
-38. What is a suffix tree? How is it used in string processing?
-39. Describe the concept of a K-d tree.
-40. What are the advantages and disadvantages of using a hash table?
-41. How do you find the shortest path in a weighted graph using Bellman-Ford algorithm?
-42. What is the concept of amortized analysis?
-43. How do you handle collisions in a hash table?
-44. Describe the concept of a Splay Tree.
-45. What is a skip list and how does it work?
-46. How do you implement a persistent data structure?
-47. Explain the concept of data structure locality of reference.
-48. How do you perform a union operation in a union-find data structure?
-49. What is a self-balancing binary search tree?
-50. Describe the differences between a Trie and a Hash Map.
+Topological sorting is a linear ordering of vertices in a directed acyclic graph (DAG) such that for every directed edge u -> v, vertex u comes before v in the ordering.
+Here is some sample Python code to perform topological sorting:
+```python
+from collections import defaultdict, deque
+
+class Graph:
+    def __init__(self
 
 ### Problem-Solving Questions
 
 51. How would you implement a stack using two queues?
+```python
+from collections import deque
+
+class Stack:
+    def __init__(self):
+        self.q1 = deque()
+        self.q2 = deque()
+
+    def push(self, x):
+        self.q2.append(x)
+        while self.q1:
+            self.q2.append(self.q1.popleft())
+        self.q1, self.q2 = self.q2, self.q1
+
+    def pop(self):
+        return self.q1.popleft()
+
+    def top(self):
+        return self.q1[0]
+
+    def empty(self):
+        return len(self.q1) == 0
+```
+
 52. How would you implement a queue using two stacks?
+```python
+class Queue:
+    def __init__(self):
+        self.stack1 = []
+        self.stack2 = []
+
+    def enqueue(self, x):
+        self.stack1.append(x)
+
+    def dequeue(self):
+        if not self.stack2:
+            while self.stack1:
+                self.stack2.append(self.stack1.pop())
+        return self.stack2.pop()
+
+    def peek(self):
+        if not self.stack2:
+            while self.stack1:
+                self.stack2.append(self.stack1.pop())
+        return self.stack2[-1]
+
+    def empty(self):
+        return len(self.stack1) == 0 and len(self.stack2) == 0
+```
+
 53. Given a sorted array, how would you find the median in O(log n) time?
+```python
+def findMedianSortedArrays(nums1, nums2):
+    merged = sorted(nums1 + nums2)
+    n = len(merged)
+    if n % 2 == 0:
+        return (merged[n // 2 - 1] + merged[n // 2]) / 2
+    else:
+        return merged[n // 2]
+```
+
 54. How do you reverse a linked list?
+```python
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+def reverseList(head):
+    prev = None
+    while head:
+        next_node = head.next
+        head.next = prev
+        prev = head
+        head = next_node
+    return prev
+```
+
 55. How do you detect a cycle in a linked list?
+```python
+def hasCycle(head):
+    slow = head
+    fast = head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+        if slow == fast:
+            return True
+    return False
+```
+
 56. How would you merge two sorted linked lists?
+```python
+def mergeTwoLists(l1, l2):
+    if not l1:
+        return l2
+    if not l2:
+        return l1
+    if l1.val < l2.val:
+        l1.next = mergeTwoLists(l1.next, l2)
+        return l1
+    else:
+        l2.next = mergeTwoLists(l1, l2.next)
+        return l2
+```
+
 57. How do you find the intersection point of two linked lists?
+```python
+def getIntersectionNode(headA, headB):
+    def length(node):
+        len = 0
+        while node:
+            len += 1
+            node = node.next
+        return len
+
+    lenA, lenB = length(headA), length(headB)
+    if lenA > lenB:
+        for _ in range(lenA - lenB):
+            headA = headA.next
+    else:
+        for _ in range(lenB - lenA):
+            headB = headB.next
+
+    while headA != headB:
+        headA = headA.next
+        headB = headB.next
+
+    return headA
+```
+
 58. How would you implement an algorithm to check for balanced parentheses using a stack?
+```python
+def isValid(s):
+    stack = []
+    mapping = {")": "(", "}": "{", "]": "["}
+    for char in s:
+        if char in mapping.values():
+            stack.append(char)
+        elif char in mapping.keys():
+            if not stack or mapping[char] != stack.pop():
+                return False
+    return not stack
+```
+
 59. Given a binary tree, how would you find its maximum depth?
+```python
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+def maxDepth(root):
+    if not root:
+        return 0
+    return 1 + max(maxDepth(root.left), maxDepth(root.right))
+```
+
 60. How would you find the lowest common ancestor of two nodes in a binary search tree?
+```python
+def lowestCommonAncestor(root, p, q):
+    if not root:
+        return None
+    if root.val == p.val or root.val == q.val:
+        return root
+    if p.val < root.val and q.val < root.val:
+        return lowestCommonAncestor(root.left, p, q)
+    if p.val > root.val and q.val > root.val:
+        return lowestCommonAncestor(root.right, p, q)
+    return root
+```
+
 
 ### Practical Design Questions
 
 61. Design a data structure that supports insert, delete, get_random_element operations all in O(1) time.
+Answer: 
+To design a data structure that supports insert, delete, and get_random_element operations all in O(1) time, we can use a combination of a hash map and an array. The hash map can be used to store the elements and their indices in the array. When an element is inserted, we can add it to the end of the array and update the hash map with its index. When an element is deleted, we can find its index using the hash map, swap it with the last element in the array, and update the hash map with the new index. The get_random_element operation can be implemented by generating a random index and returning the element at that index in the array.
+
 62. How would you design a text editor with undo and redo functionality?
+Answer: 
+To design a text editor with undo and redo functionality, we can use a stack data structure to store the history of changes. When a change is made to the text, we can push the current state of the text onto the stack. When the undo button is clicked, we can pop the top state from the stack and restore the text to its previous state. When the redo button is clicked, we can push the top state from the stack back onto the stack and restore the text to its next state.
+
 63. Design a system to manage a set of time-based events.
+Answer: 
+To design a system to manage a set of time-based events, we can use a priority queue data structure to store the events. The priority queue can be ordered by the time of each event. When an event is added, we can insert it into the priority queue based on its time. When the current time is greater than or equal to the time of the top event in the priority queue, we can remove the event from the queue and execute it.
+
 64. How would you implement an auto-complete feature using a data structure?
+Answer: 
+To implement an auto-complete feature using a data structure, we can use a trie data structure to store the possible completions. When a user types a character, we can traverse the trie based on the characters typed and return the possible completions.
+
 65. Design a recommendation system using data structures.
+Answer: 
+To design a recommendation system using data structures, we can use a matrix factorization data structure to store the user-item interactions. When a user interacts with an item, we can update the matrix factorization to reflect the interaction. When a user requests recommendations, we can use the matrix factorization to compute the similarity between the user and other users and return the recommended items.
+
 66. How would you implement a scheduling algorithm using data structures?
+Answer: 
+To implement a scheduling algorithm using data structures, we can use a priority queue data structure to store the tasks. The priority queue can be ordered by the priority of each task. When a task is added, we can insert it into the priority queue based on its priority. When the current time is greater than or equal to the time of the top task in the priority queue, we can remove the task from the queue and execute it.
+
 67. Design a data structure for a large-scale key-value store.
+Answer: 
+To design a data structure for a large-scale key-value store, we can use a distributed hash table data structure to store the key-value pairs. When a key-value pair is added, we can hash the key and store the pair in the corresponding node in the distributed hash table. When a key is looked up, we can hash the key and retrieve the corresponding value from the node in the distributed hash table.
+
 68. How would you design a system for real-time analytics?
+Answer: 
+To design a system for real-time analytics, we can use a stream processing data structure to store the data. When data is received, we can process the data in real-time using the stream processing data structure and return the analytics results.
+
 69. Implement a data structure that allows you to find the k-th smallest element in a stream of integers.
+Answer: 
+To implement a data structure that allows us to find the k-th smallest element in a stream of integers, we can use a heap data structure to store the integers. When an integer is added to the stream, we can insert it into the heap. When the k-th smallest element is requested, we can remove the top k elements from the heap and return the k-th smallest element.
+
 70. Design a data structure to track the frequency of words in a large text corpus.
+Answer: 
+To design a data structure to track the frequency of words in a large text corpus, we can use a hash map data structure to store the word frequencies. When a word is encountered, we can increment its frequency in the hash map. When the frequency of a word is requested, we can retrieve its frequency from the hash map.
+
+
 
 ### Algorithmic Questions
 
 71. Implement an algorithm to sort an array using merge sort.
+Merge sort is a divide-and-conquer algorithm that splits an array into two halves, recursively sorts each half, and then merges the two sorted halves. Here is a Python implementation of merge sort:
+```python
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left_half = arr[:mid]
+    right_half = arr[mid:]
+    return merge(merge_sort(left_half), merge_sort(right_half))
+
+def merge(left, right):
+    merged = []
+    left_index = 0
+    right_index = 0
+    while left_index < len(left) and right_index < len(right):
+        if left[left_index] <= right[right_index]:
+            merged.append(left[left_index])
+            left_index += 1
+        else:
+            merged.append(right[right_index])
+            right_index += 1
+    merged.extend(left[left_index:])
+    merged.extend(right[right_index:])
+    return merged
+```
+
 72. Write an algorithm to perform quicksort.
+Quicksort is a divide-and-conquer algorithm that selects a pivot element, partitions the array around the pivot, and recursively sorts the subarrays. Here is a Python implementation of quicksort:
+```python
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
+```
+
 73. How would you find the longest common prefix of an array of strings?
+The longest common prefix of an array of strings can be found by comparing the characters at the same position in each string. Here is a Python implementation:
+```python
+def longest_common_prefix(strs):
+    if not strs:
+        return ""
+    prefix = min(strs, key=len)
+    for i, char in enumerate(prefix):
+        for other in strs:
+            if other[i] != char:
+                return prefix[:i]
+    return prefix
+```
+
 74. Implement a depth-first traversal of a graph.
+A depth-first traversal of a graph can be implemented using a recursive function that visits each node and its neighbors. Here is a Python implementation:
+```python
+def dfs(graph, start):
+    visited = set()
+    def dfs_helper(node):
+        visited.add(node)
+        print(node)
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                dfs_helper(neighbor)
+    dfs_helper(start)
+```
+
 75. Write an algorithm to find all pairs in an array that sum up to a specific target value.
+The pairs in an array that sum up to a specific target value can be found by using a hash table to store the elements and their complements. Here is a Python implementation:
+```python
+def find_pairs(arr, target):
+    pairs = []
+    seen = set()
+    for num in arr:
+        complement = target - num
+        if complement in seen:
+            pairs.append((complement, num))
+        seen.add(num)
+    return pairs
+```
+
 76. How would you find the shortest path between two nodes in an unweighted graph?
+The shortest path between two nodes in an unweighted graph can be found using a breadth-first search algorithm. Here is a Python implementation:
+```python
+from collections import deque
+
+def shortest_path(graph, start, end):
+    queue = deque([[start]])
+    while queue:
+        path = queue.popleft()
+        node = path[-1]
+        if node == end:
+            return path
+        for neighbor in graph[node]:
+            new_path = list(path)
+            new_path.append(neighbor)
+            queue.append(new_path)
+    return None
+```
+
 77. Implement a function to find the maximum subarray sum (Kadane’s Algorithm).
+Kadane's algorithm is a dynamic programming algorithm that finds the maximum subarray sum by keeping track of the maximum sum ending at each position. Here is a Python implementation:
+```python
+def max_subarray_sum(arr):
+    max_sum = float('-inf')
+    current_sum = 0
+    for num in arr:
+        current_sum = max(num, current_sum + num)
+        max_sum = max(max_sum, current_sum)
+    return max_sum
+```
+
 78. Write an algorithm to check if a string is a palindrome.
+A string is a palindrome if it reads the same backwards as forwards. Here is a Python implementation:
+```python
+def is_palindrome(s):
+    return s == s[::-1]
+```
+
 79. How would you perform a binary search on a rotated sorted array?
+A binary search on a rotated sorted array can be performed by finding the pivot element and then performing a binary search on the appropriate half of the array. Here is a Python implementation:
+```python
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        if arr[low] <= arr[mid]:
+            if arr[low] <= target < arr[mid]:
+                high = mid - 1
+            else:
+                low = mid + 1
+        else:
+            if arr[mid] < target <= arr[high]:
+                low = mid + 1
+            else:
+                high = mid - 1
+    return -1
+```
+
 80. Implement a function to generate all possible subsets of a set.
+The subsets of a set can be generated using a recursive function that adds each element to the current subset. Here is a Python implementation:
+```python
+def generate_subsets(s):
+    subsets = [[]]
+    for elem in s:
+        subsets += [subset + [elem] for subset in subsets]
+    return subsets
+```
 
 ### Complexity Analysis
 
 81. Explain Big O notation and give examples of different time complexities.
+Big O notation is a measure of the time or space complexity of an algorithm. It describes the worst-case scenario, i.e., the maximum amount of time or space an algorithm requires as the input size increases. Big O notation is usually expressed as a function of the input size 'n'. For example, O(n) represents linear time complexity, O(n^2) represents quadratic time complexity, and O(log n) represents logarithmic time complexity.
+Examples of different time complexities include:
+- O(1) - constant time complexity, e.g., accessing an array by index
+- O(log n) - logarithmic time complexity, e.g., binary search in an array
+- O(n) - linear time complexity, e.g., finding an element in an array
+- O(n log n) - linearithmic time complexity, e.g., merge sort algorithm
+- O(n^2) - quadratic time complexity, e.g., bubble sort algorithm
+- O(2^n) - exponential time complexity, e.g., recursive Fibonacci series
+
 82. How do you analyze the space complexity of an algorithm?
+To analyze the space complexity of an algorithm, we need to consider the amount of memory it uses. This includes the space required for the input, output, and any auxiliary data structures used by the algorithm. We can analyze the space complexity by counting the number of variables, data structures, and their sizes. For example, an algorithm that uses a single variable to store the input size has a space complexity of O(1), while an algorithm that uses an array of size 'n' has a space complexity of O(n).
+
 83. What is the time complexity of various sorting algorithms (e.g., quicksort, mergesort, bubblesort)?
+The time complexity of various sorting algorithms is as follows:
+- Quicksort: O(n log n) on average, O(n^2) in the worst case
+- Mergesort: O(n log n)
+- Bubblesort: O(n^2)
+- Heapsort: O(n log n)
+- Insertion sort: O(n^2)
+- Selection sort: O(n^2)
+
 84. How would you analyze the time complexity of a recursive algorithm?
+To analyze the time complexity of a recursive algorithm, we need to consider the number of recursive calls and the time complexity of each call. We can use the master theorem to solve the recurrence relation and determine the time complexity. For example, the time complexity of the recursive Fibonacci series is O(2^n), while the time complexity of the recursive binary search is O(log n).
+
 85. What is amortized time complexity? Give examples.
+Amortized time complexity is the average time complexity of an algorithm over a sequence of operations. It is used to analyze the performance of algorithms that have a high time complexity for a single operation but a low time complexity when averaged over many operations. Examples of amortized time complexity include:
+- Dynamic arrays: O(1) amortized time complexity for insertion and deletion operations
+- Hash tables: O(1) amortized time complexity for search, insert, and delete operations
+
 86. Explain the concept of NP-completeness.
+NP-completeness is a concept in computational complexity theory that describes a class of problems that are at least as hard as the hardest problems in NP (nondeterministic polynomial time). A problem is NP-complete if it is in NP and every problem in NP can be reduced to it in polynomial time. Examples of NP-complete problems include the traveling salesman problem, the knapsack problem, and the Boolean satisfiability problem.
+
 87. How do you optimize algorithms for large data sets?
+To optimize algorithms for large data sets, we can use various techniques such as:
+- Divide and conquer: breaking down the problem into smaller sub-problems and solving each sub-problem recursively
+- Dynamic programming: storing the solutions to sub-problems in a table to avoid redundant computation
+- Greedy algorithms: making the locally optimal choice at each step to find a global optimum solution
+- Approximation algorithms: finding a near-optimal solution in polynomial time
+
 88. What is the difference between worst-case, average-case, and best-case complexity?
+The difference between worst-case, average-case, and best-case complexity is as follows:
+- Worst-case complexity: the maximum time or space an algorithm requires in the worst possible scenario
+- Average-case complexity: the average time or space an algorithm requires over all possible scenarios
+- Best-case complexity: the minimum time or space an algorithm requires in the best possible scenario
+
 89. How do you handle data structure resizing and its impact on complexity?
+To handle data structure resizing, we can use techniques such as:
+- Dynamic arrays: resizing the array when it becomes full or empty
+- Linked lists: adding or removing nodes as needed
+- Hash tables: resizing the table when the load factor exceeds a certain threshold
+
 90. Explain the trade-offs between time and space complexity.
+The trade-offs between time and space complexity are as follows:
+- Time complexity: the amount of time an algorithm requires to complete
+- Space complexity: the amount of memory an algorithm requires
+- Trade-offs: increasing time complexity can reduce space complexity, while increasing space complexity can reduce time complexity.
 
 ### Theoretical Concepts
 
 91. What are the key properties of a good hash function?
+A good hash function should have the following properties: 
+- Deterministic: Given a particular input, it should always generate the same output hash value.
+- Non-injective: It should be able to map different input values to the same output hash value (known as collisions).
+- Fixed output size: The output hash value should always be of a fixed size, regardless of the size of the input.
+- Efficient computation: The hash function should be able to compute the hash value quickly.
+- Pre-image resistance: It should be computationally infeasible to determine the original input value from its hash value.
+- Collision resistance: It should be computationally infeasible to find two different input values that produce the same hash value.
+
 92. Explain the principle of divide and conquer in algorithm design.
+The principle of divide and conquer is a problem-solving strategy that involves breaking down a complex problem into smaller sub-problems, solving each sub-problem, and then combining the solutions to solve the original problem. 
+This approach is useful for solving problems that have the following properties: 
+- Optimal substructure: The problem can be broken down into smaller sub-problems, and the optimal solution to the larger problem can be constructed from the optimal solutions of the sub-problems.
+- Overlapping sub-problems: The sub-problems may have some overlap, meaning that some sub-problems may be identical or have similar solutions.
+
 93. What is the master theorem for divide-and-conquer recurrences?
+The master theorem is a mathematical tool used to solve recurrence relations of the form T(n) = aT(n/b) + f(n), where:
+- T(n) is the time complexity of the algorithm
+- a is the number of sub-problems
+- b is the size of each sub-problem
+- f(n) is the time complexity of the work done outside the recursive calls
+The master theorem provides a general solution to this recurrence relation, which can be used to determine the time complexity of the algorithm.
+
 94. Discuss the role of greedy algorithms in solving optimization problems.
+Greedy algorithms are a type of algorithm that solves optimization problems by making the locally optimal choice at each step, with the hope that these local choices will lead to a global optimum solution. 
+Greedy algorithms are useful for solving problems that have the following properties: 
+- Optimal substructure: The problem can be broken down into smaller sub-problems, and the optimal solution to the larger problem can be constructed from the optimal solutions of the sub-problems.
+- Greedy choice property: The problem can be solved by making the locally optimal choice at each step.
+
 95. What is a probabilistic data structure? Give examples.
+A probabilistic data structure is a data structure that uses randomness to achieve its goals. 
+Examples of probabilistic data structures include:
+- Bloom filters: A Bloom filter is a data structure that uses a bit array and hash functions to test whether an element is a member of a set.
+- Hash tables with chaining: A hash table with chaining is a data structure that uses a hash function to map keys to indices of a backing array, and then uses a linked list to store collisions.
+
 96. Explain the concept of an online algorithm.
+An online algorithm is an algorithm that processes its input piece-by-piece in a serial fashion, i.e., in the order that the input is fed to the algorithm, without having the entire input available from the beginning. 
+Online algorithms are useful for solving problems that have the following properties: 
+- The input is too large to fit into memory
+- The input is arriving in a stream, and the algorithm must process the input as it arrives
+
 97. What are approximation algorithms and when are they used?
+Approximation algorithms are algorithms that find near-optimal solutions to optimization problems. 
+Approximation algorithms are useful for solving problems that are NP-hard, meaning that the running time of traditional algorithms increases exponentially with the size of the input. 
+Approximation algorithms are used when the problem is too difficult to solve exactly, and a near-optimal solution is acceptable.
+
 98. How does the concept of a "pigeonhole principle" apply in data structures?
+The pigeonhole principle states that if n items are put into m containers, with n > m, then at least one container must contain more than one item. 
+The pigeonhole principle is used in data structures to prove the existence of certain properties, such as the existence of a collision in a hash table.
+
 99. Discuss the role of data structures in system design and performance optimization.
+Data structures play a crucial role in system design and performance optimization. 
+A good data structure can improve the performance of an algorithm by reducing the time complexity, while a poor data structure can lead to poor performance. 
+Data structures are used to store and manage data, and the choice of data structure can have a significant impact on the performance of a system.
+
 100. What is the role of randomness in algorithm design?
+Randomness plays a crucial role in algorithm design, particularly in the design of probabilistic algorithms. 
+Randomness is used to introduce randomness into the algorithm, which can help to avoid worst-case scenarios and improve the average-case performance. 
+Randomness is also used in the design of probabilistic data structures, such as Bloom filters and hash tables with chaining.
 

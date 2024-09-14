@@ -229,7 +229,6 @@ angular.module('myApp').controller('MyController', ['$scope', 'MyService', funct
 ### Routing and Navigation
 
 41. How do you configure routes in AngularJS?
-
 To configure routes in AngularJS, you define routes using the `$routeProvider` service. You specify the URL pattern, the corresponding template, and the controller for each route. You can also define route parameters and use them in your controller.
 
 ```javascript
@@ -250,11 +249,9 @@ angular.module('myApp').config(['$routeProvider', function($routeProvider) {
 ```
 
 42. What is the role of `$routeProvider` in AngularJS routing?
-
 `$routeProvider` is a service that allows you to define routes for your AngularJS application. You use it to specify the URL patterns, corresponding templates, and controllers for each route.
 
 43. How do you handle route parameters in AngularJS?
-
 To handle route parameters in AngularJS, you use the `$routeParams` service. You inject `$routeParams` into your controller and access the route parameters using the `$routeParams` object.
 
 ```javascript
@@ -264,7 +261,6 @@ angular.module('myApp').controller('UserController', ['$scope', '$routeParams', 
 ```
 
 44. What is the purpose of `ng-view` in routing?
-
 `ng-view` is a directive that is used to render the template for the current route. You use it in your main HTML file to specify the location where the route template should be rendered.
 
 ```html
@@ -272,7 +268,6 @@ angular.module('myApp').controller('UserController', ['$scope', '$routeParams', 
 ```
 
 45. How do you implement nested routes in AngularJS?
-
 To implement nested routes in AngularJS, you use the `$routeProvider` service to define the nested routes. You specify the parent route and the child route, and use the `ng-view` directive to render the child route template.
 
 ```javascript
@@ -290,7 +285,6 @@ angular.module('myApp').config(['$routeProvider', function($routeProvider) {
 ```
 
 46. How do you use `$location` for URL manipulation?
-
 To use `$location` for URL manipulation, you inject `$location` into your controller and use its methods to manipulate the URL.
 
 ```javascript
@@ -300,7 +294,6 @@ angular.module('myApp').controller('MyController', ['$scope', '$location', funct
 ```
 
 47. What are route guards, and how do you implement them?
-
 Route guards are functions that are executed before the route is rendered. To implement route guards, you use the `resolve` property of the route definition.
 
 ```javascript
@@ -319,7 +312,6 @@ angular.module('myApp').config(['$routeProvider', function($routeProvider) {
 ```
 
 48. How do you manage navigation and redirection in AngularJS?
-
 To manage navigation and redirection in AngularJS, you use the `$location` service and the `$routeProvider` service. You can use the `$location` service to redirect to a different route, and use the `$routeProvider` service to define the routes.
 
 ```javascript
@@ -329,7 +321,6 @@ angular.module('myApp').controller('MyController', ['$scope', '$location', funct
 ```
 
 49. What is `$routeParams`, and how is it used?
-
 `$routeParams` is a service that provides access to the route parameters. You inject `$routeParams` into your controller and access the route parameters using the `$routeParams` object.
 
 ```javascript
@@ -339,7 +330,6 @@ angular.module('myApp').controller('UserController', ['$scope', '$routeParams', 
 ```
 
 50. How do you handle 404 pages in AngularJS routing?
-
 To handle 404 pages in AngularJS routing, you use the `otherwise` method of the `$routeProvider` service. You specify the template and controller for the 404 page.
 
 ```javascript
@@ -357,7 +347,6 @@ angular.module('myApp').config(['$routeProvider', function($routeProvider) {
 ### Forms and Validation
 
 51. How do you create and handle forms in AngularJS?
-
 In AngularJS, you can create and handle forms using the `ng-form` directive. This directive allows you to create a form and bind it to a scope object, which can then be used to validate and submit the form. To handle forms, you can use the `$valid`, `$invalid`, `$dirty`, and `$pristine` properties to check the state of the form.
 
 ```
@@ -369,7 +358,6 @@ In AngularJS, you can create and handle forms using the `ng-form` directive. Thi
 ```
 
 52. What is the difference between template-driven forms and reactive forms in AngularJS?
-
 Template-driven forms and reactive forms are two different approaches to handling forms in AngularJS. Template-driven forms use the `ng-form` directive to create a form and bind it to a scope object, while reactive forms use a more programmatic approach to create and manage forms.
 
 ```
@@ -400,7 +388,6 @@ export class MyComponent {
 ```
 
 53. How do you perform custom form validation in AngularJS?
-
 You can perform custom form validation in AngularJS by creating a custom validator function and adding it to the form control. This function will be called whenever the form control changes and will return an error object if the validation fails.
 
 ```
@@ -417,7 +404,6 @@ myForm.controls['username'].setValidators([validateUsername]);
 ```
 
 54. What are built-in form validators in AngularJS?
-
 AngularJS provides several built-in form validators, including `required`, `minlength`, `maxlength`, `pattern`, and `email`.
 
 ```
@@ -429,7 +415,6 @@ AngularJS provides several built-in form validators, including `required`, `minl
 ```
 
 55. How do you handle form submission and resetting in AngularJS?
-
 You can handle form submission and resetting in AngularJS by using the `ng-submit` and `ng-click` directives.
 
 ```
@@ -445,7 +430,6 @@ You can handle form submission and resetting in AngularJS by using the `ng-submi
 ```
 
 56. What is the role of `$valid`, `$invalid`, `$dirty`, and `$pristine` in form validation?
-
 The `$valid`, `$invalid`, `$dirty`, and `$pristine` properties are used to check the state of a form control or form.
 
 *   `$valid`: Returns `true` if the form control or form is valid.
@@ -454,7 +438,6 @@ The `$valid`, `$invalid`, `$dirty`, and `$pristine` properties are used to check
 *   `$pristine`: Returns `true` if the form control or form has not been modified.
 
 57. How do you create and use custom validators?
-
 You can create a custom validator by creating a function that returns an error object if the validation fails.
 
 ```
@@ -471,7 +454,6 @@ myForm.controls['username'].setValidators([validateUsername]);
 ```
 
 58. What is the purpose of `ng-submit` in AngularJS forms?
-
 The `ng-submit` directive is used to handle form submission in AngularJS.
 
 ```
@@ -483,7 +465,6 @@ The `ng-submit` directive is used to handle form submission in AngularJS.
 ```
 
 59. How do you use `ng-model` with forms for two-way data binding?
-
 The `ng-model` directive is used to bind a form control to a scope object, allowing for two-way data binding.
 
 ```
@@ -494,7 +475,6 @@ The `ng-model` directive is used to bind a form control to a scope object, allow
 ```
 
 60. How do you handle form errors and display them in AngularJS?
-
 You can handle form errors and display them in AngularJS by using the `$error` object and the `ng-show` or `ng-hide` directives.
 
 ```
@@ -511,13 +491,9 @@ You can handle form errors and display them in AngularJS by using the `$error` o
 ### Dependency Injection and Services
 
 61. What is the difference between services and factories in AngularJS?
-
 In AngularJS, services and factories are both used to create reusable objects that can be injected into controllers and other components. However, they differ in how they are instantiated and how they are used.
-
 A service is a singleton object that is instantiated only once, and the same instance is shared throughout the application. Services are typically used to provide a way to share data and functionality between components.
-
 A factory, on the other hand, is a function that returns a new object or value each time it is called. Factories are typically used to create multiple instances of an object, or to create objects that have different configurations.
-
 Here is an example of a service:
 
 ```javascript
@@ -537,7 +513,6 @@ angular.module('myApp').factory('MyFactory', function() {
 ```
 
 62. How do you use `$provide` to create custom services?
-
 The `$provide` service is used to register custom services, factories, and providers with the AngularJS injector. To create a custom service using `$provide`, you can use the `service` method and pass in the name of the service and the constructor function.
 
 Here is an example:
@@ -551,7 +526,6 @@ angular.module('myApp').config(['$provide', function($provide) {
 ```
 
 63. What are AngularJS modules, and how do they work?
-
 AngularJS modules are a way to organize and structure an application. A module is a container for a set of related components, such as controllers, services, and directives. Modules can be used to create reusable components that can be easily shared between applications.
 
 To create a module, you can use the `angular.module` function and pass in the name of the module. You can then use the `controller`, `service`, `factory`, and `directive` methods to register components with the module.
@@ -569,7 +543,6 @@ angular.module('myApp', [])
 ```
 
 64. How do you configure dependency injection in AngularJS?
-
 Dependency injection is a design pattern that allows components to be loosely coupled, making it easier to test, maintain, and extend the application. In AngularJS, dependency injection is implemented using the `$injector` service.
 
 To configure dependency injection, you can use the `$injector` service to register dependencies with the injector. You can then use the `inject` method to inject dependencies into components.
@@ -583,7 +556,6 @@ angular.module('myApp').controller('MyController', ['$scope', 'MyService', funct
 ```
 
 65. What is `$injector` and how does it work?
-
 The `$injector` service is used to manage dependencies between components. It is responsible for instantiating components and injecting dependencies into them.
 
 The `$injector` service uses a dependency injection pattern to manage dependencies. It maintains a registry of dependencies and their instances, and uses this registry to resolve dependencies when a component is instantiated.
@@ -597,7 +569,6 @@ angular.module('myApp').controller('MyController', ['$scope', 'MyService', funct
 ```
 
 66. How do you use `ngResource` for data access in AngularJS?
-
 `ngResource` is a module that provides a way to interact with RESTful servers. It provides a set of services and directives that can be used to create, read, update, and delete data.
 
 To use `ngResource`, you can include the `ngResource` module in your application and then use the `$resource` service to create a resource object.
@@ -615,9 +586,7 @@ angular.module('myApp').factory('MyResource', ['$resource', function($resource) 
 ```
 
 67. How do you handle asynchronous operations in services?
-
 In AngularJS, services can be used to handle asynchronous operations, such as making HTTP requests to a server. To handle asynchronous operations, you can use the `$q` service to create a promise that is resolved when the operation is complete.
-
 Here is an example:
 
 ```javascript
@@ -630,11 +599,8 @@ angular.module('myApp').service('MyService', ['$q', function($q) {
 ```
 
 68. What are AngularJS providers, and how do they differ from services?
-
 AngularJS providers are a way to create configurable services. They are similar to services, but they can be configured before they are instantiated.
-
 To create a provider, you can use the `provider` method and pass in the name of the provider and the constructor function.
-
 Here is an example:
 
 ```javascript
@@ -644,9 +610,7 @@ angular.module('myApp').provider('MyProvider', function() {
 ```
 
 69. How do you use `$q` for handling asynchronous operations?
-
 The `$q` service is used to create promises that can be used to handle asynchronous operations. To use `$q`, you can create a deferred object using the `defer` method and then resolve the promise using the `resolve` method.
-
 Here is an example:
 
 ```javascript
@@ -659,7 +623,6 @@ angular.module('myApp').service('MyService', ['$q', function($q) {
 ```
 
 70. How do you create and use decorators in AngularJS?
-
 Decorators are a way to modify or extend the behavior of a service or factory. To create a decorator, you can use the `decorator` method and pass in the name of the service or factory and the decorator function.
 
 Here is an example:
@@ -711,43 +674,33 @@ To use one-time binding for performance improvements, you should use the `::` op
 ### Testing
 
 81. How do you test AngularJS controllers?
-
 Testing AngularJS controllers is crucial to ensure the application's functionality. To test a controller, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the controller's behavior. You can use a testing framework like Jasmine or Mocha to write and run the tests.
 
 82. What are some common testing frameworks used with AngularJS?
-
 Some common testing frameworks used with AngularJS include Jasmine, Mocha, and Karma. Jasmine is a popular choice for unit testing, while Mocha is often used for integration testing. Karma is a test runner that allows you to run your tests in multiple browsers.
 
 83. How do you use Jasmine for testing AngularJS applications?
-
 To use Jasmine for testing AngularJS applications, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the application's behavior. You can use the `beforeEach` function to set up the testing environment, the `afterEach` function to clean up after each test, and the `it` function to define each test.
 
 84. What is the role of `$httpBackend` in testing AngularJS services?
-
 `$httpBackend` is a service that allows you to mock HTTP requests in your tests. You can use it to verify that your services are making the correct requests and to test their behavior in different scenarios.
 
 85. How do you test AngularJS directives?
-
 To test an AngularJS directive, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the directive's behavior. You can use the `compile` function to compile the directive and the `digest` function to trigger a digest cycle.
 
 86. What are some best practices for writing unit tests in AngularJS?
-
 Some best practices for writing unit tests in AngularJS include keeping your tests simple and focused on a specific piece of functionality, using a consistent naming convention, and testing both the happy path and error scenarios.
 
 87. How do you use Karma for running tests in AngularJS?
-
 Karma is a test runner that allows you to run your tests in multiple browsers. To use Karma, you should install it using npm or yarn, configure it to run your tests, and write your tests using a testing framework like Jasmine or Mocha.
 
 88. How do you mock dependencies in AngularJS tests?
-
 To mock dependencies in AngularJS tests, you can use a mocking library like angular-mocks or sinon. These libraries provide functions that allow you to create mock objects that can be used in place of the real dependencies.
 
 89. What is end-to-end testing, and how do you perform it in AngularJS?
-
 End-to-end testing involves testing the entire application from the user's perspective. To perform end-to-end testing in AngularJS, you can use a testing framework like Protractor or Cypress. These frameworks provide functions that allow you to interact with the application and verify its behavior.
 
 90. How do you test AngularJS routing?
-
 To test AngularJS routing, you should create a test suite that includes a setup function to configure the testing environment, a teardown function to clean up after each test, and one or more test functions to verify the routing behavior. You can use the `$location` service to navigate to different routes and the `$route` service to verify the current route.
 
 
@@ -755,9 +708,7 @@ To test AngularJS routing, you should create a test suite that includes a setup 
 ### Best Practices
 
 91. What are some best practices for organizing AngularJS code?
-
 Organizing AngularJS code effectively is crucial for maintaining a scalable and maintainable application. Here are some best practices to follow:
-
 *   Modularize your code: Break down your application into smaller, independent modules that can be easily managed and maintained.
 *   Use a consistent naming convention: Use a consistent naming convention throughout your application to make it easier to understand and navigate.
 *   Keep your controllers thin: Keep your controllers as thin as possible by moving business logic to services and factories.
@@ -765,81 +716,63 @@ Organizing AngularJS code effectively is crucial for maintaining a scalable and 
 *   Use directives for DOM manipulation: Use directives to manipulate the DOM and keep your controllers and services focused on business logic.
 
 92. How do you handle application state in AngularJS?
-
 Handling application state in AngularJS can be challenging, but there are several strategies you can use to manage it effectively. Here are some best practices:
-
 *   Use a state management library: Consider using a state management library like ngStorage or angular-ui-router to manage application state.
 *   Use services and factories: Use services and factories to encapsulate business logic and manage application state.
 *   Use the $rootScope: Use the $rootScope to share data between controllers and services.
 *   Use events: Use events to communicate between controllers and services and manage application state.
 
 93. How do you use dependency injection effectively in AngularJS?
-
 Dependency injection is a powerful feature in AngularJS that allows you to decouple your code and make it more modular and maintainable. Here are some best practices for using dependency injection effectively:
-
 *   Use the $injector: Use the $injector to inject dependencies into your controllers and services.
 *   Use the @ngInject annotation: Use the @ngInject annotation to specify dependencies for your controllers and services.
 *   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
 *   Avoid using the $rootScope: Avoid using the $rootScope to share data between controllers and services, instead use services and factories.
 
 94. What are some common anti-patterns to avoid in AngularJS development?
-
 There are several common anti-patterns to avoid when developing AngularJS applications. Here are some of the most common ones:
-
 *   Overusing the $rootScope: Avoid using the $rootScope to share data between controllers and services, instead use services and factories.
 *   Not using dependency injection: Failing to use dependency injection can make your code tightly coupled and difficult to maintain.
 *   Not using services and factories: Failing to use services and factories can make your code tightly coupled and difficult to maintain.
 *   Not using directives: Failing to use directives can make your code tightly coupled and difficult to maintain.
 
 95. How do you manage large AngularJS applications?
-
 Managing large AngularJS applications can be challenging, but there are several strategies you can use to make it more manageable. Here are some best practices:
-
 *   Modularize your code: Break down your application into smaller, independent modules that can be easily managed and maintained.
 *   Use a consistent naming convention: Use a consistent naming convention throughout your application to make it easier to understand and navigate.
 *   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
 *   Use directives: Use directives to manipulate the DOM and keep your controllers and services focused on business logic.
 
 96. How do you ensure maintainability and scalability in AngularJS projects?
-
 Ensuring maintainability and scalability in AngularJS projects requires careful planning and design. Here are some best practices:
-
 *   Modularize your code: Break down your application into smaller, independent modules that can be easily managed and maintained.
 *   Use a consistent naming convention: Use a consistent naming convention throughout your application to make it easier to understand and navigate.
 *   Use services and factories: Use services and factories to encapsulate business logic and make it reusable throughout your application.
 *   Use directives: Use directives to manipulate the DOM and keep your controllers and services focused on business logic.
 
 97. What are some strategies for debugging AngularJS applications?
-
 Debugging AngularJS applications can be challenging, but there are several strategies you can use to make it easier. Here are some best practices:
-
 *   Use the AngularJS debugger: The AngularJS debugger is a powerful tool that allows you to step through your code and inspect variables.
 *   Use console.log: Use console.log to log messages and inspect variables.
 *   Use the Chrome DevTools: The Chrome DevTools are a powerful set of tools that allow you to inspect and debug your application.
 *   Use a debugging library: Consider using a debugging library like angular-debug to make debugging easier.
 
 98. How do you use AngularJS directives for modularity?
-
 AngularJS directives are a powerful feature that allows you to extend the HTML syntax and create reusable components. Here are some best practices for using directives for modularity:
-
 *   Use the `restrict` property: Use the `restrict` property to specify how the directive should be used.
 *   Use the `template` property: Use the `template` property to specify the HTML template for the directive.
 *   Use the `link` function: Use the `link` function to manipulate the DOM and bind events.
 *   Use the `controller` property: Use the `controller` property to specify a controller for the directive.
 
 99. How do you handle cross-browser compatibility issues in AngularJS?
-
 Handling cross-browser compatibility issues in AngularJS can be challenging, but there are several strategies you can use to make it easier. Here are some best practices:
-
 *   Use a feature detection library: Consider using a feature detection library like Modernizr to detect browser features.
 *   Use a polyfill library: Consider using a polyfill library like es5-shim to add support for older browsers.
 *   Use the `ng-class` directive: Use the `ng-class` directive to conditionally apply CSS classes based on browser features.
 *   Use the `ng-style` directive: Use the `ng-style` directive to conditionally apply CSS styles based on browser features.
 
 100. How do you keep AngularJS applications up-to-date with the latest best practices?
-
 Keeping AngularJS applications up-to-date with the latest best practices requires ongoing effort and dedication. Here are some best practices:
-
 *   Follow the AngularJS blog: Follow the AngularJS blog to stay up-to-date with the latest news and best practices.
 *   Attend conferences and meetups: Attend conferences and meetups to learn from other developers and stay up-to-date with the latest best practices.
 *   Read books and tutorials: Read books and tutorials to learn new skills and stay up-to-date with the latest best practices.

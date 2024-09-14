@@ -318,7 +318,6 @@ Code documentation is essential for maintaining a clear understanding of your co
 ### Miscellaneous
 
 
-
 91. What are some common pitfalls or mistakes in JavaScript programming?
 Some common pitfalls or mistakes in JavaScript programming include using `==` instead of `===` for equality checks, not handling errors properly, and using global variables.
 

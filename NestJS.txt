@@ -3,129 +3,649 @@ Certainly! Here is a comprehensive list of 100 NestJS interview questions, cover
 ### Basics
 
 1. What is NestJS, and what are its main features?
+NestJS is a Node.js framework for building efficient, scalable Node.js server-side applications. Its main features include a modular architecture, dependency injection, and strong typing. It also supports TypeScript, which allows for better code maintainability and error prevention.
+
 2. How does NestJS differ from Express.js?
+NestJS differs from Express.js in several ways. Firstly, NestJS has a more modular architecture, which makes it easier to manage and maintain large applications. Secondly, NestJS has built-in support for dependency injection, which makes it easier to manage dependencies between modules. Finally, NestJS has strong typing, which makes it easier to catch errors at runtime.
+
 3. What is the role of decorators in NestJS?
+Decorators in NestJS are used to provide metadata about classes, methods, and properties. They can be used to define routes, inject dependencies, and configure application settings. Decorators are a key feature of NestJS and are used extensively throughout the framework.
+
 4. How do you create a new NestJS project?
+To create a new NestJS project, you can use the NestJS CLI. First, install the CLI using npm or yarn. Then, run the command `nest new project-name` to create a new project. This will create a basic project structure with a `main.ts` file, a `app.module.ts` file, and a `app.controller.ts` file.
+
 5. What is the purpose of the `@Module` decorator in NestJS?
+The `@Module` decorator is used to define a NestJS module. A module is a class that is decorated with the `@Module` decorator and is used to organize related components, services, and controllers. The `@Module` decorator is used to define the metadata for the module, such as the imports, exports, and providers.
+
 6. Explain the concept of dependency injection in NestJS.
+Dependency injection is a design pattern that allows components to be loosely coupled, making it easier to test, maintain, and extend the system. In NestJS, dependency injection is implemented through the use of modules, providers, and injectors. Modules are used to organize providers, which are classes that provide a service or value. Injectors are used to resolve dependencies between providers.
+
 7. What are providers in NestJS, and how are they used?
+Providers in NestJS are classes that provide a service or value. They are used to provide dependencies to components, services, and controllers. Providers can be injected into components, services, and controllers using the `@Inject` decorator.
+
 8. How do you handle environment variables in a NestJS application?
+Environment variables in a NestJS application can be handled using the `@Inject` decorator and the `ConfigModule`. The `ConfigModule` is a built-in module that provides a way to configure application settings. Environment variables can be injected into components, services, and controllers using the `@Inject` decorator.
+
 9. What is the `main.ts` file used for in a NestJS project?
+The `main.ts` file is the entry point of a NestJS application. It is used to create and configure the application instance. The `main.ts` file is responsible for importing the `AppModule` and creating the application instance.
+
 10. How do you define and use routes in NestJS?
+Routes in NestJS are defined using the `@Controller` decorator and the `@Get`, `@Post`, `@Put`, and `@Delete` decorators. The `@Controller` decorator is used to define a controller class, while the `@Get`, `@Post`, `@Put`, and `@Delete` decorators are used to define routes for the controller. Routes can be used to handle incoming requests and return responses.
 
 ### Modules and Components
 
 11. What is a module in NestJS, and how is it used?
+A module in NestJS is a class that is decorated with the `@Module` decorator and is used to organize related components, services, and controllers. It is the basic building block of a NestJS application and is used to define the structure and dependencies of the application.
+
 12. How do you import and export modules in NestJS?
+Modules in NestJS can be imported and exported using the `@Module` decorator. The `imports` array is used to specify the modules that are imported, and the `exports` array is used to specify the modules that are exported.
+
 13. What is the purpose of the `@Injectable` decorator?
+The `@Injectable` decorator is used to define a class as a provider that can be injected into other components. It is used to provide a service or a value that can be used by other components in the application.
+
 14. How do you use the `@Controller` decorator in NestJS?
+The `@Controller` decorator is used to define a class as a controller that handles incoming requests. It is used to define the routes and methods that handle the requests.
+
 15. What are the different types of providers in NestJS?
+There are several types of providers in NestJS, including classes, values, and factories. Classes are used to provide a service or a value, values are used to provide a constant value, and factories are used to provide a dynamic value.
+
 16. How do you create and use custom modules in NestJS?
+Custom modules in NestJS can be created by defining a class that is decorated with the `@Module` decorator. The module can be used to organize related components, services, and controllers.
+
 17. What is the role of the `@Global` decorator in NestJS modules?
+The `@Global` decorator is used to define a module as a global module that can be accessed from any part of the application. It is used to provide a service or a value that can be used by other components in the application.
+
 18. How do you configure and use dynamic modules?
+Dynamic modules in NestJS can be configured and used by defining a class that is decorated with the `@Module` decorator and using the `dynamic` property to specify the module.
+
 19. What is the purpose of the `@Inject` decorator in NestJS?
+The `@Inject` decorator is used to inject a provider into a component. It is used to provide a service or a value that can be used by the component.
+
 20. How do you use middleware in NestJS?
+Middleware in NestJS can be used by defining a class that is decorated with the `@Middleware` decorator. The middleware can be used to perform tasks such as authentication and rate limiting.
+
 
 ### Routing and Controllers
 
 21. How do you define routes in a NestJS controller?
+In a NestJS controller, you can define routes using decorators such as `@Get()`, `@Post()`, `@Put()`, and `@Delete()`. These decorators are used to specify the HTTP method and the path of the route. For example, `@Get('users')` would define a GET route for the `/users` path.
+```typescript
+import { Controller, Get } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get()
+  async findAll(): Promise<any> {
+    // Return a list of users
+  }
+}
+```
+
 22. What is the purpose of route decorators like `@Get()`, `@Post()`, `@Put()`, and `@Delete()`?
+Route decorators like `@Get()`, `@Post()`, `@Put()`, and `@Delete()` are used to specify the HTTP method and the path of a route in a NestJS controller. They are used to map incoming requests to specific controller methods.
+```typescript
+import { Controller, Get, Post, Put, Delete } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get()
+  async findAll(): Promise<any> {
+    // Return a list of users
+  }
+
+  @Post()
+  async create(): Promise<any> {
+    // Create a new user
+  }
+
+  @Put(':id')
+  async update(): Promise<any> {
+    // Update a user
+  }
+
+  @Delete(':id')
+  async delete(): Promise<any> {
+    // Delete a user
+  }
+}
+```
+
 23. How do you handle route parameters and query parameters in NestJS?
+In NestJS, you can handle route parameters and query parameters using the `@Param()` and `@Query()` decorators. The `@Param()` decorator is used to inject route parameters into a controller method, while the `@Query()` decorator is used to inject query parameters.
+```typescript
+import { Controller, Get, Param, Query } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get(':id')
+  async findOne(@Param('id') id: string): Promise<any> {
+    // Return a user by ID
+  }
+
+  @Get()
+  async findAll(@Query('name') name: string): Promise<any> {
+    // Return a list of users by name
+  }
+}
+```
+
 24. What is the role of the `@Body()` decorator in NestJS?
+The `@Body()` decorator in NestJS is used to inject the request body into a controller method. It is typically used with POST and PUT requests to inject the request payload.
+```typescript
+import { Controller, Post, Body } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Post()
+  async create(@Body() user: any): Promise<any> {
+    // Create a new user
+  }
+}
+```
+
 25. How do you validate request data in a NestJS controller?
+In a NestJS controller, you can validate request data using the `class-validator` package. You can use decorators such as `@IsString()` and `@IsInt()` to validate the request data.
+```typescript
+import { Controller, Post, Body } from '@nestjs/common';
+import { IsString, IsInt } from 'class-validator';
+
+export class UserDTO {
+  @IsString()
+  name: string;
+
+  @IsInt()
+  age: number;
+}
+
+@Controller('users')
+export class UsersController {
+  @Post()
+  async create(@Body() user: UserDTO): Promise<any> {
+    // Create a new user
+  }
+}
+```
+
 26. How do you handle exceptions in NestJS controllers?
+In a NestJS controller, you can handle exceptions using the `@Catch()` decorator. This decorator is used to catch exceptions thrown by a controller method and return a custom error response.
+```typescript
+import { Controller, Get, Catch } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get()
+  async findAll(): Promise<any> {
+    // Return a list of users
+  }
+
+  @Catch()
+  async catch(exception: any): Promise<any> {
+    // Return a custom error response
+  }
+}
+```
+
 27. What is the purpose of the `@Param()` decorator in NestJS?
+The `@Param()` decorator in NestJS is used to inject route parameters into a controller method.
+```typescript
+import { Controller, Get, Param } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get(':id')
+  async findOne(@Param('id') id: string): Promise<any> {
+    // Return a user by ID
+  }
+}
+```
+
 28. How do you use guards to protect routes in NestJS?
+In a NestJS application, you can use guards to protect routes by implementing the `CanActivate` interface. Guards can be used to authenticate and authorize incoming requests.
+```typescript
+import { Injectable, CanActivate } from '@nestjs/common';
+
+@Injectable()
+export class AuthGuard implements CanActivate {
+  canActivate(): boolean {
+    // Authenticate and authorize the request
+  }
+}
+```
+
 29. What is the difference between `@UseGuards()` and `@Roles()` decorators?
-30. How do you implement custom route handlers in NestJS?
+The `@UseGuards()` decorator is used to apply a guard to a controller or route, while the `@Roles()` decorator is used to specify the roles that are allowed to access a controller or route.
+```typescript
+import { Controller, Get, UseGuards, Roles } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get()
+  @UseGuards
 
 ### Dependency Injection
 
 31. How does dependency injection work in NestJS?
+Dependency injection is a design pattern that allows components to be loosely coupled, making it easier to test, maintain, and extend the system. In NestJS, dependency injection is implemented through the use of modules, providers, and injectors. Modules are used to organize providers, which are classes that provide a service or value. Injectors are used to resolve dependencies between providers.
+
 32. What are the benefits of using dependency injection?
+The benefits of using dependency injection include loose coupling, testability, and maintainability. By decoupling components, dependency injection makes it easier to test and maintain the system. It also makes it easier to switch between different implementations of a service.
+
 33. How do you provide and inject services in NestJS?
+To provide a service in NestJS, you need to create a provider class that implements the service interface. You can then use the `@Injectable()` decorator to mark the class as a provider. To inject a service, you can use the `@Inject()` decorator to inject the provider into a component.
+
 34. What is the difference between a singleton provider and a transient provider?
+A singleton provider is a provider that is instantiated only once, and the same instance is shared across the entire application. A transient provider is a provider that is instantiated each time it is requested. Singleton providers are useful for services that have a high overhead of creation, while transient providers are useful for services that need to be stateless.
+
 35. How do you use the `@Injectable()` decorator to define a service?
+To define a service using the `@Injectable()` decorator, you need to create a class that implements the service interface. You can then use the `@Injectable()` decorator to mark the class as a provider. For example:
+```typescript
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class UserService {
+  // service implementation
+}
+```
 36. How do you resolve dependencies dynamically in NestJS?
+To resolve dependencies dynamically in NestJS, you can use the `@Inject()` decorator with a token. The token can be a string or a symbol that identifies the dependency. For example:
+```typescript
+import { Inject } from '@nestjs/common';
+
+@Injectable()
+export class UserService {
+  constructor(@Inject('USER_REPOSITORY') private readonly userRepository: UserRepository) {}
+}
+```
+
 37. What is the role of the `@Optional()` decorator?
+The `@Optional()` decorator is used to mark a dependency as optional. If the dependency is not provided, the injector will not throw an error. Instead, it will return undefined.
+
 38. How do you create and use custom providers?
+To create a custom provider, you need to create a class that implements the `Provider` interface. You can then use the `@Injectable()` decorator to mark the class as a provider. To use a custom provider, you can use the `@Inject()` decorator to inject the provider into a component.
+
 39. What is the purpose of `useClass`, `useValue`, `useFactory`, and `useExisting` in NestJS?
+`useClass`, `useValue`, `useFactory`, and `useExisting` are all providers that can be used to provide a value or a service. `useClass` is used to provide a class, `useValue` is used to provide a value, `useFactory` is used to provide a factory function, and `useExisting` is used to provide an existing provider.
+
 40. How do you handle circular dependencies in NestJS?
+To handle circular dependencies in NestJS, you can use the `@Inject()` decorator with a token. The token can be a string or a symbol that identifies the dependency. You can also use the `@Optional()` decorator to mark a dependency as optional. If the dependency is not provided, the injector will not throw an error. Instead, it will return undefined.
+
 
 ### Database Integration
 
 41. How do you integrate a database with a NestJS application?
+To integrate a database with a NestJS application, you can use TypeORM, a TypeScript-based ORM (Object-Relational Mapping) library. TypeORM supports various databases such as MySQL, PostgreSQL, and MongoDB. You can install TypeORM using npm or yarn by running the command `npm install @nestjs/typeorm typeorm` or `yarn add @nestjs/typeorm typeorm`. Then, you can configure the database connection in the `app.module.ts` file using the `TypeOrmModule.forRoot()` method.
+
 42. What is TypeORM, and how do you use it with NestJS?
+TypeORM is a TypeScript-based ORM (Object-Relational Mapping) library that provides a simple and intuitive way to interact with databases. To use TypeORM with NestJS, you can install the `@nestjs/typeorm` package and import it in your module. You can then define entities using the `@Entity()` decorator and use the `TypeOrmModule.forRoot()` method to configure the database connection.
+
 43. How do you define and use entities in NestJS with TypeORM?
+To define an entity in NestJS with TypeORM, you can use the `@Entity()` decorator and define the entity class. For example:
+```typescript
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+
+@Entity()
+export class User {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column()
+  name: string;
+
+  @Column()
+  email: string;
+}
+```
+You can then use the `TypeOrmModule.forFeature()` method to configure the entity in the `app.module.ts` file.
+
 44. What is the role of the `@Entity()` decorator in TypeORM?
+The `@Entity()` decorator is used to define an entity in TypeORM. It provides metadata about the entity, such as the table name and column names.
+
 45. How do you perform CRUD operations using TypeORM in NestJS?
+To perform CRUD operations using TypeORM in NestJS, you can use the `Repository` class provided by TypeORM. For example:
+```typescript
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Repository } from '@nestjs/typeorm';
+import { User } from './user.entity';
+
+@Entity()
+export class UserService {
+  private readonly userRepository: Repository<User>;
+
+  constructor(@InjectRepository(User) userRepository: Repository<User>) {
+    this.userRepository = userRepository;
+  }
+
+  async findAll(): Promise<User[]> {
+    return this.userRepository.find();
+  }
+
+  async findOne(id: number): Promise<User> {
+    return this.userRepository.findOne(id);
+  }
+
+  async create(user: User): Promise<User> {
+    return this.userRepository.save(user);
+  }
+
+  async update(id: number, user: User): Promise<User> {
+    return this.userRepository.update(id, user);
+  }
+
+  async delete(id: number): Promise<void> {
+    return this.userRepository.delete(id);
+  }
+}
+```
 46. What are repositories in TypeORM, and how do you use them?
+Repositories in TypeORM are classes that provide a way to interact with the database. You can use the `@InjectRepository()` decorator to inject a repository into a service.
+
 47. How do you configure a database connection in NestJS?
+To configure a database connection in NestJS, you can use the `TypeOrmModule.forRoot()` method in the `app.module.ts` file. For example:
+```typescript
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { User } from './user.entity';
+
+@Module({
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: 'password',
+      database: 'database',
+      entities: [User],
+      synchronize: true,
+    }),
+  ],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
+```
 48. What is the purpose of migrations in TypeORM?
+Migrations in TypeORM are used to manage changes to the database schema. You can use the `typeorm migration:create` command to create a new migration.
+
 49. How do you use the `@Transaction()` decorator in NestJS?
+The `@Transaction()` decorator is used to define a transaction in NestJS. You can use it to wrap a service method that performs multiple database operations.
+
 50. How do you handle database transactions in NestJS?
+To handle database transactions in NestJS, you can use the `@Transaction()` decorator to define a transaction
+
 
 ### Asynchronous Operations
 
 51. How do you handle asynchronous operations in NestJS?
+NestJS provides a built-in support for asynchronous operations through the use of async/await syntax and the @Injectable() decorator. To handle asynchronous operations, you can define a service with the @Injectable() decorator and use the async/await syntax to perform asynchronous operations. You can also use the @UseGuards() decorator to apply a guard to a controller or route to handle asynchronous operations.
+
 52. What is the `@Injectable()` decorator used for in asynchronous services?
+The @Injectable() decorator is used to define a service that can be injected into other components, such as controllers. In asynchronous services, the @Injectable() decorator is used to define a service that can perform asynchronous operations.
+
 53. How do you use async/await in NestJS services and controllers?
+To use async/await in NestJS services and controllers, you can define a service or controller with the @Injectable() decorator and use the async/await syntax to perform asynchronous operations.
+
 54. What are the benefits of using Promises and Observables in NestJS?
+Promises and Observables are used to handle asynchronous operations in NestJS. Promises are used to handle single asynchronous operations, while Observables are used to handle multiple asynchronous operations.
+
 55. How do you handle exceptions and errors in asynchronous operations?
+To handle exceptions and errors in asynchronous operations, you can use try/catch blocks and error handlers to catch and handle exceptions and errors.
+
 56. How do you use the `@Transaction()` decorator for transactional operations?
+The @Transaction() decorator is used to define a transactional operation that can be rolled back if an error occurs.
+
 57. What is the role of the `rxjs` library in NestJS?
+The rxjs library is used to handle Observables in NestJS. Observables are used to handle multiple asynchronous operations.
+
 58. How do you create and manage Observables in NestJS?
+To create and manage Observables in NestJS, you can use the rxjs library and the @Injectable() decorator to define a service that can perform asynchronous operations.
+
 59. How do you use the `async` and `await` keywords effectively in NestJS?
+To use the async and await keywords effectively in NestJS, you can define a service or controller with the @Injectable() decorator and use the async/await syntax to perform asynchronous operations.
+
 60. How do you handle concurrency and parallelism in NestJS?
+To handle concurrency and parallelism in NestJS, you can use the async/await syntax and the @Injectable() decorator to define a service that can perform asynchronous operations concurrently.
+
 
 ### Validation and Serialization
 
 61. How do you validate incoming request data in NestJS?
+NestJS provides a built-in validation mechanism using the `class-validator` package. You can use decorators such as `@IsString()`, `@IsInt()`, and others to validate incoming request data. You can also create custom validation decorators to handle complex validation scenarios. To use validation in NestJS, you need to install the `class-validator` package and import it in your module. Then, you can use the validation decorators in your DTOs (Data Transfer Objects) to define the validation rules. NestJS will automatically validate the incoming request data against these rules and throw an error if the data is invalid.
+
 62. What is the role of the `class-validator` package in NestJS?
+The `class-validator` package is a popular validation library for Node.js that is widely used in NestJS applications. It provides a set of decorators that can be used to validate incoming request data. The package is designed to work seamlessly with NestJS and provides a simple and intuitive way to validate data. It supports a wide range of validation rules, including string, number, date, and array validations.
+
 63. How do you use the `@IsString()`, `@IsInt()`, and other validation decorators?
+To use the `@IsString()`, `@IsInt()`, and other validation decorators, you need to import the `class-validator` package in your module and define a DTO (Data Transfer Object) with the validation rules. For example, you can define a `UserDTO` with the following validation rules:
+```typescript
+import { IsString, IsInt } from 'class-validator';
+
+export class UserDTO {
+  @IsString()
+  name: string;
+
+  @IsInt()
+  age: number;
+}
+```
+Then, you can use the `UserDTO` in your controller to validate the incoming request data:
+```typescript
+import { Controller, Post, Body } from '@nestjs/common';
+import { UserDTO } from './user.dto';
+
+@Controller('users')
+export class UsersController {
+  @Post()
+  createUser(@Body() userDTO: UserDTO) {
+    // Create a new user
+  }
+}
+```
+
 64. How do you handle validation errors and display custom error messages?
+To handle validation errors and display custom error messages, you can use the `ValidationPipe` in NestJS. The `ValidationPipe` is a built-in pipe that can be used to validate incoming request data and handle validation errors. You can configure the `ValidationPipe` to display custom error messages by passing a `validationOptions` object to the `ValidationPipe` constructor. For example:
+```typescript
+import { ValidationPipe } from '@nestjs/common';
+
+const validationOptions = {
+  errorHttpStatusCode: 422,
+  exceptionFactory: (errors: ValidationError[]) => {
+    return new HttpException('Validation failed', HttpStatus.UNPROCESSABLE_ENTITY);
+  },
+};
+
+const validationPipe = new ValidationPipe(validationOptions);
+```
+
 65. What is the `class-transformer` package, and how is it used in NestJS?
+The `class-transformer` package is a popular library for transforming and serializing data in Node.js. It is widely used in NestJS applications to transform and serialize data. The package provides a set of decorators that can be used to transform and serialize data. For example, you can use the `@Expose()` decorator to expose a property of a class, and the `@Exclude()` decorator to exclude a property from serialization.
+
 66. How do you serialize and deserialize data using `class-transformer`?
+To serialize and deserialize data using `class-transformer`, you need to import the `class-transformer` package in your module and define a class with the transformation rules. For example, you can define a `User` class with the following transformation rules:
+```typescript
+import { Expose, Exclude } from 'class-transformer';
+
+export class User {
+  @Expose()
+  name: string;
+
+  @Exclude()
+  password: string;
+}
+```
+Then, you can use the `class-transformer` to serialize and deserialize the `User` class:
+```typescript
+import { plainToClass } from 'class-transformer';
+
+const user = new User();
+user.name = 'John Doe';
+user.password = 'secret';
+
+const serializedUser = plainToClass(User, user);
+console.log(serializedUser); // { name: 'John Doe' }
+
+const deserializedUser = plainToClass(User, serializedUser);
+console.log(deserializedUser); // User { name: 'John Doe', password: undefined }
+```
+
 67. What are validation pipes, and how do you use them in NestJS?
+Validation pipes are a feature of NestJS that allows you to validate incoming request data using a pipe. A pipe is a function that takes the incoming request data as input and returns the validated data. You can use validation pipes to validate incoming request data and handle validation errors. To use a validation pipe, you need to create a pipe class that implements the `PipeTransform` interface and use the `@UsePipes()` decorator to apply the pipe to a controller or route.
+
 68. How do you create custom validation pipes in NestJS?
+To create a custom validation pipe, you need to create a pipe class that implements the `PipeTransform` interface. For example:
+```typescript
+import { PipeTransform, Injectable } from '@nestjs/common';
+
+@Injectable()
+export class CustomValidationPipe implements PipeTransform {
+  transform(value: any) {
+    // Validate the value
+    return value;
+  }
+}
+```
+Then, you can use the `@UsePipes()` decorator to apply the custom validation pipe to a controller or route:
+```typescript
+import { Controller, Post, Body, UsePipes } from '@nestjs/common';
+import { CustomValidationPipe } from './custom-validation.pipe';
+
+@Controller('users')
+export class UsersController {
+  @Post()
+  @UsePipes(CustomValidationPipe)
+  createUser(@Body() userDTO: UserDTO) {
+    // Create a new user
+  }
+}
+```
+
 69. What is the purpose of the `ValidationPipe` in NestJS?
+The `ValidationPipe` is a built-in pipe in NestJS that can be used to validate incoming request data. It provides a simple and intuitive way to validate data and handle validation errors. The `ValidationPipe` can be used to validate data using the `class-validator` package and handle validation errors using a custom error handler.
+
 70. How do you handle complex data validation scenarios?
+To handle complex data validation scenarios, you can use a combination of validation decorators and custom validation pipes. You can define a custom validation pipe that uses a complex validation logic and apply it to a controller or route using the `@UsePipes()` decorator. For example:
+```typescript
+import { PipeTransform, Injectable } from '@nestjs/common';
+
+@Injectable()
+export class ComplexValidationPipe implements PipeTransform {
+  transform(value: any) {
+    // Complex validation logic
+    return value;
+  }
+}
+```
+Then, you can use the `@UsePipes()` decorator to apply the custom validation pipe to a controller or route:
+```typescript
+import { Controller, Post, Body, UsePipes } from '@nestjs/common';
+import { ComplexValidationPipe } from './complex-validation.pipe';
+
+@Controller('users')
+export class UsersController {
+  @Post()
+  @UsePipes(ComplexValidationPipe)
+  createUser(@Body() userDTO: UserDTO) {
+    // Create a new user
+  }
+}
+```
 
 ### Authentication and Authorization
 
 71. How do you implement authentication in a NestJS application?
+Authentication in a NestJS application can be implemented using various strategies such as JWT (JSON Web Tokens), Passport.js, and OAuth. To implement authentication, you need to install the required packages, create an authentication module, and configure the authentication strategy. You can use the `@nestjs/jwt` package to implement JWT authentication, and the `@nestjs/passport` package to implement Passport.js authentication. You can also use the `@nestjs/oauth` package to implement OAuth authentication.
+
 72. What is the role of JWT (JSON Web Tokens) in authentication?
+JSON Web Tokens (JWT) play a crucial role in authentication by providing a secure way to transfer claims between parties. JWT is a compact, URL-safe means of representing claims to be transferred between two parties. The token is digitally signed and contains a payload that can be verified and trusted.
+
 73. How do you create and use JWT strategies in NestJS?
+To create and use JWT strategies in NestJS, you need to install the `@nestjs/jwt` package and import it in your module. You can then create a JWT strategy by extending the `JwtStrategy` class and overriding the `validate` method. You can use the `@UseGuards` decorator to apply the JWT strategy to a controller or route.
+
 74. What is Passport.js, and how does it integrate with NestJS?
+Passport.js is a popular authentication middleware for Node.js that provides a simple way to authenticate requests. Passport.js integrates with NestJS through the `@nestjs/passport` package, which provides a set of decorators and classes that make it easy to use Passport.js with NestJS.
+
 75. How do you implement role-based access control (RBAC) in NestJS?
+To implement role-based access control (RBAC) in NestJS, you can use the `@nestjs/roles` package, which provides a set of decorators and classes that make it easy to implement RBAC. You can define roles and permissions using the `@Role` and `@Permission` decorators, and use the `@UseGuards` decorator to apply the RBAC guard to a controller or route.
+
 76. How do you use guards for authentication and authorization?
+Guards in NestJS are used to protect routes and controllers from unauthorized access. To use guards for authentication and authorization, you can create a guard class that implements the `CanActivate` interface and use the `@UseGuards` decorator to apply the guard to a controller or route.
+
 77. What are the different types of guards in NestJS?
+There are several types of guards in NestJS, including authentication guards, authorization guards, and role-based access control guards. Authentication guards are used to authenticate requests, while authorization guards are used to authorize requests. Role-based access control guards are used to implement RBAC.
+
 78. How do you create custom guards in NestJS?
+To create a custom guard in NestJS, you need to create a class that implements the `CanActivate` interface. You can then use the `@UseGuards` decorator to apply the guard to a controller or route.
+
 79. What is the purpose of the `@Roles()` decorator?
+The `@Roles()` decorator is used to define the roles that are allowed to access a controller or route. It is used to implement role-based access control (RBAC) in NestJS.
+
 80. How do you handle user sessions and cookies in NestJS?
+To handle user sessions and cookies in NestJS, you can use the `@nestjs/session` package, which provides a set of decorators and classes that make it easy to handle user sessions and cookies. You can use the `@Session` decorator to inject the session object into a controller or service.
+
+
 
 ### Testing
 
 81. How do you write unit tests for NestJS services?
+Writing unit tests for NestJS services involves using the Jest testing framework and the `@nestjs/testing` module. You can create a test module using the `Test.createTestingModule` method and then use the `@Inject` decorator to inject the service into the test. You can then use the `expect` function to assert that the service behaves as expected.
+
 82. What is the role of the `TestingModule` in NestJS testing?
+The `TestingModule` is a utility class provided by the `@nestjs/testing` module that allows you to create a test module for your NestJS application. It provides a way to configure the testing module, including the providers, controllers, and imports.
+
 83. How do you use Jest for testing NestJS applications?
+Jest is a popular testing framework that can be used to test NestJS applications. You can use Jest to write unit tests, integration tests, and end-to-end tests for your NestJS application. To use Jest with NestJS, you need to install the `@nestjs/testing` module and configure it in your `jest.config.js` file.
+
 84. How do you mock dependencies in NestJS tests?
+To mock dependencies in NestJS tests, you can use the `@Inject` decorator to inject a mock implementation of the dependency into the test. You can also use the `jest.mock` function to mock the dependency.
+
 85. How do you test controllers and route handlers in NestJS?
+To test controllers and route handlers in NestJS, you can use the `Test.createTestingModule` method to create a test module and then use the `@Inject` decorator to inject the controller into the test. You can then use the `expect` function to assert that the controller behaves as expected.
+
 86. What is the purpose of the `@nestjs/testing` module?
+The `@nestjs/testing` module provides a set of utilities for testing NestJS applications, including the `Test` class, which allows you to create a test module, and the `@Inject` decorator, which allows you to inject dependencies into the test.
+
 87. How do you perform integration testing in a NestJS application?
+To perform integration testing in a NestJS application, you can use the `Test.createTestingModule` method to create a test module that includes the components you want to test. You can then use the `@Inject` decorator to inject the components into the test and use the `expect` function to assert that they behave as expected.
+
 88. How do you use `supertest` for HTTP endpoint testing in NestJS?
+`supertest` is a library that allows you to test HTTP endpoints in a NestJS application. You can use `supertest` to send requests to your application and assert that the responses are correct.
+
 89. What are some best practices for testing NestJS applications?
+Some best practices for testing NestJS applications include writing unit tests for services and controllers, using integration tests to test the interactions between components, and using end-to-end tests to test the entire application. You should also use a testing framework such as Jest and a library such as `supertest` to make testing easier.
+
 90. How do you handle asynchronous tests in NestJS?
+To handle asynchronous tests in NestJS, you can use the `async/await` syntax to write asynchronous tests. You can also use the `@Inject` decorator to inject dependencies into the test and use the `expect` function to assert that the test behaves as expected.
 
 ### Advanced Topics
 
 91. How does NestJS handle microservices architecture?
+NestJS provides a built-in support for microservices architecture through the `@Microservice()` decorator. This decorator allows you to define a microservice and its communication pattern. NestJS supports multiple communication patterns such as TCP, Redis, RabbitMQ, and more. You can use the `@Microservice()` decorator to define a microservice and its communication pattern, and then use the `@Inject()` decorator to inject the microservice into your controllers or services.
+
 92. What is the purpose of the `@Microservice()` decorator?
+The `@Microservice()` decorator is used to define a microservice and its communication pattern. It allows you to specify the transport layer, such as TCP or Redis, and the communication pattern, such as request-response or publish-subscribe.
+
 93. How do you implement message-based communication with microservices?
+To implement message-based communication with microservices, you can use the `@Microservice()` decorator to define a microservice and its communication pattern. You can then use the `@Inject()` decorator to inject the microservice into your controllers or services. You can use the `@MessagePattern()` decorator to define a message pattern for the microservice.
+
 94. How do you use WebSockets in a NestJS application?
+To use WebSockets in a NestJS application, you can use the `@WebSocketServer()` decorator to define a WebSocket server. You can then use the `@OnConnect()` decorator to define a handler for when a client connects to the server, and the `@OnMessage()` decorator to define a handler for when a client sends a message to the server.
+
 95. What are interceptors in NestJS, and how are they used?
+Interceptors in NestJS are used to intercept incoming requests and outgoing responses. They can be used to perform tasks such as authentication, rate limiting, and logging. You can define an interceptor using the `@Interceptor()` decorator and then use the `@UseInterceptors()` decorator to apply the interceptor to a controller or route.
+
 96. How do you create and use custom interceptors?
+To create a custom interceptor, you can define a class that implements the `Interceptor` interface. You can then use the `@Interceptor()` decorator to define the interceptor and the `@UseInterceptors()` decorator to apply the interceptor to a controller or route.
+
 97. What is the purpose of custom exception filters in NestJS?
+Custom exception filters in NestJS are used to catch and handle exceptions that occur in your application. You can define a custom exception filter using the `@Catch()` decorator and then use the `@UseFilters()` decorator to apply the filter to a controller or route.
+
 98. How do you use the `@Catch()` decorator to handle exceptions?
+To use the `@Catch()` decorator to handle exceptions, you can define a class that implements the `ExceptionFilter` interface. You can then use the `@Catch()` decorator to define the exception filter and the `@UseFilters()` decorator to apply the filter to a controller or route.
+
 99. How do you implement rate limiting in a NestJS application?
+To implement rate limiting in a NestJS application, you can use an interceptor to track the number of requests made by a client and block further requests if the rate limit is exceeded. You can use the `@Interceptor()` decorator to define the interceptor and the `@UseInterceptors()` decorator to apply the interceptor to a controller or route.
+
 100. What are some performance optimization techniques for NestJS applications?
+Some performance optimization techniques for NestJS applications include using caching, optimizing database queries, and using a load balancer to distribute traffic. You can also use tools such as NestJS's built-in caching mechanism and third-party libraries such as Redis to improve performance.

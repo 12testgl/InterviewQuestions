@@ -67,7 +67,9 @@ Answer: Functional components are easier to read and write, and they don't have 
 Answer: You can create reusable components in React by breaking down your UI into smaller, reusable pieces.
 
 
+
 ### State Management
+
 21. What is the `useState` hook, and how does it work?
 Answer: The `useState` hook is a built-in React hook that allows you to add state to functional components. It takes an initial state value as an argument and returns an array with two elements: the current state value and an `updateState` function.
 
@@ -164,6 +166,8 @@ Answer: BrowserRouter uses the URL path, HashRouter uses the URL hash.
 
 50. How can you handle authentication and authorization with React Router?
 Answer: By using protected routes and authentication checks.
+
+
 
 ### Hooks
 
