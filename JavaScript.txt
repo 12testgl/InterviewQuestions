@@ -3,22 +3,28 @@ Certainly! Here's a comprehensive list of 100 JavaScript interview questions tha
 ### Basics
 
 1. What is JavaScript, and what are its main uses?
-JavaScript is a high-level, dynamic, and interpreted programming language that is primarily used for client-side scripting on the web. Its main uses include creating interactive web pages, web applications, mobile applications, and server-side programming with technologies like Node.js.
+JavaScript is a high-level, dynamic, and interpreted programming language that is primarily used for client-side scripting on the web. Its main uses 
+include creating interactive web pages, web applications, mobile applications, and server-side programming with technologies like Node.js.
 
 2. Explain the difference between `var`, `let`, and `const`.
-`var` is a function-scoped variable declaration, `let` is a block-scoped variable declaration, and `const` is a block-scoped constant declaration. `let` and `const` were introduced in ES6 to provide more control over variable scope and prevent common issues like variable hoisting.
+`var` is a function-scoped variable declaration, `let` is a block-scoped variable declaration, and `const` is a block-scoped constant declaration. 
+`let` and `const` were introduced in ES6 to provide more control over variable scope and prevent common issues like variable hoisting.
 
 3. What is a closure in JavaScript?
-A closure is a function that has access to its outer function's scope, even when the outer function has returned. This allows the inner function to use and manipulate variables from the outer function's scope.
+A closure is a function that has access to its outer function's scope, even when the outer function has returned. This allows the inner function to
+ use and manipulate variables from the outer function's scope.
 
 4. How does JavaScript handle asynchronous operations?
-JavaScript handles asynchronous operations using callbacks, promises, and async/await. Callbacks are functions passed as arguments to other functions, promises are objects that represent the eventual completion of an operation, and async/await is a syntax sugar on top of promises that makes asynchronous code look and feel synchronous.
+JavaScript handles asynchronous operations using callbacks, promises, and async/await. Callbacks are functions passed as arguments to other functions,
+ promises are objects that represent the eventual completion of an operation, and async/await is a syntax sugar on top of promises that makes asynchronous code look and feel synchronous.
 
 5. What are JavaScript data types? Give examples.
-JavaScript has several data types, including numbers, strings, booleans, arrays, objects, null, and undefined. Examples include `let num = 5;`, `let str = 'hello';`, `let bool = true;`, `let arr = [1, 2, 3];`, and `let obj = { name: 'John', age: 30 };`.
+JavaScript has several data types, including numbers, strings, booleans, arrays, objects, null, and undefined. Examples include `let num = 5;`, 
+`let str = 'hello';`, `let bool = true;`, `let arr = [1, 2, 3];`, and `let obj = { name: 'John', age: 30 };`.
 
 6. Explain the concept of hoisting.
-Hoisting is a JavaScript mechanism where variables and functions are moved to the top of their scope, regardless of where they are actually defined. This can lead to unexpected behavior if not understood properly.
+Hoisting is a JavaScript mechanism where variables and functions are moved to the top of their scope, regardless of where they are actually defined. 
+This can lead to unexpected behavior if not understood properly.
 
 7. What is the difference between `==` and `===` in JavaScript?
 `==` is a loose equality operator that checks for value equality, while `===` is a strict equality operator that checks for both value and type equality.
@@ -27,32 +33,40 @@ Hoisting is a JavaScript mechanism where variables and functions are moved to th
 You can create an object in JavaScript using the object literal syntax, `let obj = { key: value };`, or using the `Object.create()` method.
 
 9. What is the purpose of the `this` keyword in JavaScript?
-The `this` keyword refers to the current execution context of a function. It can refer to the global object, a function's own scope, or an object that a function is called on.
+The `this` keyword refers to the current execution context of a function. It can refer to the global object, a function's own scope, or an 
+object that a function is called on.
 
 10. What is event delegation?
-Event delegation is a technique where you attach an event listener to a parent element, and then use the event target to determine which child element triggered the event. This can improve performance and simplify event handling.
+Event delegation is a technique where you attach an event listener to a parent element, and then use the event target to determine which child 
+element triggered the event. This can improve performance and simplify event handling.
 
 
 
 ### Functions
 
 11. What is a callback function?
-A callback function is a function passed as an argument to another function, which is then executed by that function. It's a way to pass a function as an argument to another function, allowing for more flexibility and control over the execution of the code.
+A callback function is a function passed as an argument to another function, which is then executed by that function. It's a way to pass a function 
+as an argument to another function, allowing for more flexibility and control over the execution of the code.
 
 12. How do arrow functions differ from regular functions?
-Arrow functions are a concise way to define small, single-purpose functions. They have a shorter syntax, do not have their own `this` context, and do not support the `arguments` object. They are often used as callbacks or event handlers.
+Arrow functions are a concise way to define small, single-purpose functions. They have a shorter syntax, do not have their own `this` context, and 
+do not support the `arguments` object. They are often used as callbacks or event handlers.
 
-13. Explain the concept of function currying.
-Function currying is a technique where a function takes multiple arguments, but instead of taking all of them at once, it takes the first argument and returns a new function that takes the remaining arguments. This allows for more flexibility and reusability of code.
+13. Explain the concept of function currying?
+Function currying is a technique where a function takes multiple arguments, but instead of taking all of them at once, it takes the first argument 
+and returns a new function that takes the remaining arguments. This allows for more flexibility and reusability of code.
 
 14. What is a higher-order function?
-A higher-order function is a function that takes another function as an argument or returns a function as its result. They are often used to abstract away low-level details and provide a more functional programming style.
+A higher-order function is a function that takes another function as an argument or returns a function as its result. They are often used to abstract 
+away low-level details and provide a more functional programming style.
 
 15. How can you create a private method in JavaScript?
-In JavaScript, there is no strict concept of private methods, but you can achieve similar behavior using closures or the `#` symbol (private fields) introduced in ECMAScript 2020.
+In JavaScript, there is no strict concept of private methods, but you can achieve similar behavior using closures or the `#` symbol (private fields) 
+introduced in ECMAScript 2020.
 
 16. What is the `bind()` method and how does it work?
-The `bind()` method creates a new function that has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+The `bind()` method creates a new function that has its `this` keyword set to the provided value, with a given sequence of arguments preceding any 
+provided when the new function is called.
 
 17. How do you handle errors in JavaScript?
 JavaScript provides a built-in `try-catch` block to handle errors. You can also use `throw` to manually throw an error, and `finally` to execute code regardless of whether an error occurred.
@@ -72,16 +86,20 @@ Generator functions are a type of function that can be paused and resumed during
 ### Objects and Arrays
 
 21. How do you clone an object in JavaScript?
-To clone an object in JavaScript, you can use the spread operator or Object.assign() method. The spread operator is a more concise way to clone an object, while Object.assign() is more flexible and allows you to merge multiple objects.
+To clone an object in JavaScript, you can use the spread operator or Object.assign() method. The spread operator is a more concise way to clone an object, while Object.assign() is more 
+flexible and allows you to merge multiple objects.
 
 22. What is the difference between `Object.assign()` and spread operator for object copying?
-The main difference between Object.assign() and the spread operator is that Object.assign() modifies the target object, while the spread operator creates a new object. Additionally, Object.assign() can handle nested objects, while the spread operator only clones the top-level properties.
+The main difference between Object.assign() and the spread operator is that Object.assign() modifies the target object, while the spread operator creates a new object. Additionally, Object.assign() 
+can handle nested objects, while the spread operator only clones the top-level properties.
 
 23. Explain the concept of prototype inheritance.
-Prototype inheritance is a mechanism in JavaScript where an object can inherit properties and methods from another object, known as its prototype. This allows for code reuse and a more efficient way of creating objects.
+Prototype inheritance is a mechanism in JavaScript where an object can inherit properties and methods from another object, known as its prototype. This allows for code reuse and a more efficient way 
+of creating objects.
 
 24. How do you check if an object has a property?
-You can check if an object has a property using the in operator or the hasOwnProperty() method. The in operator checks if the property exists in the object or its prototype chain, while hasOwnProperty() only checks if the property exists in the object itself.
+You can check if an object has a property using the in operator or the hasOwnProperty() method. The in operator checks if the property exists in the object or its prototype chain, while
+ hasOwnProperty() only checks if the property exists in the object itself.
 
 25. What are some common array methods in JavaScript?
 Some common array methods in JavaScript include push(), pop(), shift(), unshift(), splice(), slice(), and concat(). These methods allow you to manipulate and transform arrays in various ways.
@@ -93,13 +111,110 @@ You can iterate over an array using a for loop, for...of loop, or array methods 
 The reduce() method is used to apply a function to each element in an array and reduce it to a single value. It's commonly used to calculate sums, products, or other aggregate values.
 
 28. How do you remove duplicates from an array?
-You can remove duplicates from an array using the Set object or the filter() method. The Set object automatically removes duplicates, while the filter() method allows you to specify a condition for removing elements.
+You can remove duplicates from an array using the Set object or the filter() method. The Set object automatically removes duplicates, while the filter() method allows you to specify a 
+condition for removing elements.
 
 29. What is the difference between `map()` and `forEach()`?
-The main difference between map() and forEach() is that map() returns a new array with the transformed elements, while forEach() does not return anything. forEach() is used for side effects, while map() is used for data transformation.
+The main difference between map() and forEach() is that map() returns a new array with the transformed elements, while forEach() does not return anything. forEach() is used for side effects,
+ while map() is used for data transformation.
+You can sort an array of objects by a specific property using the sort() method and providing a compare function. The compare function takes two objects as arguments and returns a value that determines their order. Here's an example of sorting an array of objects by a specific property:
 
-30. How can you sort an array of objects by a specific property?
-You can sort an array of objects by a specific property using the sort() method and providing a compare function. The compare function takes two objects as arguments and returns a value that determines their order.
+```javascript
+// Define the array of objects
+const people = [
+    { name: 'John', age: 30 },
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 40 },
+    { name: 'Jane', age: 35 }
+];
+
+// Sort the array of objects by age
+people.sort((a, b) => a.age - b.age);
+
+// Print the sorted array
+console.log(people);
+```
+
+This will output:
+
+```javascript
+[
+    { name: 'Alice', age: 25 },
+    { name: 'John', age: 30 },
+    { name: 'Jane', age: 35 },
+    { name: 'Bob', age: 40 }
+]
+```
+
+In this example, the compare function `(a, b) => a.age - b.age` is used to sort the array of objects by the age property. The sort() method modifies the original array and returns the sorted array.
+
+You can also use the `localeCompare()` method to sort strings in a specific locale. For example:
+
+```javascript
+// Define the array of objects
+const people = [
+    { name: 'John', age: 30 },
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 40 },
+    { name: 'Jane', age: 35 }
+];
+
+// Sort the array of objects by name
+people.sort((a, b) => a.name.localeCompare(b.name));
+
+// Print the sorted array
+console.log(people);
+```
+
+This will output:
+
+```javascript
+[
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 40 },
+    { name: 'Jane', age: 35 },
+    { name: 'John', age: 30 }
+]
+```
+
+In this example, the compare function `(a, b) => a.name.localeCompare(b.name)` is used to sort the array of objects by the name property in a specific locale.
+
+You can also use the `sort()` method with a custom compare function to sort the array of objects based on multiple properties. For example:
+
+```javascript
+// Define the array of objects
+const people = [
+    { name: 'John', age: 30, country: 'USA' },
+    { name: 'Alice', age: 25, country: 'UK' },
+    { name: 'Bob', age: 40, country: 'USA' },
+    { name: 'Jane', age: 35, country: 'Canada' }
+];
+
+// Sort the array of objects by country and age
+people.sort((a, b) => {
+    if (a.country === b.country) {
+        return a.age - b.age;
+    } else {
+        return a.country.localeCompare(b.country);
+    }
+});
+
+// Print the sorted array
+console.log(people);
+```
+
+This will output:
+
+```javascript
+[
+    { name: 'Bob', age: 40, country: 'USA' },
+    { name: 'John', age: 30, country: 'USA' },
+    { name: 'Alice', age: 25, country: 'UK' },
+    { name: 'Jane', age: 35, country: 'Canada' }
+]
+```
+
+In this example, the compare function is used to sort the array of objects by the country property and then by the age property.
 
 
 
@@ -107,35 +222,96 @@ You can sort an array of objects by a specific property using the sort() method 
 ### ES6 and Beyond
 
 31. What are template literals and how are they used?
-Template literals are a feature in JavaScript that allows you to embed expressions inside string literals, using backticks (``) instead of quotes. They provide a more readable and efficient way to create strings, especially when working with variables or functions.
+Template literals are a feature in JavaScript that allows you to embed expressions inside string literals, using backticks (``) instead of quotes. They provide a more readable and efficient way 
+to create strings, especially when working with variables or functions.
 
 32. What is destructuring assignment and how does it work?
-Destructuring assignment is a syntax in JavaScript that allows you to extract values from arrays or objects and assign them to variables. It works by using the same syntax as array or object literals, but on the left side of an assignment.
+Destructuring assignment is a syntax in JavaScript that allows you to extract values from arrays or objects and assign them to variables. It works by using the same syntax as array or object literals, 
+but on the left side of an assignment.
 
 33. How do default parameters work in functions?
-Default parameters in JavaScript allow you to specify a default value for a function parameter, which is used if no value is provided when the function is called. This can simplify your code and make it more readable.
+Default parameters in JavaScript allow you to specify a default value for a function parameter, which is used if no value is provided when the function is called. This can simplify your code and make 
+it more readable.
 
 34. Explain the concept of modules in JavaScript.
-Modules in JavaScript are a way to organize and structure your code into reusable pieces. They allow you to import and export variables, functions, and classes, making it easier to manage dependencies and avoid naming conflicts.
+Modules in JavaScript are a way to organize and structure your code into reusable pieces. They allow you to import and export variables, functions, and classes, making it easier to manage dependencies 
+and avoid naming conflicts.
 
 35. What is the `spread` operator and how is it used?
-The spread operator in JavaScript is a syntax that allows you to expand an array or object into a new array or object. It's commonly used to merge arrays, create new objects, or pass arguments to functions.
+The spread operator in JavaScript is a syntax that allows you to expand an array or object into a new array or object. It's commonly used to merge arrays, create new objects, or pass arguments 
+to functions.
 
 36. What is the difference between `class` and `function` constructors?
-In JavaScript, `class` and `function` constructors are both used to create objects, but they have different syntax and behavior. `class` constructors are part of the ES6 syntax and provide a more traditional object-oriented programming style, while `function` constructors are the traditional way of creating objects in JavaScript.
+In JavaScript, `class` and `function` constructors are both used to create objects, but they have different syntax and behavior. `class` constructors are part of the ES6 syntax and provide a more 
+traditional object-oriented programming style, while `function` constructors are the traditional way of creating objects in JavaScript.
+
 
 37. How do you handle asynchronous operations using `async/await`?
-`async/await` is a syntax in JavaScript that allows you to write asynchronous code that looks and feels synchronous. It's built on top of promises and provides a more readable and efficient way to handle asynchronous operations.
+`async/await` is a syntax in JavaScript that allows you to write asynchronous code that looks and feels synchronous. It's built on top of promises and provides a more readable and efficient way to
+ handle asynchronous operations.
 
 38. What is the purpose of `Promise.all()`?
-`Promise.all()` is a method in JavaScript that takes an array of promises and returns a new promise that resolves when all the promises in the array have resolved. It's commonly used to handle multiple asynchronous operations that need to be executed concurrently.
+`Promise.all()` is a method in JavaScript that takes an array of promises and returns a new promise that resolves when all the promises in the array have resolved. It's commonly used to handle 
+multiple asynchronous operations that need to be executed concurrently.
+
+
 
 39. What are `WeakMap` and `WeakSet`?
-`WeakMap` and `WeakSet` are data structures in JavaScript that allow you to store objects as keys or values, but with a weak reference. This means that the objects are not prevented from being garbage collected, which can help prevent memory leaks.
+`WeakMap` and `WeakSet` are data structures in JavaScript that allow you to store objects as keys or values, but with a weak reference. This means that the objects are not prevented from being 
+garbage collected, which can help prevent memory leaks.
+
+// Create a WeakMap
+const weakMap = new WeakMap();
+
+// Create an object to use as a key
+const key = {};
+
+// Set a value in the WeakMap
+weakMap.set(key, 'value');
+
+// Get the value from the WeakMap
+console.log(weakMap.get(key)); // Output: "value"
+
+// Delete the key
+key = null;
+
+// The value is still in the WeakMap, but it's no longer reachable
+console.log(weakMap.size); // Output: 0
+
+// Create a WeakSet
+const weakSet = new WeakSet();
+
+// Create an object to add to the WeakSet
+const obj = {};
+
+// Add the object to the WeakSet
+weakSet.add(obj);
+
+// Check if the object is in the WeakSet
+console.log(weakSet.has(obj)); // Output: true
+
+// Delete the object
+obj = null;
+
+// The object is still in the WeakSet, but it's no longer reachable
+console.log(weakSet.size); // Output: 0
 
 40. What is a `Symbol` and how is it used?
 A `Symbol` in JavaScript is a unique and immutable value that can be used as a property key in objects. It's commonly used to create unique identifiers or to hide properties from the outside world.
 
+// Create a new Symbol
+const mySymbol = Symbol('mySymbol');
+
+// Use the Symbol as a property key
+const obj = {
+    [mySymbol]: 'Hello, World!'
+};
+
+// Access the property using the Symbol
+console.log(obj[mySymbol]); // Output: "Hello, World!"
+
+// Try to access the property using a string
+console.log(obj['mySymbol']); // Output: undefined
 
 
 ### DOM Manipulation
@@ -151,6 +327,24 @@ You can add or remove a class from an element using the `element.classList.add()
 
 44. What is event bubbling and how does it work?
 Event bubbling is a process where an event propagates from the innermost element to the outermost element in the DOM.
+```javascript
+// Add an event listener to the parent element
+document.getElementById('parent').addEventListener('click', function(event) {
+  // Check if the event target is the innermost element
+  if (event.target === document.getElementById('innermost')) {
+    console.log('Innermost element clicked');
+  } else {
+    console.log('Parent element clicked');
+  }
+});
+
+// Add an event listener to the innermost element
+document.getElementById('innermost').addEventListener('click', function(event) {
+  // Prevent event bubbling by stopping the propagation of the event
+  event.stopPropagation();
+  console.log('Innermost element clicked');
+});
+```
 
 45. How can you create and append new elements to the DOM?
 You can create a new element using the `document.createElement()` method and append it to the DOM using the `parent.appendChild()` method.
@@ -194,6 +388,30 @@ You can avoid memory leaks in JavaScript by properly cleaning up event listeners
 
 57. What is debouncing and throttling?
 Debouncing and throttling are techniques used to limit the frequency of function calls, often used to prevent excessive event handling.
+// Debouncing
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
+  };
+}
+
+// Throttling
+
+function throttle(func, wait) {
+  let lastCallTime = 0;
+  return function(...args) {
+    const now = Date.now();
+    if (now - lastCallTime > wait) {
+      lastCallTime = now;
+      func.apply(this, args);
+    }
+  };
+}
 
 58. How does JavaScript handle garbage collection?
 JavaScript handles garbage collection automatically, using a mechanism that identifies and removes unused objects from memory.
@@ -221,7 +439,8 @@ A Proxy in JavaScript is an object that acts as an intermediary between an objec
 Reflect and Proxy work together to provide a way to intercept and modify property access and method calls on an object, allowing for more fine-grained control over object behavior.
 
 65. Explain the concept of event loop and call stack.
-The event loop is a mechanism that allows JavaScript to handle asynchronous operations, such as events and timeouts, by executing them in a single thread. The call stack is a data structure that keeps track of the current execution context of a program.
+The event loop is a mechanism that allows JavaScript to handle asynchronous operations, such as events and timeouts, by executing them in a single thread. The call stack is a data structure that 
+keeps track of the current execution context of a program.
 
 66. What is the difference between `setTimeout()` and `setInterval()`?
 setTimeout() executes a function once after a specified delay, while setInterval() executes a function repeatedly at a specified interval.
@@ -230,7 +449,8 @@ setTimeout() executes a function once after a specified delay, while setInterval
 A custom iterator in JavaScript can be created using the Symbol.iterator property and the next() method, which returns an object with a value and a done property.
 
 68. What are `async iterators` and `for-await-of` loops?
-Async iterators are a type of iterator that allows for asynchronous iteration over a sequence of values, while for-await-of loops are a type of loop that allows for asynchronous iteration over a sequence of values.
+Async iterators are a type of iterator that allows for asynchronous iteration over a sequence of values, while for-await-of loops are a type of loop that allows for asynchronous iteration over a
+ sequence of values.
 
 69. How does the JavaScript engine handle the `this` keyword in different contexts?
 The JavaScript engine handles the this keyword differently depending on the context in which it is used, such as in a function, a method, or a constructor.
@@ -243,73 +463,90 @@ WeakRef and FinalizationRegistry are features in JavaScript that allow for weak 
 ### Security
 
 71. What is Cross-Site Scripting (XSS) and how can you prevent it?
-Cross-Site Scripting (XSS) is a type of security vulnerability that allows an attacker to inject malicious code into a website, which is then executed by the user's browser. To prevent XSS, use input validation and sanitization, implement Content Security Policy (CSP), and use a Web Application Firewall (WAF).
+Cross-Site Scripting (XSS) is a type of security vulnerability that allows an attacker to inject malicious code into a website, which is then executed by the user's browser. To prevent XSS, 
+use input validation and sanitization, implement Content Security Policy (CSP), and use a Web Application Firewall (WAF).
 
 72. Explain Cross-Origin Resource Sharing (CORS).
-Cross-Origin Resource Sharing (CORS) is a security feature implemented in web browsers to prevent web pages from making requests to a different origin (domain, protocol, or port) than the one the web page was loaded from. CORS allows web servers to specify who can access their resources.
+Cross-Origin Resource Sharing (CORS) is a security feature implemented in web browsers to prevent web pages from making requests to a different origin (domain, protocol, or port) than the one 
+the web page was loaded from. CORS allows web servers to specify who can access their resources.
 
 73. What is Content Security Policy (CSP) and how does it work?
-Content Security Policy (CSP) is a security feature that helps prevent cross-site scripting (XSS) attacks by defining which sources of content are allowed to be executed within a web page. CSP works by specifying a set of rules that the browser enforces when loading content.
+Content Security Policy (CSP) is a security feature that helps prevent cross-site scripting (XSS) attacks by defining which sources of content are allowed to be executed within a web page. 
+CSP works by specifying a set of rules that the browser enforces when loading content.
 
 74. How can you handle sensitive data in JavaScript securely?
-To handle sensitive data in JavaScript securely, use HTTPS to encrypt data in transit, store sensitive data on the server-side, use secure protocols for authentication and authorization, and implement proper error handling and logging.
+To handle sensitive data in JavaScript securely, use HTTPS to encrypt data in transit, store sensitive data on the server-side, use secure protocols for authentication and authorization, 
+and implement proper error handling and logging.
 
 75. What is the Same-Origin Policy and why is it important?
-The Same-Origin Policy is a security feature implemented in web browsers to prevent a web page from making requests to a different origin (domain, protocol, or port) than the one the web page was loaded from. This policy is important because it helps prevent malicious scripts from making unauthorized requests on behalf of the user.
+The Same-Origin Policy is a security feature implemented in web browsers to prevent a web page from making requests to a different origin (domain, protocol, or port) than the one the web 
+page was loaded from. This policy is important because it helps prevent malicious scripts from making unauthorized requests on behalf of the user.
 
 
 
 ### Testing and Debugging
 
 76. How do you debug JavaScript code in the browser?
-Debugging JavaScript code in a browser can be done using the browser's developer tools, such as the Chrome DevTools or Firefox Developer Edition. You can set breakpoints, inspect variables, and use the console to log messages and errors.
+Debugging JavaScript code in a browser can be done using the browser's developer tools, such as the Chrome DevTools or Firefox Developer Edition. You can set breakpoints, inspect variables, 
+and use the console to log messages and errors.
 
 77. What are some common debugging tools or techniques?
-Common debugging tools include the browser's developer tools, console.log statements, debugger statements, and third-party libraries like React DevTools or Vue Devtools. Techniques include using the call stack to identify the source of an error, using the debugger to step through code, and using console.log statements to inspect variables.
+Common debugging tools include the browser's developer tools, console.log statements, debugger statements, and third-party libraries like React DevTools or Vue Devtools. Techniques include 
+using the call stack to identify the source of an error, using the debugger to step through code, and using console.log statements to inspect variables.
 
 78. How do you write unit tests for JavaScript code?
-Unit tests can be written using a testing framework like Jest or Mocha. You can write test cases to verify that a function or method behaves as expected, and use assertions to verify that the expected output is produced.
+Unit tests can be written using a testing framework like Jest or Mocha. You can write test cases to verify that a function or method behaves as expected, and use assertions to verify that the 
+expected output is produced.
 
 79. What is the role of `console.log()` in debugging?
 `console.log()` is used to log messages to the console, which can be useful for debugging purposes. You can use it to inspect variables, log errors, or verify that a piece of code is executing as expected.
 
 80. How do you use browser developer tools to analyze performance?
-Browser developer tools can be used to analyze performance by using the performance tab to record and analyze performance metrics, such as load time, CPU usage, and memory usage. You can also use the network tab to analyze network requests and the memory tab to analyze memory usage.
+Browser developer tools can be used to analyze performance by using the performance tab to record and analyze performance metrics, such as load time, CPU usage, and memory usage. You can also 
+use the network tab to analyze network requests and the memory tab to analyze memory usage.
 
 
 
 ### Frameworks and Libraries
 
 81. What is the Virtual DOM, and how does it work in React?
-The Virtual DOM is a lightweight in-memory representation of the real DOM. It's a key feature of React that enables efficient and fast rendering of components. When the state of a component changes, React updates the Virtual DOM, which is then compared to the real DOM. Only the differences are applied to the real DOM, minimizing the number of DOM mutations.
+The Virtual DOM is a lightweight in-memory representation of the real DOM. It's a key feature of React that enables efficient and fast rendering of components. When the state of a component 
+changes, React updates the Virtual DOM, which is then compared to the real DOM. Only the differences are applied to the real DOM, minimizing the number of DOM mutations.
 
 82. How does Angular handle two-way data binding?
-Angular uses a mechanism called "zones" to handle two-way data binding. Zones are a way to group related components and services together, allowing Angular to detect changes to the data model and update the UI accordingly. When a user interacts with the UI, Angular updates the data model, which in turn updates the UI.
+Angular uses a mechanism called "zones" to handle two-way data binding. Zones are a way to group related components and services together, allowing Angular to detect changes to the data model 
+and update the UI accordingly. When a user interacts with the UI, Angular updates the data model, which in turn updates the UI.
 
 83. What is the purpose of Vue.js directives?
-Vue.js directives are used to attach special behavior to HTML elements. They are essentially functions that are executed when the element is rendered or updated. Directives can be used to manipulate the element's attributes, style, or content.
+Vue.js directives are used to attach special behavior to HTML elements. They are essentially functions that are executed when the element is rendered or updated. Directives can be used to 
+manipulate the element's attributes, style, or content.
 
 84. Explain the concept of state management in Redux.
-Redux is a state management library that helps manage global state by providing a single source of truth for state. It uses a store to hold the state, and actions to update the state. When an action is dispatched, the state is updated, and the UI is re-rendered.
+Redux is a state management library that helps manage global state by providing a single source of truth for state. It uses a store to hold the state, and actions to update the state. 
+When an action is dispatched, the state is updated, and the UI is re-rendered.
 
 85. How do you handle side effects in React with `useEffect`?
-`useEffect` is a hook in React that allows you to handle side effects, such as making API calls or setting timers. It takes a function as an argument, which is executed after the component has rendered. The function can return a cleanup function, which is executed when the component is unmounted.
+`useEffect` is a hook in React that allows you to handle side effects, such as making API calls or setting timers. It takes a function as an argument, which is executed after the 
+component has rendered. The function can return a cleanup function, which is executed when the component is unmounted.
 
 
 ### Best Practices
 
 
 86. What are some common JavaScript design patterns?
-Some common JavaScript design patterns include the Singleton pattern, the Factory pattern, and the Observer pattern. These patterns help solve common problems in software design, such as managing global state or handling events.
+Some common JavaScript design patterns include the Singleton pattern, the Factory pattern, and the Observer pattern. These patterns help solve common problems in software design, 
+such as managing global state or handling events.
 
 87. How do you ensure your code is maintainable and scalable?
-To ensure your code is maintainable and scalable, follow best practices such as writing modular code, using clear and concise variable names, and testing your code thoroughly. Additionally, use design patterns and principles to solve common problems.
+To ensure your code is maintainable and scalable, follow best practices such as writing modular code, using clear and concise variable names, and testing your code thoroughly. Additionally, 
+use design patterns and principles to solve common problems.
 
 88. What are some best practices for writing secure JavaScript code?
 Some best practices for writing secure JavaScript code include validating user input, using HTTPS to encrypt data in transit, and implementing proper error handling and logging.
 
 89. How do you handle version control and dependency management in JavaScript projects?
-Use a version control system like Git to manage your codebase, and a package manager like npm or yarn to manage dependencies. This helps keep track of changes to your code and ensures that your dependencies are up-to-date.
+Use a version control system like Git to manage your codebase, and a package manager like npm or yarn to manage dependencies. This helps keep track of changes to your code and ensures that your 
+dependencies are up-to-date.
 
 90. What is the importance of code documentation?
 Code documentation is essential for maintaining a clear understanding of your codebase. It helps other developers understand how your code works, and makes it easier to onboard new team members.
@@ -331,23 +568,8 @@ Some strategies for handling large-scale JavaScript applications include breakin
 Use async/await or Promises to manage asynchronous code in a JavaScript application. These help simplify the code and make it easier to read.
 
 95. What is the role of TypeScript in the JavaScript ecosystem?
-TypeScript is a statically typed language that helps improve code quality and maintainability. It's designed to work seamlessly with existing JavaScript code, and provides features like type checking and autocompletion.
-
-96. What new features were introduced in the latest ECMAScript specification?
-The latest ECMAScript specification introduced features like async/await, classes, and modules. These features help simplify the code and make it more efficient.
-
-97. How does JavaScript support new programming paradigms like functional programming?
-JavaScript supports functional programming through features like arrow functions, map, and reduce. These help simplify the code and make it more declarative.
-
-98. What is the impact of recent updates to JavaScript libraries and frameworks?
-Recent updates to JavaScript libraries and frameworks have improved performance, security, and maintainability. They've also introduced new features and best practices that help developers write better code.
-
-99. How do JavaScript updates impact browser support and compatibility?
-JavaScript updates can impact browser support and compatibility by introducing new features that may not be supported by older browsers. This can lead to compatibility issues and affect the user experience.
-
-100. What are some emerging trends in JavaScript development?
-Some emerging trends in JavaScript development include the use of WebAssembly, Serverless architecture, and Artificial Intelligence. These trends are expected to shape the future of JavaScript development and improve the user experience.
-
+TypeScript is a statically typed language that helps improve code quality and maintainability. It's designed to work seamlessly with existing JavaScript code, and provides features like type 
+checking and autocompletion.
 
 ### Recent Developments
 
