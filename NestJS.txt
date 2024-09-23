@@ -246,6 +246,7 @@ export class UserService {
   // service implementation
 }
 ```
+
 36. How do you resolve dependencies dynamically in NestJS?
 To resolve dependencies dynamically in NestJS, you can use the `@Inject()` decorator with a token. The token can be a string or a symbol that identifies the dependency. For example:
 ```typescript
